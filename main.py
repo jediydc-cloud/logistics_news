@@ -1,6 +1,6 @@
 """
 국내외 물류 뉴스 자동 브리핑 및 콘텐츠 아이디어 도출 시스템
-GitHub Actions 실행용 스크립트
+GitHub Actions 실행용 스크립트 (배치 처리 버전 — API 호출 최소화)
 """
 
 import os
@@ -30,7 +30,7 @@ if not GEMINI_API_KEY:
     raise EnvironmentError("❌ GEMINI_API_KEY 환경변수가 설정되지 않았습니다.")
 
 client = genai.Client(api_key=GEMINI_API_KEY)
-GEMINI_MODEL = "gemini-1.5-flash"   # ← 2.0에서 변경 (무료 RPM 더 넉넉)
+GEMINI_MODEL = "gemini-1.5-flash"
 
 TOP_NEWS_COUNT        = 5
 CANDIDATE_POOL_SIZE   = 10
@@ -208,25 +208,20 @@ def score_news_row(row):
 # ──────────────────────────────────────────
 def extract_json_from_text(raw):
     raw = raw.strip()
-    # thinking 태그 제거
     raw = re.sub(r"<think>.*?</think>", "", raw, flags=re.DOTALL).strip()
-    # 마크다운 코드블록 제거
     raw = re.sub(r"^```json\s*", "", raw).strip()
     raw = re.sub(r"^```\s*",    "", raw).strip()
     raw = re.sub(r"\s*```$",    "", raw).strip()
-    # 1차: 전체 JSON 파싱
     try:
         return json.loads(raw)
     except Exception:
         pass
-    # 2차: { } 블록 추출
     m = re.search(r"\{.*\}", raw, re.DOTALL)
     if m:
         try:
             return json.loads(m.group())
         except Exception:
             pass
-    # 3차: [ ] 블록 추출
     m = re.search(r"\[.*\]", raw, re.DOTALL)
     if m:
         try:
@@ -235,7 +230,7 @@ def extract_json_from_text(raw):
             pass
     raise ValueError(f"JSON 파싱 실패 | 원문 앞 200자: {raw[:200]}")
 
-def call_gemini_json(prompt, retries=5, wait=10):
+def call_gemini_json(prompt, retries=3, wait=15):
     last_err = None
     for attempt in range(retries):
         try:
@@ -245,121 +240,68 @@ def call_gemini_json(prompt, retries=5, wait=10):
         except Exception as e:
             last_err = e
             err_str = str(e)
-            # 429 에러 메시지에서 권장 대기 시간 추출
             m = re.search(r"retry in (\d+(?:\.\d+)?)s", err_str)
             retry_wait = float(m.group(1)) + 3 if m else wait * (attempt + 1)
-            retry_wait = min(retry_wait, 90)  # 최대 90초 캡
-            print(f"    ⚠️ Gemini 시도 {attempt+1}/{retries} 실패 → {retry_wait:.0f}초 대기 후 재시도")
+            retry_wait = min(retry_wait, 90)
+            print(f"    ⚠️ Gemini 시도 {attempt+1}/{retries} 실패 → {retry_wait:.0f}초 대기")
             time.sleep(retry_wait)
     raise RuntimeError(f"Gemini 호출 최종 실패: {last_err}")
 
 # ──────────────────────────────────────────
-# 기사 분석
+# 기사 배치 분석 (API 1회 호출로 전체 처리)
 # ──────────────────────────────────────────
-def fallback_article_analysis(row):
-    cat   = row["카테고리_규칙"]
-    title = row["기사제목"]
-    desc  = row["기사설명"]
-    is_en = row["언어"] == "en"
-    title_ko = f"[번역 대기] {title}" if is_en else title
-    desc_ko  = f"[번역 대기] {desc[:120]}" if is_en else desc[:120]
-    return {
-        "translated_title_ko":       title_ko,
-        "translated_description_ko": desc_ko,
-        "summary_3lines": [
-            title_ko,
-            f"핵심 내용: {desc_ko}",
-            f"시사점: {cat} 관점에서 확인 필요"
-        ],
-        "category":            cat,
-        "importance_score_ai": 5,
-        "importance_reason":   "자동 fallback 요약 (AI 분석 재시도 필요)",
-        "content_angle":       f"{cat} 이슈를 쉽게 설명하는 해설형 콘텐츠로 연결 가능",
-        "keywords":            [cat]
-    }
-
-def analyze_article_with_gemini(row):
-    is_english = row["언어"] == "en"
-
-    lang_instruction = """
-⚠️ 이 기사는 영어 원문입니다.
-- translated_title_ko: 제목을 자연스러운 한국어로 완전히 번역하라. 영어 단어를 섞지 마라.
-- translated_description_ko: 설명을 자연스러운 한국어로 완전히 번역하라.
-- summary_3lines: 반드시 100% 한국어로만 작성하라. 영어 단어가 하나라도 포함되면 안 된다.
-- importance_reason: 반드시 한국어로만 작성하라.
-- content_angle: 반드시 한국어로만 작성하라.
-- keywords: 한국어 핵심어로 작성하라 (물류 전문 용어는 한국어 표기 사용).
-""".strip() if is_english else """
-- translated_title_ko: 한국어 제목을 자연스럽게 다듬어 작성하라.
-- translated_description_ko: 설명을 한국어로 정리하라.
-- 모든 필드를 한국어로 작성하라.
-""".strip()
+def analyze_articles_batch(df_candidates):
+    articles_text = []
+    for i, (_, row) in enumerate(df_candidates.iterrows(), start=1):
+        articles_text.append(
+            f"[기사{i}]\n"
+            f"출처: {row['출처']} / 국내외: {row['국내외구분']} / 언어: {row['언어']}\n"
+            f"발행일: {row['발행일_표준']}\n"
+            f"제목(원문): {row['기사제목']}\n"
+            f"설명(원문): {row['기사설명']}"
+        )
 
     prompt = f"""
-너는 '물류업 대표에게 아침 뉴스 브리핑을 올리는 수석 비서'다.
-아래 기사 메타데이터만 보고 과장 없이 핵심만 정리하라.
-기사 원문을 상상해서 덧붙이지 말고, 주어진 제목/설명 범위 안에서만 판단하라.
-반드시 JSON만 출력하라. 모든 출력은 반드시 한국어로만 작성하라.
-
-[언어 처리 규칙]
-{lang_instruction}
+너는 물류업 대표에게 아침 뉴스 브리핑을 올리는 수석 비서다.
+아래 기사 {len(df_candidates)}개를 분석하여 반드시 JSON 배열로만 출력하라.
+모든 출력은 반드시 한국어로만 작성하라 (영어 혼용 절대 금지).
+영어 원문 기사는 반드시 한국어로 완전히 번역하라.
 
 [공통 출력 규칙]
-1) 모든 필드는 반드시 한국어로만 작성 (영어 혼용 절대 금지)
-2) summary_3lines는 정확히 3개의 한국어 문자열
-   - 1번째: 핵심 사실 (무슨 일이 있었나)
-   - 2번째: 배경·맥락 (왜 중요한가)
-   - 3번째: 시사점 (물류업계에 어떤 영향인가)
+1) 모든 필드는 반드시 한국어로만 작성
+2) summary_3lines는 정확히 3개: [핵심사실, 배경·맥락, 시사점]
 3) importance_score_ai는 1~10 정수
-4) category는 다음 중 하나만 사용:
-   ["항만·해운","항공·운송","창고·물류센터","자동화·기술","정책·공공","안전·리스크","투자·경영","기타"]
-5) content_angle은 향후 영상/콘텐츠 포인트를 한국어 한 문장으로
-6) keywords는 3~5개 한국어 핵심어 리스트
+4) category는 다음 중 하나: ["항만·해운","항공·운송","창고·물류센터","자동화·기술","정책·공공","안전·리스크","투자·경영","기타"]
+5) keywords는 3~5개 한국어 핵심어
 
-[기사 정보]
-출처: {row["출처"]}
-국내외구분: {row["국내외구분"]}
-언어: {row["언어"]}
-발행일: {row["발행일_표준"]}
-제목(원문): {row["기사제목"]}
-설명(원문): {row["기사설명"]}
+[분석할 기사 목록]
+{chr(10).join(articles_text)}
 
-[JSON 스키마]
-{{
-  "translated_title_ko": "한국어 제목",
-  "translated_description_ko": "한국어 설명",
-  "summary_3lines": ["핵심 사실 (한국어)", "배경·맥락 (한국어)", "시사점 (한국어)"],
-  "category": "카테고리",
-  "importance_score_ai": 5,
-  "importance_reason": "한국어로 작성",
-  "content_angle": "한국어로 작성",
-  "keywords": ["한국어키워드1", "한국어키워드2", "한국어키워드3"]
-}}
+[JSON 배열 스키마 — 기사 순서대로 {len(df_candidates)}개 출력]
+[
+  {{
+    "idx": 1,
+    "translated_title_ko": "한국어 제목",
+    "translated_description_ko": "한국어 설명",
+    "summary_3lines": ["핵심사실", "배경·맥락", "시사점"],
+    "category": "카테고리",
+    "importance_score_ai": 7,
+    "importance_reason": "한국어로 작성",
+    "content_angle": "한국어로 작성",
+    "keywords": ["키워드1", "키워드2", "키워드3"]
+  }}
+]
 """.strip()
 
     try:
         data = call_gemini_json(prompt)
-        if not isinstance(data, dict):
-            return fallback_article_analysis(row)
-        lines = data.get("summary_3lines", [])
-        if not isinstance(lines, list) or len(lines) != 3:
-            lines = fallback_article_analysis(row)["summary_3lines"]
-        keywords = data.get("keywords", [])
-        if not isinstance(keywords, list):
-            keywords = []
-        return {
-            "translated_title_ko":       data.get("translated_title_ko", row["기사제목"]),
-            "translated_description_ko": data.get("translated_description_ko", row["기사설명"]),
-            "summary_3lines":            lines,
-            "category":                  data.get("category", row["카테고리_규칙"]),
-            "importance_score_ai":       int(data.get("importance_score_ai", 5)),
-            "importance_reason":         data.get("importance_reason", ""),
-            "content_angle":             data.get("content_angle", ""),
-            "keywords":                  keywords[:5]
-        }
+        if not isinstance(data, list):
+            raise ValueError("배열이 아님")
+        print(f"  ✅ 배치 분석 성공: {len(data)}건 반환")
+        return data
     except Exception as e:
-        print(f"⚠️ fallback: {row['기사제목'][:40]} / {e}")
-        return fallback_article_analysis(row)
+        print(f"  ⚠️ 배치 분석 실패: {e}")
+        return None
 
 # ──────────────────────────────────────────
 # 일일 브리프 생성
@@ -400,9 +342,9 @@ def generate_daily_brief(df_top):
         return call_gemini_json(prompt)
     except Exception:
         return {
-            "총평":       "오늘은 국내외 물류 뉴스가 혼재된 가운데 정책, 기술, 운영 이슈가 함께 나타났습니다.",
-            "국내동향":   "국내 뉴스는 정책·항만·운영 이슈 중심으로 점검할 필요가 있습니다.",
-            "해외동향":   "해외 뉴스는 자동화, 공급망, 글로벌 운송 흐름의 변화가 눈에 띕니다.",
+            "총평":        "오늘은 국내외 물류 뉴스가 혼재된 가운데 정책, 기술, 운영 이슈가 함께 나타났습니다.",
+            "국내동향":    "국내 뉴스는 정책·항만·운영 이슈 중심으로 점검할 필요가 있습니다.",
+            "해외동향":    "해외 뉴스는 자동화, 공급망, 글로벌 운송 흐름의 변화가 눈에 띕니다.",
             "리스크포인트":"지연·규제·운영 차질 관련 뉴스는 실무 대응 관점에서 확인이 필요합니다.",
             "기회포인트":  "자동화와 투자 관련 뉴스는 향후 콘텐츠와 사업 전략의 소재가 될 수 있습니다.",
             "오늘의한줄":  "오늘은 운영 리스크와 기술 기회를 함께 읽어야 하는 날입니다."
@@ -589,33 +531,65 @@ def main():
     )
     print(f"[STEP 4] 후보군 선별: {len(df_candidates)}건")
 
-    # STEP 5. Gemini 기사 분석
+    # STEP 5. Gemini 기사 배치 분석 (API 1회 호출)
+    print(f"[STEP 5] 배치 분석 시작: {len(df_candidates)}건 → Gemini 1회 호출")
+    batch_result = analyze_articles_batch(df_candidates)
+
     analysis_results = []
     for i, (_, row) in enumerate(df_candidates.iterrows(), start=1):
-        print(f"  [{i}/{len(df_candidates)}] 분석: {row['기사제목'][:50]}")
-        result = analyze_article_with_gemini(row)
-        analysis_results.append({
-            "row_id":       row["row_id"],
-            "번역제목":     result["translated_title_ko"],
-            "번역설명":     result["translated_description_ko"],
-            "요약1":        result["summary_3lines"][0],
-            "요약2":        result["summary_3lines"][1],
-            "요약3":        result["summary_3lines"][2],
-            "3줄요약":      "\n".join(result["summary_3lines"]),
-            "카테고리":     result["category"],
-            "AI중요도":     result["importance_score_ai"],
-            "왜중요한가":   result["importance_reason"],
-            "콘텐츠포인트": result["content_angle"],
-            "AI핵심키워드": result["keywords"]
-        })
-        time.sleep(4)   # ← 1.2초에서 변경 (RPM 초과 방지)
+        item = None
+        if batch_result:
+            for r in batch_result:
+                if isinstance(r, dict) and r.get("idx") == i:
+                    item = r
+                    break
+            if not item and i <= len(batch_result):
+                item = batch_result[i - 1]
+
+        if item:
+            lines = item.get("summary_3lines", [])
+            if not isinstance(lines, list) or len(lines) != 3:
+                lines = [row["기사제목"], f"핵심 내용: {row['기사설명'][:80]}", "시사점 확인 필요"]
+            keywords = item.get("keywords", [])
+            analysis_results.append({
+                "row_id":       row["row_id"],
+                "번역제목":     item.get("translated_title_ko", row["기사제목"]),
+                "번역설명":     item.get("translated_description_ko", row["기사설명"]),
+                "요약1":        lines[0],
+                "요약2":        lines[1],
+                "요약3":        lines[2],
+                "3줄요약":      "\n".join(lines),
+                "카테고리":     item.get("category", row["카테고리_규칙"]),
+                "AI중요도":     int(item.get("importance_score_ai", 5)),
+                "왜중요한가":   item.get("importance_reason", ""),
+                "콘텐츠포인트": item.get("content_angle", ""),
+                "AI핵심키워드": keywords[:5] if isinstance(keywords, list) else []
+            })
+        else:
+            is_en = row["언어"] == "en"
+            title_ko = f"[번역 대기] {row['기사제목']}" if is_en else row["기사제목"]
+            analysis_results.append({
+                "row_id":       row["row_id"],
+                "번역제목":     title_ko,
+                "번역설명":     row["기사설명"],
+                "요약1":        title_ko,
+                "요약2":        f"핵심 내용: {row['기사설명'][:80]}",
+                "요약3":        f"시사점: {row['카테고리_규칙']} 관점에서 확인 필요",
+                "3줄요약":      f"{title_ko}\n핵심 내용: {row['기사설명'][:80]}\n시사점 확인 필요",
+                "카테고리":     row["카테고리_규칙"],
+                "AI중요도":     5,
+                "왜중요한가":   "분석 대기",
+                "콘텐츠포인트": "",
+                "AI핵심키워드": []
+            })
+
+    print("[STEP 5] Gemini 분석 완료")
 
     df_ai = pd.DataFrame(analysis_results)
     df_candidates = df_candidates.merge(df_ai, on="row_id", how="left")
     df_candidates["중요도점수"] = (
         df_candidates["규칙점수"] + df_candidates["AI중요도"] * 1.8
     ).round(2)
-    print("[STEP 5] Gemini 분석 완료")
 
     # STEP 6. 최종 선별
     df_top = select_top_news(
@@ -623,11 +597,11 @@ def main():
     )
     print(f"[STEP 6] 최종 뉴스 선별: {len(df_top)}건")
 
-    # STEP 7. 일일 브리프
+    # STEP 7. 일일 브리프 (API 1회 호출)
     brief_data = generate_daily_brief(df_top)
     print("[STEP 7] 일일 브리프 생성 완료")
 
-    # STEP 8. 콘텐츠 아이디어
+    # STEP 8. 콘텐츠 아이디어 (API 1회 호출)
     ideas = generate_content_ideas(df_top, idea_count=CONTENT_IDEA_COUNT)
     print("[STEP 8] 콘텐츠 아이디어 생성 완료")
 
