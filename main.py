@@ -240,54 +240,85 @@ def call_gemini_json(prompt, retries=3, wait=2):
 # 기사 분석
 # ──────────────────────────────────────────
 def fallback_article_analysis(row):
-    cat = row["카테고리_규칙"]
+    cat   = row["카테고리_규칙"]
     title = row["기사제목"]
     desc  = row["기사설명"]
+    is_en = row["언어"] == "en"
+    # 영어 기사는 번역 실패 시 원문 그대로 노출되지 않도록 안내 문구 추가
+    title_ko = f"[번역 대기] {title}" if is_en else title
+    desc_ko  = f"[번역 대기] {desc[:120]}" if is_en else desc[:120]
     return {
-        "translated_title_ko":       title,
-        "translated_description_ko": desc,
-        "summary_3lines": [title, f"핵심 내용: {desc[:90]}", f"시사점: {cat} 관점에서 확인 필요"],
+        "translated_title_ko":       title_ko,
+        "translated_description_ko": desc_ko,
+        "summary_3lines": [
+            title_ko,
+            f"핵심 내용: {desc_ko}",
+            f"시사점: {cat} 관점에서 확인 필요"
+        ],
         "category":              cat,
         "importance_score_ai":   5,
-        "importance_reason":     "자동 fallback 요약",
+        "importance_reason":     "자동 fallback 요약 (AI 분석 재시도 필요)",
         "content_angle":         f"{cat} 이슈를 쉽게 설명하는 해설형 콘텐츠로 연결 가능",
         "keywords":              [cat]
     }
 
 def analyze_article_with_gemini(row):
+    is_english = row["언어"] == "en"
+
+    # 영어 기사일 때 번역 지시를 훨씬 강하게 명시
+    lang_instruction = """
+⚠️ 이 기사는 영어 원문입니다.
+- translated_title_ko: 제목을 자연스러운 한국어로 완전히 번역하라. 영어 단어를 섞지 마라.
+- translated_description_ko: 설명을 자연스러운 한국어로 완전히 번역하라.
+- summary_3lines: 반드시 100% 한국어로만 작성하라. 영어 단어가 하나라도 포함되면 안 된다.
+- importance_reason: 반드시 한국어로만 작성하라.
+- content_angle: 반드시 한국어로만 작성하라.
+- keywords: 한국어 핵심어로 작성하라 (물류 전문 용어는 한국어 표기 사용).
+""".strip() if is_english else """
+- translated_title_ko: 한국어 제목을 자연스럽게 다듬어 작성하라.
+- translated_description_ko: 설명을 한국어로 정리하라.
+- 모든 필드를 한국어로 작성하라.
+""".strip()
+
     prompt = f"""
-너는 '대표에게 아침 뉴스 브리핑을 올리는 수석 비서'다.
+너는 '물류업 대표에게 아침 뉴스 브리핑을 올리는 수석 비서'다.
 아래 기사 메타데이터만 보고 과장 없이 핵심만 정리하라.
 기사 원문을 상상해서 덧붙이지 말고, 주어진 제목/설명 범위 안에서만 판단하라.
-반드시 JSON만 출력하라.
+반드시 JSON만 출력하라. 모든 출력은 반드시 한국어로만 작성하라.
 
-[출력 규칙]
-1) 한국어로 작성
-2) summary_3lines는 정확히 3개의 문자열
+[언어 처리 규칙]
+{lang_instruction}
+
+[공통 출력 규칙]
+1) 모든 필드는 반드시 한국어로만 작성 (영어 혼용 절대 금지)
+2) summary_3lines는 정확히 3개의 한국어 문자열
+   - 1번째: 핵심 사실 (무슨 일이 있었나)
+   - 2번째: 배경·맥락 (왜 중요한가)
+   - 3번째: 시사점 (물류업계에 어떤 영향인가)
 3) importance_score_ai는 1~10 정수
-4) category는 다음 중 하나: ["항만·해운","항공·운송","창고·물류센터","자동화·기술","정책·공공","안전·리스크","투자·경영","기타"]
-5) 영어 기사라면 translated_title_ko, translated_description_ko를 자연스럽게 번역
-6) content_angle은 향후 영상/콘텐츠 포인트를 한 문장으로 제시
-7) keywords는 3~5개 핵심어 리스트
+4) category는 다음 중 하나만 사용:
+   ["항만·해운","항공·운송","창고·물류센터","자동화·기술","정책·공공","안전·리스크","투자·경영","기타"]
+5) content_angle은 향후 영상/콘텐츠 포인트를 한국어 한 문장으로
+6) keywords는 3~5개 한국어 핵심어 리스트
 
 [기사 정보]
 출처: {row["출처"]}
 국내외구분: {row["국내외구분"]}
 언어: {row["언어"]}
 발행일: {row["발행일_표준"]}
-제목: {row["기사제목"]}
-설명: {row["기사설명"]}
+제목(원문): {row["기사제목"]}
+설명(원문): {row["기사설명"]}
 
 [JSON 스키마]
 {{
-  "translated_title_ko": "string",
-  "translated_description_ko": "string",
-  "summary_3lines": ["string", "string", "string"],
-  "category": "string",
+  "translated_title_ko": "한국어 제목",
+  "translated_description_ko": "한국어 설명",
+  "summary_3lines": ["핵심 사실 (한국어)", "배경·맥락 (한국어)", "시사점 (한국어)"],
+  "category": "카테고리",
   "importance_score_ai": 5,
-  "importance_reason": "string",
-  "content_angle": "string",
-  "keywords": ["string", "string", "string"]
+  "importance_reason": "한국어로 작성",
+  "content_angle": "한국어로 작성",
+  "keywords": ["한국어키워드1", "한국어키워드2", "한국어키워드3"]
 }}
 """.strip()
 
