@@ -30,7 +30,7 @@ if not GEMINI_API_KEY:
     raise EnvironmentError("❌ GEMINI_API_KEY 환경변수가 설정되지 않았습니다.")
 
 client = genai.Client(api_key=GEMINI_API_KEY)
-GEMINI_MODEL = "gemini-2.5-flash"
+GEMINI_MODEL = "gemini-2.0-flash"
 
 TOP_NEWS_COUNT       = 5
 CANDIDATE_POOL_SIZE  = 10
@@ -208,21 +208,38 @@ def score_news_row(row):
 # ──────────────────────────────────────────
 def extract_json_from_text(raw):
     raw = raw.strip()
-    raw = re.sub(r"^```json", "", raw).strip()
-    raw = re.sub(r"^```",    "", raw).strip()
-    raw = re.sub(r"```$",    "", raw).strip()
+
+    # thinking 태그 제거 (gemini-2.5 계열 대비)
+    raw = re.sub(r"<think>.*?</think>", "", raw, flags=re.DOTALL).strip()
+
+    # 마크다운 코드블록 제거
+    raw = re.sub(r"^```json\s*", "", raw).strip()
+    raw = re.sub(r"^```\s*",    "", raw).strip()
+    raw = re.sub(r"\s*```$",    "", raw).strip()
+
+    # 1차: 전체를 JSON으로 파싱
     try:
         return json.loads(raw)
     except Exception:
         pass
-    for pattern in [r"\{.*\}", r"\[.*\]"]:
-        m = re.search(pattern, raw, re.DOTALL)
-        if m:
-            try:
-                return json.loads(m.group())
-            except Exception:
-                pass
-    raise ValueError("JSON 파싱 실패")
+
+    # 2차: 첫 번째 { ... } 블록 추출
+    m = re.search(r"\{.*\}", raw, re.DOTALL)
+    if m:
+        try:
+            return json.loads(m.group())
+        except Exception:
+            pass
+
+    # 3차: [ ... ] 블록 추출
+    m = re.search(r"\[.*\]", raw, re.DOTALL)
+    if m:
+        try:
+            return json.loads(m.group())
+        except Exception:
+            pass
+
+    raise ValueError(f"JSON 파싱 실패 | 원문 앞 200자: {raw[:200]}")
 
 def call_gemini_json(prompt, retries=3, wait=2):
     last_err = None
@@ -230,11 +247,13 @@ def call_gemini_json(prompt, retries=3, wait=2):
         try:
             resp = client.models.generate_content(model=GEMINI_MODEL, contents=prompt)
             text = resp.text if hasattr(resp, "text") else str(resp)
-            return extract_json_from_text(text)
+            result = extract_json_from_text(text)
+            return result
         except Exception as e:
             last_err = e
+            print(f"    ⚠️ Gemini 시도 {attempt+1}/{retries} 실패: {e}")
             time.sleep(wait * (attempt + 1))
-    raise RuntimeError(f"Gemini 호출 실패: {last_err}")
+    raise RuntimeError(f"Gemini 호출 최종 실패: {last_err}")
 
 # ──────────────────────────────────────────
 # 기사 분석
