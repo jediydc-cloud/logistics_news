@@ -1,0 +1,51 @@
+name: 📦 Daily Logistics News Report
+
+on:
+  # 매일 오전 7시 KST (UTC 22:00 전날)
+  schedule:
+    - cron: "0 22 * * *"
+  
+  # 수동 실행 버튼 (테스트용)
+  workflow_dispatch:
+
+permissions:
+  contents: write   # docs/data.json 커밋을 위해 필요
+
+jobs:
+  generate-report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      # 1. 저장소 체크아웃
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Python 환경 설정
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      # 3. 패키지 설치
+      - name: 📦 Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # 4. 뉴스 분석 스크립트 실행
+      - name: 🚀 Run logistics news analysis
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python main.py
+
+      # 5. docs/data.json을 저장소에 커밋
+      - name: 💾 Commit and push data.json
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data.json
+          # 변경사항이 있을 때만 커밋
+          git diff --staged --quiet || git commit -m "📰 Daily logistics report - $(TZ='Asia/Seoul' date '+%Y-%m-%d %H:%M KST')"
+          git push
