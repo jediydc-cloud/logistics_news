@@ -30,13 +30,13 @@ if not GEMINI_API_KEY:
     raise EnvironmentError("❌ GEMINI_API_KEY 환경변수가 설정되지 않았습니다.")
 
 client = genai.Client(api_key=GEMINI_API_KEY)
-GEMINI_MODEL = "gemini-2.0-flash"
+GEMINI_MODEL = "gemini-1.5-flash"   # ← 2.0에서 변경 (무료 RPM 더 넉넉)
 
-TOP_NEWS_COUNT       = 5
-CANDIDATE_POOL_SIZE  = 10
-MIN_DOMESTIC         = 3
-MIN_GLOBAL           = 3
-CONTENT_IDEA_COUNT   = 3
+TOP_NEWS_COUNT        = 5
+CANDIDATE_POOL_SIZE   = 10
+MIN_DOMESTIC          = 3
+MIN_GLOBAL            = 3
+CONTENT_IDEA_COUNT    = 3
 MAX_ARTICLES_PER_FEED = 12
 
 OUTPUT_PATH = "docs/data.json"
@@ -75,13 +75,13 @@ RSS_FEEDS = [
 # 카테고리 / 가중치 설정
 # ──────────────────────────────────────────
 CATEGORY_RULES = {
-    "항만·해운":   ["항만","항구","해운","선사","해상","컨테이너","선박","port","shipping","ocean","vessel","container","maritime"],
-    "항공·운송":   ["항공","화물","운송","배송","택배","truck","trucking","delivery","freight","transport","parcel"],
+    "항만·해운":    ["항만","항구","해운","선사","해상","컨테이너","선박","port","shipping","ocean","vessel","container","maritime"],
+    "항공·운송":    ["항공","화물","운송","배송","택배","truck","trucking","delivery","freight","transport","parcel"],
     "창고·물류센터":["창고","물류센터","풀필먼트","센터","warehouse","fulfillment","distribution center","dc"],
-    "자동화·기술": ["로봇","자동화","ai","rfid","센서","디지털","플랫폼","robot","automation","technology","tech","software"],
-    "정책·공공":   ["정부","정책","법안","장관","세관","공사","공공기관","규제","ministry","government","policy","customs","authority","regulation"],
-    "안전·리스크": ["파업","지연","사고","리스크","중단","위험","분실","손실","delay","risk","strike","disruption","accident","loss"],
-    "투자·경영":   ["투자","실적","인수","확장","수익","전략","경영","investment","acquisition","earnings","profit","expansion","strategy"]
+    "자동화·기술":  ["로봇","자동화","ai","rfid","센서","디지털","플랫폼","robot","automation","technology","tech","software"],
+    "정책·공공":    ["정부","정책","법안","장관","세관","공사","공공기관","규제","ministry","government","policy","customs","authority","regulation"],
+    "안전·리스크":  ["파업","지연","사고","리스크","중단","위험","분실","손실","delay","risk","strike","disruption","accident","loss"],
+    "투자·경영":    ["투자","실적","인수","확장","수익","전략","경영","investment","acquisition","earnings","profit","expansion","strategy"]
 }
 
 SOURCE_WEIGHT = {
@@ -92,14 +92,14 @@ SOURCE_WEIGHT = {
 }
 
 CATEGORY_WEIGHT = {
-    "정책·공공":   2.3,
-    "안전·리스크": 2.5,
-    "자동화·기술": 2.2,
-    "항만·해운":   1.9,
-    "항공·운송":   1.9,
+    "정책·공공":    2.3,
+    "안전·리스크":  2.5,
+    "자동화·기술":  2.2,
+    "항만·해운":    1.9,
+    "항공·운송":    1.9,
     "창고·물류센터":1.8,
-    "투자·경영":   1.8,
-    "기타":        1.0
+    "투자·경영":    1.8,
+    "기타":         1.0
 }
 
 # ──────────────────────────────────────────
@@ -175,11 +175,11 @@ def recency_score(dt):
     now = datetime.now(KST).replace(tzinfo=None)
     h = (now - pd.Timestamp(dt).to_pydatetime()).total_seconds() / 3600
     h = max(h, 0)
-    if h <= 6:   return 5.0
-    if h <= 12:  return 4.2
-    if h <= 24:  return 3.4
-    if h <= 48:  return 2.3
-    if h <= 72:  return 1.2
+    if h <= 6:  return 5.0
+    if h <= 12: return 4.2
+    if h <= 24: return 3.4
+    if h <= 48: return 2.3
+    if h <= 72: return 1.2
     return 0.5
 
 def description_score(desc):
@@ -208,51 +208,49 @@ def score_news_row(row):
 # ──────────────────────────────────────────
 def extract_json_from_text(raw):
     raw = raw.strip()
-
-    # thinking 태그 제거 (gemini-2.5 계열 대비)
+    # thinking 태그 제거
     raw = re.sub(r"<think>.*?</think>", "", raw, flags=re.DOTALL).strip()
-
     # 마크다운 코드블록 제거
     raw = re.sub(r"^```json\s*", "", raw).strip()
     raw = re.sub(r"^```\s*",    "", raw).strip()
     raw = re.sub(r"\s*```$",    "", raw).strip()
-
-    # 1차: 전체를 JSON으로 파싱
+    # 1차: 전체 JSON 파싱
     try:
         return json.loads(raw)
     except Exception:
         pass
-
-    # 2차: 첫 번째 { ... } 블록 추출
+    # 2차: { } 블록 추출
     m = re.search(r"\{.*\}", raw, re.DOTALL)
     if m:
         try:
             return json.loads(m.group())
         except Exception:
             pass
-
-    # 3차: [ ... ] 블록 추출
+    # 3차: [ ] 블록 추출
     m = re.search(r"\[.*\]", raw, re.DOTALL)
     if m:
         try:
             return json.loads(m.group())
         except Exception:
             pass
-
     raise ValueError(f"JSON 파싱 실패 | 원문 앞 200자: {raw[:200]}")
 
-def call_gemini_json(prompt, retries=3, wait=2):
+def call_gemini_json(prompt, retries=5, wait=10):
     last_err = None
     for attempt in range(retries):
         try:
             resp = client.models.generate_content(model=GEMINI_MODEL, contents=prompt)
             text = resp.text if hasattr(resp, "text") else str(resp)
-            result = extract_json_from_text(text)
-            return result
+            return extract_json_from_text(text)
         except Exception as e:
             last_err = e
-            print(f"    ⚠️ Gemini 시도 {attempt+1}/{retries} 실패: {e}")
-            time.sleep(wait * (attempt + 1))
+            err_str = str(e)
+            # 429 에러 메시지에서 권장 대기 시간 추출
+            m = re.search(r"retry in (\d+(?:\.\d+)?)s", err_str)
+            retry_wait = float(m.group(1)) + 3 if m else wait * (attempt + 1)
+            retry_wait = min(retry_wait, 90)  # 최대 90초 캡
+            print(f"    ⚠️ Gemini 시도 {attempt+1}/{retries} 실패 → {retry_wait:.0f}초 대기 후 재시도")
+            time.sleep(retry_wait)
     raise RuntimeError(f"Gemini 호출 최종 실패: {last_err}")
 
 # ──────────────────────────────────────────
@@ -263,7 +261,6 @@ def fallback_article_analysis(row):
     title = row["기사제목"]
     desc  = row["기사설명"]
     is_en = row["언어"] == "en"
-    # 영어 기사는 번역 실패 시 원문 그대로 노출되지 않도록 안내 문구 추가
     title_ko = f"[번역 대기] {title}" if is_en else title
     desc_ko  = f"[번역 대기] {desc[:120]}" if is_en else desc[:120]
     return {
@@ -274,17 +271,16 @@ def fallback_article_analysis(row):
             f"핵심 내용: {desc_ko}",
             f"시사점: {cat} 관점에서 확인 필요"
         ],
-        "category":              cat,
-        "importance_score_ai":   5,
-        "importance_reason":     "자동 fallback 요약 (AI 분석 재시도 필요)",
-        "content_angle":         f"{cat} 이슈를 쉽게 설명하는 해설형 콘텐츠로 연결 가능",
-        "keywords":              [cat]
+        "category":            cat,
+        "importance_score_ai": 5,
+        "importance_reason":   "자동 fallback 요약 (AI 분석 재시도 필요)",
+        "content_angle":       f"{cat} 이슈를 쉽게 설명하는 해설형 콘텐츠로 연결 가능",
+        "keywords":            [cat]
     }
 
 def analyze_article_with_gemini(row):
     is_english = row["언어"] == "en"
 
-    # 영어 기사일 때 번역 지시를 훨씬 강하게 명시
     lang_instruction = """
 ⚠️ 이 기사는 영어 원문입니다.
 - translated_title_ko: 제목을 자연스러운 한국어로 완전히 번역하라. 영어 단어를 섞지 마라.
@@ -404,12 +400,12 @@ def generate_daily_brief(df_top):
         return call_gemini_json(prompt)
     except Exception:
         return {
-            "총평":      "오늘은 국내외 물류 뉴스가 혼재된 가운데 정책, 기술, 운영 이슈가 함께 나타났습니다.",
-            "국내동향":  "국내 뉴스는 정책·항만·운영 이슈 중심으로 점검할 필요가 있습니다.",
-            "해외동향":  "해외 뉴스는 자동화, 공급망, 글로벌 운송 흐름의 변화가 눈에 띕니다.",
+            "총평":       "오늘은 국내외 물류 뉴스가 혼재된 가운데 정책, 기술, 운영 이슈가 함께 나타났습니다.",
+            "국내동향":   "국내 뉴스는 정책·항만·운영 이슈 중심으로 점검할 필요가 있습니다.",
+            "해외동향":   "해외 뉴스는 자동화, 공급망, 글로벌 운송 흐름의 변화가 눈에 띕니다.",
             "리스크포인트":"지연·규제·운영 차질 관련 뉴스는 실무 대응 관점에서 확인이 필요합니다.",
-            "기회포인트": "자동화와 투자 관련 뉴스는 향후 콘텐츠와 사업 전략의 소재가 될 수 있습니다.",
-            "오늘의한줄": "오늘은 운영 리스크와 기술 기회를 함께 읽어야 하는 날입니다."
+            "기회포인트":  "자동화와 투자 관련 뉴스는 향후 콘텐츠와 사업 전략의 소재가 될 수 있습니다.",
+            "오늘의한줄":  "오늘은 운영 리스크와 기술 기회를 함께 읽어야 하는 날입니다."
         }
 
 # ──────────────────────────────────────────
@@ -459,7 +455,6 @@ def generate_content_ideas(df_top, idea_count=3):
     except Exception:
         pass
 
-    # fallback
     fallback = []
     for i, row in df_top.head(idea_count).reset_index(drop=True).iterrows():
         fallback.append({
@@ -538,13 +533,13 @@ def main():
                 pub_raw = entry.get("published", "") or entry.get("pubDate", "") or entry.get("updated", "")
                 summary = clean_html_text(entry.get("summary", "") or entry.get("description", ""))
                 records.append({
-                    "수집일시":  datetime.now(KST).replace(tzinfo=None),
-                    "출처":      feed["source"],
-                    "국내외구분":feed["region"],
-                    "기본언어":  feed["default_lang"],
-                    "기사제목":  title,
-                    "기사링크":  link,
-                    "기사설명":  summary,
+                    "수집일시":   datetime.now(KST).replace(tzinfo=None),
+                    "출처":       feed["source"],
+                    "국내외구분": feed["region"],
+                    "기본언어":   feed["default_lang"],
+                    "기사제목":   title,
+                    "기사링크":   link,
+                    "기사설명":   summary,
                     "발행일_원문":pub_raw,
                 })
             print(f"  ✅ {feed['source']}: {len(entries)}건 수집")
@@ -555,11 +550,11 @@ def main():
     print(f"\n[STEP 1] RSS 수집 완료: {len(df)}건")
 
     # STEP 2. 정제 및 중복 제거
-    df["기사제목"]   = df["기사제목"].apply(clean_html_text)
-    df["기사설명"]   = df["기사설명"].apply(clean_html_text)
-    df["제목정규키"] = df["기사제목"].apply(normalize_title_key)
-    df["발행일"]     = df["발행일_원문"].apply(parse_pubdate)
-    df["발행일_표준"]= df["발행일"].apply(format_kst)
+    df["기사제목"]    = df["기사제목"].apply(clean_html_text)
+    df["기사설명"]    = df["기사설명"].apply(clean_html_text)
+    df["제목정규키"]  = df["기사제목"].apply(normalize_title_key)
+    df["발행일"]      = df["발행일_원문"].apply(parse_pubdate)
+    df["발행일_표준"] = df["발행일"].apply(format_kst)
     df["언어"] = df.apply(
         lambda r: detect_language_safe(f"{r['기사제목']} {r['기사설명']}", default=r["기본언어"]),
         axis=1
@@ -586,7 +581,7 @@ def main():
     # STEP 3. 규칙 점수
     df["규칙점수"] = df.apply(score_news_row, axis=1)
     df = df.sort_values(["규칙점수", "발행일"], ascending=[False, False], na_position="last").copy()
-    print(f"[STEP 3] 규칙 기반 점수 계산 완료")
+    print("[STEP 3] 규칙 기반 점수 계산 완료")
 
     # STEP 4. 후보군 선별
     df_candidates = select_candidate_pool(
@@ -600,27 +595,27 @@ def main():
         print(f"  [{i}/{len(df_candidates)}] 분석: {row['기사제목'][:50]}")
         result = analyze_article_with_gemini(row)
         analysis_results.append({
-            "row_id":      row["row_id"],
-            "번역제목":    result["translated_title_ko"],
-            "번역설명":    result["translated_description_ko"],
-            "요약1":       result["summary_3lines"][0],
-            "요약2":       result["summary_3lines"][1],
-            "요약3":       result["summary_3lines"][2],
-            "3줄요약":     "\n".join(result["summary_3lines"]),
-            "카테고리":    result["category"],
-            "AI중요도":    result["importance_score_ai"],
-            "왜중요한가":  result["importance_reason"],
-            "콘텐츠포인트":result["content_angle"],
-            "AI핵심키워드":result["keywords"]
+            "row_id":       row["row_id"],
+            "번역제목":     result["translated_title_ko"],
+            "번역설명":     result["translated_description_ko"],
+            "요약1":        result["summary_3lines"][0],
+            "요약2":        result["summary_3lines"][1],
+            "요약3":        result["summary_3lines"][2],
+            "3줄요약":      "\n".join(result["summary_3lines"]),
+            "카테고리":     result["category"],
+            "AI중요도":     result["importance_score_ai"],
+            "왜중요한가":   result["importance_reason"],
+            "콘텐츠포인트": result["content_angle"],
+            "AI핵심키워드": result["keywords"]
         })
-        time.sleep(1.2)
+        time.sleep(4)   # ← 1.2초에서 변경 (RPM 초과 방지)
 
     df_ai = pd.DataFrame(analysis_results)
     df_candidates = df_candidates.merge(df_ai, on="row_id", how="left")
     df_candidates["중요도점수"] = (
         df_candidates["규칙점수"] + df_candidates["AI중요도"] * 1.8
     ).round(2)
-    print(f"[STEP 5] Gemini 분석 완료")
+    print("[STEP 5] Gemini 분석 완료")
 
     # STEP 6. 최종 선별
     df_top = select_top_news(
@@ -643,20 +638,20 @@ def main():
     top_news_list = []
     for _, row in df_top.iterrows():
         top_news_list.append({
-            "rank":         int(row["순위"]),
-            "region":       row["국내외구분"],
-            "source":       row["출처"],
-            "title":        row["번역제목"],
+            "rank":           int(row["순위"]),
+            "region":         row["국내외구분"],
+            "source":         row["출처"],
+            "title":          row["번역제목"],
             "original_title": row["기사제목"],
-            "summary":      [row["요약1"], row["요약2"], row["요약3"]],
-            "description":  row["번역설명"],
-            "category":     row["카테고리"],
-            "importance":   int(row["AI중요도"]),
-            "reason":       row["왜중요한가"],
-            "content_angle":row["콘텐츠포인트"],
-            "keywords":     row["AI핵심키워드"] if isinstance(row["AI핵심키워드"], list) else [],
-            "link":         row["기사링크"],
-            "published":    row["발행일_표준"]
+            "summary":        [row["요약1"], row["요약2"], row["요약3"]],
+            "description":    row["번역설명"],
+            "category":       row["카테고리"],
+            "importance":     int(row["AI중요도"]),
+            "reason":         row["왜중요한가"],
+            "content_angle":  row["콘텐츠포인트"],
+            "keywords":       row["AI핵심키워드"] if isinstance(row["AI핵심키워드"], list) else [],
+            "link":           row["기사링크"],
+            "published":      row["발행일_표준"]
         })
 
     ideas_list = []
@@ -671,10 +666,10 @@ def main():
         })
 
     output = {
-        "generated_at": generated_at,
+        "generated_at":  generated_at,
         "analysis_date": analysis_date,
-        "brief": brief_data,
-        "top_news": top_news_list,
+        "brief":         brief_data,
+        "top_news":      top_news_list,
         "content_ideas": ideas_list
     }
 
