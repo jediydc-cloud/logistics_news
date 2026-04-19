@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-19 07:30",
-  "analysis_date": "2026-04-19",
+  "generated_at": "2026-04-20 07:31",
+  "analysis_date": "2026-04-20",
   "brief": {
     "총평": "오늘은 국내외 물류 뉴스가 혼재된 가운데 정책, 기술, 운영 이슈가 함께 나타났습니다.",
     "국내동향": "국내 뉴스는 정책·항만·운영 이슈 중심으로 점검할 필요가 있습니다.",
@@ -12,6 +12,46 @@
   "top_news": [
     {
       "rank": 1,
+      "region": "해외",
+      "source": "Google News Global",
+      "title": "[번역 대기] How dangerous trucking companies escape their past, change names and get back on the road. - CBS News",
+      "original_title": "How dangerous trucking companies escape their past, change names and get back on the road. - CBS News",
+      "summary": [
+        "[번역 대기] How dangerous trucking companies escape their past, change names and get back on the road. - CBS News",
+        "핵심 내용: How dangerous trucking companies escape their past, change names and get back on",
+        "시사점: 항공·운송 관점에서 확인 필요"
+      ],
+      "description": "How dangerous trucking companies escape their past, change names and get back on the road. CBS News",
+      "category": "항공·운송",
+      "importance": 5,
+      "reason": "분석 대기",
+      "content_angle": "",
+      "keywords": [],
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1BdzctbEFULXNnbzhhcHl4YURYX3BvZ2RXek4xclVLQmdmbHJIOVZNYU1JanZSdlRzUTZqVF9DM0wzREVUV09zQThxVDdEdTh1MjJmbWpUQnN6NGJ2Sy14aThGcWlYcjhqcVRkdC13dTc?oc=5",
+      "published": "2026-04-19 22:55"
+    },
+    {
+      "rank": 2,
+      "region": "해외",
+      "source": "Google News Global",
+      "title": "[번역 대기] Bypassing closed skies: First-of-its-kind solution keeps e-commerce shipments flowing to Israel - The Jerusalem Post",
+      "original_title": "Bypassing closed skies: First-of-its-kind solution keeps e-commerce shipments flowing to Israel - The Jerusalem Post",
+      "summary": [
+        "[번역 대기] Bypassing closed skies: First-of-its-kind solution keeps e-commerce shipments flowing to Israel - The Jerusalem Post",
+        "핵심 내용: Bypassing closed skies: First-of-its-kind solution keeps e-commerce shipments fl",
+        "시사점: 기타 관점에서 확인 필요"
+      ],
+      "description": "Bypassing closed skies: First-of-its-kind solution keeps e-commerce shipments flowing to Israel The Jerusalem Post",
+      "category": "기타",
+      "importance": 5,
+      "reason": "분석 대기",
+      "content_angle": "",
+      "keywords": [],
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQRnRSeWk5ell1UEVGUG1DeVNhTkdHQUQ5Sk1vSmVIbDVwUEhsT1diWFplTGpsX3I1a1V0c01HVkNHbW0xX1Bsa0FWRldZdEMyMjNIQllUcXlOa0MxX0FuSnVGb0xsdnFhdnQyQ0pneDR2UG9PdXhXdkdUMjJ1eGU2RVN4U1RCZFNfOXd1bWx4RQ?oc=5",
+      "published": "2026-04-19 19:46"
+    },
+    {
+      "rank": 3,
       "region": "해외",
       "source": "Logistics Management",
       "title": "[번역 대기] Refund process for IEEPA tariffs is set to go live April 20",
@@ -31,7 +71,7 @@
       "published": "2026-04-18 04:22"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "region": "국내",
       "source": "물류신문",
       "title": "한국해양진흥공사, 국적선사 CEO 콘퍼런스 열어 위기관리 방안 논의",
@@ -51,27 +91,7 @@
       "published": "2026-04-17 15:25"
     },
     {
-      "rank": 3,
-      "region": "해외",
-      "source": "Logistics Management",
-      "title": "[번역 대기] MHI and Deloitte report finds AI biggest disruptor of supply chains over the next decade",
-      "original_title": "MHI and Deloitte report finds AI biggest disruptor of supply chains over the next decade",
-      "summary": [
-        "[번역 대기] MHI and Deloitte report finds AI biggest disruptor of supply chains over the next decade",
-        "핵심 내용: The publication, based on a survey of supply chain leaders, reports that a quart",
-        "시사점: 자동화·기술 관점에서 확인 필요"
-      ],
-      "description": "The publication, based on a survey of supply chain leaders, reports that a quarter of respondents (24%) categorize AI as transformational and nearly half (48%) consider its disruptive impact to be significant or greater—up 25 percentage points since 2025.",
-      "category": "자동화·기술",
-      "importance": 5,
-      "reason": "분석 대기",
-      "content_angle": "",
-      "keywords": [],
-      "link": "https://www.logisticsmgmt.com/article/mhi_and_deloitte_report_finds_ai_biggest_disruptor_of_supply_chains_over_the_next_decade",
-      "published": "2026-04-17 21:27"
-    },
-    {
-      "rank": 4,
+      "rank": 5,
       "region": "국내",
       "source": "물류신문",
       "title": "관세청, IMF 신경제포럼서 ‘K-관세행정’ AI 혁신 성과 세계에 알려",
@@ -89,57 +109,37 @@
       "keywords": [],
       "link": "https://www.klnews.co.kr/news/articleView.html?idxno=320785",
       "published": "2026-04-17 15:11"
-    },
-    {
-      "rank": 5,
-      "region": "국내",
-      "source": "물류신문",
-      "title": "국산 무탄소 전기 야드트랙터, 부산항에서 최초로 선보여",
-      "original_title": "국산 무탄소 전기 야드트랙터, 부산항에서 최초로 선보여",
-      "summary": [
-        "국산 무탄소 전기 야드트랙터, 부산항에서 최초로 선보여",
-        "핵심 내용: 부산항만공사(BPA, 사장 송상근)가 해양수산부와 함께 ‘항만 무탄소화 전환 지원 사업’을 통해 국산화에 성공한 무탄소 하역장비인 전기 야드 트",
-        "시사점: 항만·해운 관점에서 확인 필요"
-      ],
-      "description": "부산항만공사(BPA, 사장 송상근)가 해양수산부와 함께 ‘항만 무탄소화 전환 지원 사업’을 통해 국산화에 성공한 무탄소 하역장비인 전기 야드 트랙터(사진)를 국내 최초로 부산항에 도입, 친환경 행보에 적극 나서고 있다.이번에 도입된 전기 야드트랙터는 지난해 7월부터 약 2개월 간 부산항을 테스트베드로 해 성공적으로 시험운행을 마쳤으며, 지원사업 공모를 거쳐 모집한 부산항 부두 운영사 2곳에 각각 1대씩 총 2대가 항만 현장에 투입됐다.각 터미널의 특성을 반영, 수요자 맞춤형으로 제작된 이번 국산 전기 야드트랙터는 부품의 약 90%",
-      "category": "항만·해운",
-      "importance": 5,
-      "reason": "분석 대기",
-      "content_angle": "",
-      "keywords": [],
-      "link": "https://www.klnews.co.kr/news/articleView.html?idxno=320786",
-      "published": "2026-04-17 15:17"
     }
   ],
   "content_ideas": [
     {
       "rank": 1,
+      "topic": "항공·운송",
+      "reason": "분석 대기",
+      "video_title": "[번역 대기] How dangerous trucking companies escape their past, change names and get back on the road. - CBS News이 물류업계에 주는 의미",
+      "format": "해설형",
+      "based_on_titles": [
+        "[번역 대기] How dangerous trucking companies escape their past, change names and get back on the road. - CBS News"
+      ]
+    },
+    {
+      "rank": 2,
+      "topic": "기타",
+      "reason": "분석 대기",
+      "video_title": "[번역 대기] Bypassing closed skies: First-of-its-kind solution keeps e-commerce shipments flowing to Israel - The Jerusalem Post이 물류업계에 주는 의미",
+      "format": "해설형",
+      "based_on_titles": [
+        "[번역 대기] Bypassing closed skies: First-of-its-kind solution keeps e-commerce shipments flowing to Israel - The Jerusalem Post"
+      ]
+    },
+    {
+      "rank": 3,
       "topic": "정책·공공",
       "reason": "분석 대기",
       "video_title": "[번역 대기] Refund process for IEEPA tariffs is set to go live April 20이 물류업계에 주는 의미",
       "format": "해설형",
       "based_on_titles": [
         "[번역 대기] Refund process for IEEPA tariffs is set to go live April 20"
-      ]
-    },
-    {
-      "rank": 2,
-      "topic": "정책·공공",
-      "reason": "분석 대기",
-      "video_title": "한국해양진흥공사, 국적선사 CEO 콘퍼런스 열어 위기관리 방안 논의이 물류업계에 주는 의미",
-      "format": "해설형",
-      "based_on_titles": [
-        "한국해양진흥공사, 국적선사 CEO 콘퍼런스 열어 위기관리 방안 논의"
-      ]
-    },
-    {
-      "rank": 3,
-      "topic": "자동화·기술",
-      "reason": "분석 대기",
-      "video_title": "[번역 대기] MHI and Deloitte report finds AI biggest disruptor of supply chains over the next decade이 물류업계에 주는 의미",
-      "format": "해설형",
-      "based_on_titles": [
-        "[번역 대기] MHI and Deloitte report finds AI biggest disruptor of supply chains over the next decade"
       ]
     }
   ]
