@@ -4,12 +4,18 @@ on:
   # 매일 오전 7시 KST (UTC 22:00 전날)
   schedule:
     - cron: "0 22 * * *"
-  
-  # 수동 실행 버튼 (테스트용)
+
+  # 수동 실행 버튼
   workflow_dispatch:
 
+# 같은 브랜치에서 중복 실행 방지
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+# docs/data.json 커밋/푸시용 최소 권한
 permissions:
-  contents: write   # docs/data.json 커밋을 위해 필요
+  contents: write
 
 jobs:
   generate-report:
@@ -20,6 +26,8 @@ jobs:
       # 1. 저장소 체크아웃
       - name: 📥 Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       # 2. Python 환경 설정
       - name: 🐍 Setup Python
@@ -31,6 +39,8 @@ jobs:
       # 3. 패키지 설치
       - name: 📦 Install dependencies
         run: |
+          python -V
+          pip -V
           pip install --upgrade pip
           pip install -r requirements.txt
 
@@ -38,14 +48,30 @@ jobs:
       - name: 🚀 Run logistics news analysis
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python main.py
+          GEMINI_MODEL: gemini-2.5-flash
+        run: |
+          python main.py
 
-      # 5. docs/data.json을 저장소에 커밋
+      # 5. 산출물 존재 확인
+      - name: ✅ Verify output file
+        run: |
+          test -f docs/data.json
+          echo "docs/data.json 확인 완료"
+
+      # 6. docs/data.json 커밋 및 푸시
       - name: 💾 Commit and push data.json
         run: |
-          git config user.name  "github-actions[bot]"
+          git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+
           git add docs/data.json
-          # 변경사항이 있을 때만 커밋
-          git diff --staged --quiet || git commit -m "📰 Daily logistics report - $(TZ='Asia/Seoul' date '+%Y-%m-%d %H:%M KST')"
-          git push
+
+          if git diff --staged --quiet; then
+            echo "변경 사항 없음 - 커밋 생략"
+            exit 0
+          fi
+
+          git commit -m "📰 Daily logistics report - $(TZ='Asia/Seoul' date '+%Y-%m-%d %H:%M KST')"
+
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin HEAD:"${GITHUB_REF_NAME}"
