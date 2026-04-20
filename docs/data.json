@@ -1,145 +1,231 @@
 {
-  "generated_at": "2026-04-20 07:31",
-  "analysis_date": "2026-04-20",
+  "generated_at": "2026-04-21 07:37",
+  "analysis_date": "2026-04-21",
+  "project_overview": {
+    "project_name": "국내외 물류 뉴스 자동 브리핑 및 콘텐츠 아이디어 도출 시스템",
+    "purpose": "국내외 물류 뉴스를 자동 수집·정리해 대표가 빠르게 핵심 이슈를 파악하고 콘텐츠 기획에 활용할 수 있도록 돕는 시스템",
+    "main_features": [
+      "RSS 기반 물류 뉴스 자동 수집",
+      "중복 제거 및 중요 뉴스 선별",
+      "한국어 중심 요약 및 일일 브리프 생성",
+      "콘텐츠 아이디어 자동 제안"
+    ],
+    "final_deliverable": "테오시스 홈페이지용 data.json"
+  },
   "brief": {
-    "총평": "오늘은 국내외 물류 뉴스가 혼재된 가운데 정책, 기술, 운영 이슈가 함께 나타났습니다.",
-    "국내동향": "국내 뉴스는 정책·항만·운영 이슈 중심으로 점검할 필요가 있습니다.",
-    "해외동향": "해외 뉴스는 자동화, 공급망, 글로벌 운송 흐름의 변화가 눈에 띕니다.",
-    "리스크포인트": "지연·규제·운영 차질 관련 뉴스는 실무 대응 관점에서 확인이 필요합니다.",
-    "기회포인트": "자동화와 투자 관련 뉴스는 향후 콘텐츠와 사업 전략의 소재가 될 수 있습니다.",
-    "오늘의한줄": "오늘은 운영 리스크와 기술 기회를 함께 읽어야 하는 날입니다."
+    "총평": "오늘은 국내외로 공급망 리스크가 고조되는 가운데, ESG 경영과 지속가능성에 대한 중요성이 더욱 부각되고 있습니다. 지정학적 불안정과 시장 구조 변화가 운송 비용과 역량에 압박을 가하지만, 탄소 감축을 통한 신규 수익 창출과 친환경 투자는 새로운 기회를 제공합니다.",
+    "국내동향": "해양수산부가 기업의 온실가스 감축 실적을 배출권으로 인정해 수익화하는 지원을 시작했습니다. DHL은 지속가능항공유 도입으로 친환경 물류를 강화하며 ESG 경영을 가속화하고 있으며, 인천항만공사는 상생펀드를 확대하여 해운·물류기업의 경영 부담 완화를 돕습니다.",
+    "해외동향": "ITS 물류 지수는 호르무즈 해협 위기로 인한 해상 운송 비용 증가와 운송 역량 감소를 경고하며 글로벌 공급망 리스크를 강조했습니다. 또한, J.B. 헌트는 트럭 운송 시장이 구조적인 변화를 겪고 있다고 분석하며, 이는 전반적인 시장 전략 재검토를 요구합니다.",
+    "리스크포인트": "호르무즈 해협의 지정학적 불안정성으로 해상 운송 비용이 상승하고 공급망 병목 현상이 심화될 수 있습니다. 전반적인 운송 역량 감소와 트럭 운송 시장의 구조적 변화는 운송 비용 예측 가능성을 떨어뜨리고 운영 효율성에 영향을 줄 수 있습니다.",
+    "기회포인트": "해양수산부의 탄소 배출권 수익 전환 지원을 통해 온실가스 감축 노력이 새로운 수익원으로 이어질 수 있습니다. 지속가능항공유 도입과 같은 친환경 투자는 ESG 경쟁력을 강화하고 미래 항공 화물 시장에서 우위를 점할 기회입니다. 인천항만공사의 상생펀드 활용도 고려해볼 만합니다.",
+    "오늘의한줄": "지정학적 리스크와 시장 변화에 대비하며 ESG 경영을 통해 새로운 수익 기회를 모색하고 지속가능한 성장을 이루어야 합니다."
   },
   "top_news": [
     {
       "rank": 1,
-      "region": "해외",
-      "source": "Google News Global",
-      "title": "[번역 대기] How dangerous trucking companies escape their past, change names and get back on the road. - CBS News",
-      "original_title": "How dangerous trucking companies escape their past, change names and get back on the road. - CBS News",
+      "region": "국내",
+      "classification": "국내",
+      "source": "물류신문",
+      "title": "해양수산부, 감축 탄소 배출권으로 수익 전환 지원",
+      "display_title": "해양수산부, 감축 탄소 배출권으로 수익 전환 지원",
+      "original_title": "해양수산부, 감축한 탄소 수익으로 돌려받는다",
       "summary": [
-        "[번역 대기] How dangerous trucking companies escape their past, change names and get back on the road. - CBS News",
-        "핵심 내용: How dangerous trucking companies escape their past, change names and get back on",
-        "시사점: 항공·운송 관점에서 확인 필요"
+        "해양수산부가 온실가스 감축 외부사업 설명회를 통해 기업들이 탄소 배출권으로 수익을 창출할 수 있도록 지원합니다.",
+        "탄소중립 목표 달성을 위해 배출권거래제 의무 대상이 아닌 기업도 자발적으로 온실가스를 감축하면 그 실적을 배출권으로 인정해주는 제도입니다.",
+        "물류기업은 온실가스 감축 노력을 통해 환경 보호는 물론, 배출권 판매를 통한 새로운 수익원을 확보하고 지속가능성을 높일 수 있습니다."
       ],
-      "description": "How dangerous trucking companies escape their past, change names and get back on the road. CBS News",
-      "category": "항공·운송",
-      "importance": 5,
-      "reason": "분석 대기",
-      "content_angle": "",
-      "keywords": [],
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1BdzctbEFULXNnbzhhcHl4YURYX3BvZ2RXek4xclVLQmdmbHJIOVZNYU1JanZSdlRzUTZqVF9DM0wzREVUV09zQThxVDdEdTh1MjJmbWpUQnN6NGJ2Sy14aThGcWlYcjhqcVRkdC13dTc?oc=5",
-      "published": "2026-04-19 22:55"
+      "summary_text": "해양수산부가 온실가스 감축 외부사업 설명회를 통해 기업들이 탄소 배출권으로 수익을 창출할 수 있도록 지원합니다. 탄소중립 목표 달성을 위해 배출권거래제 의무 대상이 아닌 기업도 자발적으로 온실가스를 감축하면 그 실적을 배출권으로 인정해주는 제도입니다. 물류기업은 온실가스 감축 노력을 통해 환경 보호는 물론, 배출권 판매를 통한 새로운 수익원을 확보하고 지속가능성을 높일 수 있습니다.",
+      "description": "해양수산부가 한국해양교통안전공단과 함께 해양수산 부문 외부사업 설명회를 개최하여 해운·항만·수산 기업들의 온실가스 감축 노력을 배출권으로 인정받아 수익을 창출할 수 있도록 지원 방안을 안내합니다.",
+      "category": "정책·공공",
+      "importance": 9,
+      "reason": "탄소중립 시대에 물류기업이 온실가스 감축 노력을 통해 정부로부터 배출권을 인정받아 새로운 수익을 창출할 수 있는 기회를 제공하므로, 친환경 경영 전략과 사업 확장에 매우 중요합니다.",
+      "content_angle": "물류기업의 탄소 감축 노력이 어떻게 배출권 거래를 통해 실질적인 재정적 이점으로 전환될 수 있는지 심층 분석하는 콘텐츠를 제작할 수 있습니다.",
+      "keywords": [
+        "해양수산부",
+        "온실가스감축",
+        "탄소배출권",
+        "외부사업",
+        "수익창출"
+      ],
+      "link": "https://www.klnews.co.kr/news/articleView.html?idxno=320802",
+      "published": "2026-04-20 16:17",
+      "quality": {
+        "title_status": "원문한국어",
+        "summary_status": "AI요약",
+        "analysis_status": "ai"
+      }
     },
     {
       "rank": 2,
-      "region": "해외",
-      "source": "Google News Global",
-      "title": "[번역 대기] Bypassing closed skies: First-of-its-kind solution keeps e-commerce shipments flowing to Israel - The Jerusalem Post",
-      "original_title": "Bypassing closed skies: First-of-its-kind solution keeps e-commerce shipments flowing to Israel - The Jerusalem Post",
+      "region": "국내",
+      "classification": "국내",
+      "source": "물류신문",
+      "title": "DHL, 지속가능항공유 도입으로 친환경 경영 가속화",
+      "display_title": "DHL, 지속가능항공유 도입으로 친환경 경영 가속화",
+      "original_title": "DHL, 지속가능항공유 도입으로 친환경 경영 가속도 붙여",
       "summary": [
-        "[번역 대기] Bypassing closed skies: First-of-its-kind solution keeps e-commerce shipments flowing to Israel - The Jerusalem Post",
-        "핵심 내용: Bypassing closed skies: First-of-its-kind solution keeps e-commerce shipments fl",
-        "시사점: 기타 관점에서 확인 필요"
+        "DHL그룹이 IAG 카고와의 신규 계약을 통해 대규모 지속가능항공유(SAF)를 도입하여 친환경 항공 물류를 강화합니다.",
+        "글로벌 탄소중립 목표 달성 및 환경 규제 강화에 따라 항공 물류 분야에서도 탈탄소화가 중요한 과제로 부상하고 있습니다.",
+        "지속가능항공유 도입은 물류 기업의 ESG 경영 강화는 물론, 미래 항공 화물 운송 시장의 경쟁력 확보에 필수적인 요소가 될 것입니다."
       ],
-      "description": "Bypassing closed skies: First-of-its-kind solution keeps e-commerce shipments flowing to Israel The Jerusalem Post",
-      "category": "기타",
-      "importance": 5,
-      "reason": "분석 대기",
-      "content_angle": "",
-      "keywords": [],
-      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQRnRSeWk5ell1UEVGUG1DeVNhTkdHQUQ5Sk1vSmVIbDVwUEhsT1diWFplTGpsX3I1a1V0c01HVkNHbW0xX1Bsa0FWRldZdEMyMjNIQllUcXlOa0MxX0FuSnVGb0xsdnFhdnQyQ0pneDR2UG9PdXhXdkdUMjJ1eGU2RVN4U1RCZFNfOXd1bWx4RQ?oc=5",
-      "published": "2026-04-19 19:46"
+      "summary_text": "DHL그룹이 IAG 카고와의 신규 계약을 통해 대규모 지속가능항공유(SAF)를 도입하여 친환경 항공 물류를 강화합니다. 글로벌 탄소중립 목표 달성 및 환경 규제 강화에 따라 항공 물류 분야에서도 탈탄소화가 중요한 과제로 부상하고 있습니다. 지속가능항공유 도입은 물류 기업의 ESG 경영 강화는 물론, 미래 항공 화물 운송 시장의 경쟁력 확보에 필수적인 요소가 될 것입니다.",
+      "description": "DHL그룹이 IAG 카고와의 5년간 신규 계약을 통해 런던 히드로 공항에서 약 2억 4천만 리터의 지속가능항공유(SAF)를 공급받아 항공 물류의 탈탄소화를 가속화하며 친환경 경영을 강화합니다.",
+      "category": "항공·운송",
+      "importance": 9,
+      "reason": "글로벌 물류 기업의 지속가능항공유 도입은 친환경 항공 물류 전환의 가속화를 의미하며, 탄소 감축 목표 달성과 함께 미래 항공 화물 운송 시장에서의 경쟁 우위를 확보하는 데 매우 중요합니다.",
+      "content_angle": "지속가능항공유(SAF)가 항공 물류 산업에 미치는 영향, 주요 글로벌 물류 기업들의 SAF 도입 현황 및 전망을 다루는 심층 분석 콘텐츠로 적합합니다.",
+      "keywords": [
+        "DHL",
+        "지속가능항공유",
+        "SAF",
+        "친환경물류",
+        "항공탈탄소화"
+      ],
+      "link": "https://www.klnews.co.kr/news/articleView.html?idxno=320795",
+      "published": "2026-04-20 13:22",
+      "quality": {
+        "title_status": "원문한국어",
+        "summary_status": "AI요약",
+        "analysis_status": "ai"
+      }
     },
     {
       "rank": 3,
       "region": "해외",
-      "source": "Logistics Management",
-      "title": "[번역 대기] Refund process for IEEPA tariffs is set to go live April 20",
-      "original_title": "Refund process for IEEPA tariffs is set to go live April 20",
+      "classification": "해외",
+      "source": "Google News Global",
+      "title": "ITS 물류 지수, 운송 역량 감소와 호르무즈 위기로 인한 비용 증가로 전국 운송 리스크 경고",
+      "display_title": "ITS 물류 지수, 운송 역량 감소와 호르무즈 위기로 인한 비용 증가로 전국 운송 리스크 경고",
+      "original_title": "ITS Logistics index flags nationwide freight risk as capacity exits and Hormuz crisis drive cost increases - American Journal of Transportation",
       "summary": [
-        "[번역 대기] Refund process for IEEPA tariffs is set to go live April 20",
-        "핵심 내용: Companies that paid tariffs later ruled unlawful under the International Emergen",
-        "시사점: 정책·공공 관점에서 확인 필요"
+        "ITS 물류 지수는 운송 역량 감소와 호르무즈 위기로 인한 비용 증가로 전국적인 화물 운송 리스크가 커지고 있음을 경고했습니다.",
+        "지정학적 불안정성(호르무즈 해협 위기)은 해상 운송 비용을 증가시키고, 전반적인 운송 능력 감소는 공급망의 병목 현상을 심화시키는 원인입니다.",
+        "물류 기업은 이러한 공급망 리스크에 대비하여 운송 경로 다변화, 재고 관리 효율화, 운송 역량 확보 전략을 재검토해야 합니다."
       ],
-      "description": "Companies that paid tariffs later ruled unlawful under the International Emergency Economic Powers Act (IEEPA) will be able to start filing refund claims April 20, according to U.S. Customs and Border Protection.",
-      "category": "정책·공공",
-      "importance": 5,
-      "reason": "분석 대기",
-      "content_angle": "",
-      "keywords": [],
-      "link": "https://www.logisticsmgmt.com/article/refund_process_for_ieepa_tariffs_is_set_to_go_live_april_20",
-      "published": "2026-04-18 04:22"
+      "summary_text": "ITS 물류 지수는 운송 역량 감소와 호르무즈 위기로 인한 비용 증가로 전국적인 화물 운송 리스크가 커지고 있음을 경고했습니다. 지정학적 불안정성(호르무즈 해협 위기)은 해상 운송 비용을 증가시키고, 전반적인 운송 능력 감소는 공급망의 병목 현상을 심화시키는 원인입니다. 물류 기업은 이러한 공급망 리스크에 대비하여 운송 경로 다변화, 재고 관리 효율화, 운송 역량 확보 전략을 재검토해야 합니다.",
+      "description": "ITS 물류 지수가 운송 역량 감소와 호르무즈 해협 위기로 인한 비용 증가로 인해 전국적인 화물 운송 리스크가 높아지고 있다고 경고했습니다.",
+      "category": "안전·리스크",
+      "importance": 9,
+      "reason": "호르무즈 해협 위기와 운송 역량 감소는 글로벌 공급망 안정성을 위협하고 운송 비용을 급증시킬 수 있으므로, 물류업 대표는 이에 대한 면밀한 모니터링과 비상 계획 수립을 통해 리스크를 최소화해야 합니다.",
+      "content_angle": "호르무즈 해협 위기 등 지정학적 리스크가 글로벌 운송 비용과 공급망에 미치는 영향 및 물류 기업의 대응 전략을 다루는 긴급 브리핑 콘텐츠로 활용할 수 있습니다.",
+      "keywords": [
+        "ITS물류지수",
+        "운송리스크",
+        "운송역량",
+        "호르무즈위기",
+        "공급망교란"
+      ],
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxORkpTcDhRRzFLbFRqVDMzRTRvUV9oa1ZFTm1QYkdQbXF5UU9IbXJpR0Zha2NYaUNHN19PZ3hyVk9wZTU1Wm5meGVBeWxwQU1sM09uZDgwX3NrTjBBQ0dXQ1VVcTY5c2FPX0Mta0VNYzJ2X2wycnVWcmNyZU5pbEx5czlDSXFHRmppd3NtbGJ2cTlHekxMLVR6emRyYi1YUGZXcTFFUzdCNHhDU3Vtd2J4M3g4UHcySHlJcC0wQTRrYURvRnNnUmhNOE9rYUw?oc=5",
+      "published": "2026-04-21 01:31",
+      "quality": {
+        "title_status": "번역완료",
+        "summary_status": "AI요약",
+        "analysis_status": "ai"
+      }
     },
     {
       "rank": 4,
       "region": "국내",
+      "classification": "국내",
       "source": "물류신문",
-      "title": "한국해양진흥공사, 국적선사 CEO 콘퍼런스 열어 위기관리 방안 논의",
-      "original_title": "한국해양진흥공사, 국적선사 CEO 콘퍼런스 열어 위기관리 방안 논의",
+      "title": "인천항만공사, 상생펀드 100억 원으로 확대",
+      "display_title": "인천항만공사, 상생펀드 100억 원으로 확대",
+      "original_title": "인천항만공사, 상생펀드 100억 원으로 확대",
       "summary": [
-        "한국해양진흥공사, 국적선사 CEO 콘퍼런스 열어 위기관리 방안 논의",
-        "핵심 내용: 한국해양진흥공사(사장 안병길)는 최근 중동 지역 분쟁, 보호무역주의 확산, 환경 규제 강화 등으로 해운시장의 불확실성이 커지는 가운데, 국적 해",
-        "시사점: 정책·공공 관점에서 확인 필요"
+        "인천항만공사가 해운·물류기업 지원을 위해 '동반성장 상생펀드' 규모를 100억 원으로 확대했습니다.",
+        "미·이란 전쟁으로 인한 국제 유가 상승으로 해운·물류기업의 경영 부담이 커진 상황에 대응하기 위함입니다.",
+        "저금리 대출을 통해 협력 기업들의 연료비 및 물류비 증가로 인한 수익성 악화를 완화하고 상생을 도모합니다."
       ],
-      "description": "한국해양진흥공사(사장 안병길)는 최근 중동 지역 분쟁, 보호무역주의 확산, 환경 규제 강화 등으로 해운시장의 불확실성이 커지는 가운데, 국적 해운선사의 경영 애로를 청취하고 실질적 대응책을 모색하기 위한 ‘국적선사 최고경영자(CEO) 콘퍼런스’를 15~16일 서울에서 개최했다.이번 콘퍼런스는 세계 해운정책 변화와 위험 대응을 주제로 열렸으며, 각 분야 전문가들이 해운업계가 직면한 핵심 현안을 집중 진단했다. 이은영 삼일회계법인 상무는 “보호무역 기조 강화와 지정학적 위험 장기화 속에서 공급망 재편과 운임 변동성이 확대되고 있다”며",
-      "category": "정책·공공",
-      "importance": 5,
-      "reason": "분석 대기",
-      "content_angle": "",
-      "keywords": [],
-      "link": "https://www.klnews.co.kr/news/articleView.html?idxno=320787",
-      "published": "2026-04-17 15:25"
+      "summary_text": "인천항만공사가 해운·물류기업 지원을 위해 '동반성장 상생펀드' 규모를 100억 원으로 확대했습니다. 미·이란 전쟁으로 인한 국제 유가 상승으로 해운·물류기업의 경영 부담이 커진 상황에 대응하기 위함입니다. 저금리 대출을 통해 협력 기업들의 연료비 및 물류비 증가로 인한 수익성 악화를 완화하고 상생을 도모합니다.",
+      "description": "인천항만공사가 국제 유가 상승으로 어려움을 겪는 해운·물류기업을 지원하기 위해 저금리 상생대출 프로그램인 '동반성장 상생펀드' 규모를 80억 원에서 100억 원으로 확대한다.",
+      "category": "투자·경영",
+      "importance": 8,
+      "reason": "국제유가 상승으로 인한 물류비용 증가 압박 속에서, 항만공사의 저금리 자금 지원은 협력사들의 재정적 부담을 경감하고 사업 연속성을 확보하는 데 중요한 역할을 합니다.",
+      "content_angle": "항만공사의 상생 펀드 확대가 물류업계의 유가 상승 대응 전략에 어떤 영향을 미칠지 분석하는 콘텐츠로 활용할 수 있습니다.",
+      "keywords": [
+        "인천항만공사",
+        "상생펀드",
+        "저금리대출",
+        "유가상승",
+        "물류기업지원"
+      ],
+      "link": "https://www.klnews.co.kr/news/articleView.html?idxno=320806",
+      "published": "2026-04-20 16:32",
+      "quality": {
+        "title_status": "원문한국어",
+        "summary_status": "AI요약",
+        "analysis_status": "ai"
+      }
     },
     {
       "rank": 5,
-      "region": "국내",
-      "source": "물류신문",
-      "title": "관세청, IMF 신경제포럼서 ‘K-관세행정’ AI 혁신 성과 세계에 알려",
-      "original_title": "관세청, IMF 신경제포럼서 ‘K-관세행정’ AI 혁신 성과 세계에 알려",
+      "region": "해외",
+      "classification": "해외",
+      "source": "Google News Global",
+      "title": "\"상황이 구조적으로 달라졌다\": J.B. 헌트, 트럭 운송 시장의 전환 언급",
+      "display_title": "\"상황이 구조적으로 달라졌다\": J.B. 헌트, 트럭 운송 시장의 전환 언급",
+      "original_title": "‘Things Are Structurally Different’: J.B. Hunt Says the Trucking Market Has Turned - WWD",
       "summary": [
-        "관세청, IMF 신경제포럼서 ‘K-관세행정’ AI 혁신 성과 세계에 알려",
-        "핵심 내용: 미국 워싱턴 D.C.에서 열린 ‘2026 IMF·세계은행 춘계회의’ 기간 중 개최된 *신경제포럼(New Economy Forum)*에서 한국 관",
-        "시사점: 자동화·기술 관점에서 확인 필요"
+        "J.B. 헌트가 현재 트럭 운송 시장이 과거와는 다른 구조적인 변화를 겪고 있다고 분석했습니다.",
+        "팬데믹 이후 공급망 혼란, 인플레이션, 연료비 변동 등 다양한 요인이 복합적으로 작용하며 운송 시장의 근본적인 변화를 야기하고 있습니다.",
+        "이는 운송 비용, 운송 능력, 서비스 품질 등 전반적인 시장 전략에 영향을 미치므로, 물류 기업들은 변화된 시장 환경에 맞는 대응 전략을 수립해야 합니다."
       ],
-      "description": "미국 워싱턴 D.C.에서 열린 ‘2026 IMF·세계은행 춘계회의’ 기간 중 개최된 *신경제포럼(New Economy Forum)*에서 한국 관세청이 AI 기반 디지털 관세행정 혁신 사례를 발표하며 국제사회의 주목을 받았다.이명구 관세청장은 “정부기술(GovTech): 혁신의 영향력 이해”를 주제로 열린 포럼에서 조세행정 분야 패널로 초청되어 에스토니아·도미니카공화국 대표들과 함께 AI 행정혁신을 논의했다. 그는 급증하는 교역량과 인력 부족이라는 현실적 한계를 기술로 돌파한 한국의 경험을 공유하며, 머신러닝 기반 위험선별 시스템 도",
-      "category": "자동화·기술",
-      "importance": 5,
-      "reason": "분석 대기",
-      "content_angle": "",
-      "keywords": [],
-      "link": "https://www.klnews.co.kr/news/articleView.html?idxno=320785",
-      "published": "2026-04-17 15:11"
+      "summary_text": "J.B. 헌트가 현재 트럭 운송 시장이 과거와는 다른 구조적인 변화를 겪고 있다고 분석했습니다. 팬데믹 이후 공급망 혼란, 인플레이션, 연료비 변동 등 다양한 요인이 복합적으로 작용하며 운송 시장의 근본적인 변화를 야기하고 있습니다. 이는 운송 비용, 운송 능력, 서비스 품질 등 전반적인 시장 전략에 영향을 미치므로, 물류 기업들은 변화된 시장 환경에 맞는 대응 전략을 수립해야 합니다.",
+      "description": "주요 트럭 운송 회사인 J.B. 헌트가 트럭 운송 시장이 구조적으로 변화하여 이전과는 다른 양상을 보이고 있다고 밝혔습니다.",
+      "category": "항공·운송",
+      "importance": 8,
+      "reason": "트럭 운송 시장의 구조적 변화는 물류 비용, 운송 역량 확보, 고객 서비스 전략 등 물류업 대표의 사업 운영 전반에 걸쳐 중대한 영향을 미치므로, 이에 대한 이해와 선제적 대응이 필수적입니다.",
+      "content_angle": "글로벌 트럭 운송 시장의 구조적 변화 원인과 한국 물류 시장에 미칠 영향, 그리고 대응 전략을 심층 분석하는 인사이트 콘텐츠로 활용할 수 있습니다.",
+      "keywords": [
+        "JBHunt",
+        "트럭운송시장",
+        "시장변화",
+        "운송비용",
+        "구조적변화"
+      ],
+      "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOMWFIQjhtR3RvNDdXUy04WFBjdkQ0UGsxU3E2blZDR2ZvU2d1VHpuWkxzems4MU1lWjlteXhJT0JhZ0dGWERjVnZsVVE1ejNOU1BFNUJqTUZiMWQ0cnd0b0xHOHJVNExmZFA1UnBjU2l0WlRxcVNZWUtwaVE5WEVNSHprSk9XNlJoSGZTODkzUjVNOE1UajZmMHVTQncyQ1pxOGRPLU10R2tPVkVjYVJ1NjUtcUtyQUNpX2M1YXF2dE1vY09KUU9KVVZiR1hMUnJ1ejRkam0yTmJmbTQxUUN6Yl9aeGNicTRXWllSQWFLMUpoblJEMERVR3hLZw?oc=5",
+      "published": "2026-04-21 02:01",
+      "quality": {
+        "title_status": "번역완료",
+        "summary_status": "AI요약",
+        "analysis_status": "ai"
+      }
     }
   ],
   "content_ideas": [
     {
       "rank": 1,
-      "topic": "항공·운송",
-      "reason": "분석 대기",
-      "video_title": "[번역 대기] How dangerous trucking companies escape their past, change names and get back on the road. - CBS News이 물류업계에 주는 의미",
+      "topic": "물류기업의 탄소 배출권 활용 및 ESG 수익 창출 전략",
+      "reason": "물류기업, 특히 중소기업이 막연하게만 느끼던 탄소중립 목표를 실제 수익과 연결할 수 있는 구체적인 방법을 제시합니다. 해양수산부의 배출권 전환 지원 제도를 활용하여 환경 보호와 동시에 새로운 수익원을 창출하고, 기업의 지속가능성을 높이는 실질적인 가이드라인을 제공함으로써 시청자들이 직접 사업에 적용할 수 있도록 돕습니다.",
+      "video_title": "물류기업, 탄소 배출권으로 돈 벌기? 💰 해수부 지원사업 100% 활용법!",
       "format": "해설형",
       "based_on_titles": [
-        "[번역 대기] How dangerous trucking companies escape their past, change names and get back on the road. - CBS News"
+        "해양수산부, 감축 탄소 배출권으로 수익 전환 지원",
+        "DHL, 지속가능항공유 도입으로 친환경 경영 가속화"
       ]
     },
     {
       "rank": 2,
-      "topic": "기타",
-      "reason": "분석 대기",
-      "video_title": "[번역 대기] Bypassing closed skies: First-of-its-kind solution keeps e-commerce shipments flowing to Israel - The Jerusalem Post이 물류업계에 주는 의미",
-      "format": "해설형",
+      "topic": "글로벌 지정학적 리스크 및 시장 변화에 따른 물류 생존 전략",
+      "reason": "지정학적 불안정성과 국내외 시장의 구조적 변화로 인해 물류 기업들이 직면한 운송 리스크와 비용 증가 문제를 심도 있게 다룹니다. 시청자들이 현재의 위기 상황을 정확히 이해하고, 운송 경로 다변화, 재고 관리 효율화, 정부 지원책 활용 등 실질적인 대응 전략을 수립하여 기업의 안정성과 경쟁력을 확보하는 데 도움을 줄 것입니다.",
+      "video_title": "호르무즈 위기 & 트럭 시장 대격변! 🚚 2024 물류 리스크, 우리 기업 생존 전략은?",
+      "format": "전망형",
       "based_on_titles": [
-        "[번역 대기] Bypassing closed skies: First-of-its-kind solution keeps e-commerce shipments flowing to Israel - The Jerusalem Post"
+        "ITS 물류 지수, 운송 역량 감소와 호르무즈 위기로 인한 비용 증가로 전국 운송 리스크 경고",
+        "\"상황이 구조적으로 달라졌다\": J.B. 헌트, 트럭 운송 시장의 전환 언급",
+        "인천항만공사, 상생펀드 100억 원으로 확대"
       ]
     },
     {
       "rank": 3,
-      "topic": "정책·공공",
-      "reason": "분석 대기",
-      "video_title": "[번역 대기] Refund process for IEEPA tariffs is set to go live April 20이 물류업계에 주는 의미",
-      "format": "해설형",
+      "topic": "정부/공공기관 금융 지원과 ESG 경영을 통한 물류기업 경쟁력 강화",
+      "reason": "고유가 및 경기 불안정으로 어려움을 겪는 물류기업들이 활용할 수 있는 인천항만공사의 상생펀드와 같은 금융 지원책을 소개하고, 나아가 탄소 배출권 전환 지원 및 친환경 경영 도입을 통해 비용 절감과 동시에 장기적인 기업 가치를 높이는 전략을 제시합니다. 단기적 자금난 해결과 장기적 경쟁력 확보를 동시에 고민하는 시청자들에게 실질적인 해결책을 제공할 것입니다.",
+      "video_title": "물류기업 자금난 돌파!💰 인천항만 상생펀드+ESG로 윈윈 전략?!",
+      "format": "설명형",
       "based_on_titles": [
-        "[번역 대기] Refund process for IEEPA tariffs is set to go live April 20"
+        "인천항만공사, 상생펀드 100억 원으로 확대",
+        "해양수산부, 감축 탄소 배출권으로 수익 전환 지원",
+        "DHL, 지속가능항공유 도입으로 친환경 경영 가속화"
       ]
     }
   ]
