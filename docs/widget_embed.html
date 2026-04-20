@@ -9,7 +9,6 @@
 <div id="ln-root"></div>
 
 <style>
-  /* ── 전역 리셋 및 기본 변수 ── */
   #ln-root {
     --ln-primary:   #1a3a5c;
     --ln-accent:    #2e7de0;
@@ -38,7 +37,6 @@
     margin: 0 auto;
   }
 
-  /* ── 헤더 ── */
   .ln-header {
     background: linear-gradient(135deg, var(--ln-primary) 0%, #2a5fa8 100%);
     color: #fff;
@@ -51,10 +49,23 @@
     flex-wrap: wrap;
     gap: 10px;
   }
-  .ln-header h1 { margin: 0; font-size: 18px; font-weight: 700; letter-spacing: -.3px; }
-  .ln-header .ln-meta { font-size: 12px; opacity: .8; text-align: right; }
+  .ln-header h1 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -.3px;
+  }
+  .ln-header .ln-subtitle {
+    font-size: 12px;
+    opacity: .88;
+    margin-top: 4px;
+  }
+  .ln-header .ln-meta {
+    font-size: 12px;
+    opacity: .82;
+    text-align: right;
+  }
 
-  /* ── 오늘의 한 줄 ── */
   .ln-oneliner {
     background: var(--ln-accent);
     color: #fff;
@@ -65,9 +76,10 @@
     font-weight: 600;
     letter-spacing: -.2px;
   }
-  .ln-oneliner::before { content: "💬 "; }
+  .ln-oneliner::before {
+    content: "💬 ";
+  }
 
-  /* ── 섹션 제목 ── */
   .ln-section-title {
     font-size: 15px;
     font-weight: 700;
@@ -80,7 +92,6 @@
     gap: 6px;
   }
 
-  /* ── 브리프 그리드 ── */
   .ln-brief-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -94,12 +105,26 @@
     padding: 16px 18px;
     box-shadow: var(--ln-shadow);
   }
-  .ln-brief-card.risk  { border-left: 4px solid var(--ln-risk);  background: var(--ln-risk-bg); }
-  .ln-brief-card.oppo  { border-left: 4px solid var(--ln-ok);    background: var(--ln-ok-bg);   }
-  .ln-brief-card h3    { margin: 0 0 8px; font-size: 13px; font-weight: 700; color: var(--ln-primary); }
-  .ln-brief-card p     { margin: 0; font-size: 13px; color: var(--ln-text); }
+  .ln-brief-card.risk {
+    border-left: 4px solid var(--ln-risk);
+    background: var(--ln-risk-bg);
+  }
+  .ln-brief-card.oppo {
+    border-left: 4px solid var(--ln-ok);
+    background: var(--ln-ok-bg);
+  }
+  .ln-brief-card h3 {
+    margin: 0 0 8px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--ln-primary);
+  }
+  .ln-brief-card p {
+    margin: 0;
+    font-size: 13px;
+    color: var(--ln-text);
+  }
 
-  /* ── 뉴스 카드 리스트 ── */
   .ln-news-list {
     display: flex;
     flex-direction: column;
@@ -129,7 +154,10 @@
     font-weight: 700;
     flex-shrink: 0;
   }
-  .ln-news-body { flex: 1; min-width: 0; }
+  .ln-news-body {
+    flex: 1;
+    min-width: 0;
+  }
   .ln-news-meta {
     display: flex;
     flex-wrap: wrap;
@@ -146,21 +174,41 @@
     background: var(--ln-accent2);
     color: var(--ln-accent);
   }
-  .ln-badge.domestic { background: #e8f5e9; color: #2e7d32; }
-  .ln-badge.global   { background: #e3f2fd; color: #1565c0; }
+  .ln-badge.domestic {
+    background: #e8f5e9;
+    color: #2e7d32;
+  }
+  .ln-badge.global {
+    background: #e3f2fd;
+    color: #1565c0;
+  }
+  .ln-badge.ai {
+    background: #eef6ff;
+    color: #245fb2;
+  }
+  .ln-badge.fallback {
+    background: #f3f4f6;
+    color: #666;
+  }
+
   .ln-news-title {
     font-size: 14px;
     font-weight: 700;
     margin: 0 0 8px;
     color: var(--ln-text);
+    word-break: keep-all;
   }
   .ln-news-title a {
     color: inherit;
     text-decoration: none;
   }
-  .ln-news-title a:hover { color: var(--ln-accent); text-decoration: underline; }
+  .ln-news-title a:hover {
+    color: var(--ln-accent);
+    text-decoration: underline;
+  }
+
   .ln-summary-list {
-    margin: 0 0 8px;
+    margin: 0 0 10px;
     padding-left: 0;
     list-style: none;
     display: flex;
@@ -179,6 +227,23 @@
     left: 0;
     color: var(--ln-accent);
   }
+
+  .ln-detail-box {
+    margin-top: 8px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    background: #f8fafc;
+    border: 1px solid #edf2f7;
+  }
+  .ln-detail-box p {
+    margin: 0 0 6px;
+    font-size: 12.5px;
+    color: var(--ln-text);
+  }
+  .ln-detail-box p:last-child {
+    margin-bottom: 0;
+  }
+
   .ln-keywords {
     display: flex;
     flex-wrap: wrap;
@@ -192,7 +257,13 @@
     padding: 1px 7px;
     font-size: 11px;
   }
-  .ln-published { font-size: 11px; color: #aab; margin-top: 6px; }
+
+  .ln-published {
+    font-size: 11px;
+    color: #98a4b3;
+    margin-top: 8px;
+  }
+
   .ln-importance {
     display: flex;
     align-items: center;
@@ -202,7 +273,6 @@
     margin-top: 4px;
   }
 
-  /* ── 콘텐츠 아이디어 ── */
   .ln-ideas-list {
     display: flex;
     flex-direction: column;
@@ -210,13 +280,12 @@
     margin-bottom: 24px;
   }
   .ln-idea-card {
-    background: var(--ln-card);
+    background: var(--ln-idea-bg);
     border: 1px solid var(--ln-border);
     border-left: 4px solid var(--ln-idea);
     border-radius: var(--ln-radius);
     padding: 16px 20px;
     box-shadow: var(--ln-shadow);
-    background: var(--ln-idea-bg);
   }
   .ln-idea-card h3 {
     margin: 0 0 4px;
@@ -233,165 +302,67 @@
     font-size: 11px;
     margin-bottom: 6px;
   }
-  .ln-idea-reason { font-size: 12.5px; color: var(--ln-sub); margin: 0; }
+  .ln-idea-reason {
+    font-size: 12.5px;
+    color: var(--ln-sub);
+    margin: 0;
+  }
 
-  /* ── 푸터 ── */
   .ln-footer {
     text-align: center;
     font-size: 11px;
-    color: #bbb;
+    color: #a6b0bb;
     padding-top: 10px;
   }
 
-  /* ── 로딩 / 에러 ── */
-  .ln-loading, .ln-error {
+  .ln-loading, .ln-error, .ln-empty {
     text-align: center;
     padding: 40px;
     color: var(--ln-sub);
   }
+
   .ln-spinner {
-    width: 36px; height: 36px;
+    width: 36px;
+    height: 36px;
     border: 4px solid #e0e8f0;
     border-top-color: var(--ln-accent);
     border-radius: 50%;
     animation: ln-spin .8s linear infinite;
     margin: 0 auto 12px;
   }
-  @keyframes ln-spin { to { transform: rotate(360deg); } }
+  @keyframes ln-spin {
+    to { transform: rotate(360deg); }
+  }
 
-  /* ── 반응형 ── */
   @media (max-width: 600px) {
     #ln-root { padding: 12px; }
     .ln-news-card { flex-direction: column; gap: 10px; }
     .ln-rank { align-self: flex-start; }
+    .ln-header { padding: 18px 20px; }
+    .ln-header .ln-meta { text-align: left; }
   }
 </style>
 
 <script>
 (function() {
-
   // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  // ★ 여기만 수정하세요!
-  // GitHub Pages에서 data.json이 서비스되는 URL
+  // ★ 여기만 실제 주소로 수정하세요
+  // 예시:
+  // const DATA_URL = "https://jediydc-cloud.github.io/logistics_news/data.json";
   const DATA_URL = "https://YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME/data.json";
-  // 예: "https://teaosis.github.io/logistics-news/data.json"
   // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
   const root = document.getElementById("ln-root");
 
-  // 별 아이콘 (중요도)
-  function stars(n) {
-    const filled = Math.round(Math.min(Math.max(n, 1), 10) / 2);
-    return "★".repeat(filled) + "☆".repeat(5 - filled) + ` ${n}/10`;
-  }
+  const BAD_UI_PHRASES = [
+    "[번역 대기]",
+    "[번역 필요]",
+    "자동 fallback",
+    "분석 대기",
+    "요약 생성 실패",
+    "fallback"
+  ];
 
-  // 배지
-  function badge(text) {
-    const cls = text === "국내" ? "domestic" : text === "해외" ? "global" : "";
-    return `<span class="ln-badge ${cls}">${text}</span>`;
-  }
-
-  // 뉴스 카드 HTML
-  function newsCardHTML(item) {
-    const summaryItems = (item.summary || [])
-      .map(s => `<li>${escHtml(s)}</li>`).join("");
-    const kwHTML = (item.keywords || [])
-      .map(k => `<span class="ln-kw">${escHtml(k)}</span>`).join("");
-
-    return `
-      <div class="ln-news-card">
-        <div class="ln-rank">${item.rank}</div>
-        <div class="ln-news-body">
-          <div class="ln-news-meta">
-            ${badge(item.region)}
-            <span class="ln-badge">${escHtml(item.category)}</span>
-            <span class="ln-badge" style="background:#f3f4f6;color:#555">${escHtml(item.source)}</span>
-          </div>
-          <p class="ln-news-title">
-            ${item.link
-              ? `<a href="${escAttr(item.link)}" target="_blank" rel="noopener">${escHtml(item.title)}</a>`
-              : escHtml(item.title)}
-          </p>
-          <ul class="ln-summary-list">${summaryItems}</ul>
-          <div class="ln-importance">${stars(item.importance)}</div>
-          ${kwHTML ? `<div class="ln-keywords">${kwHTML}</div>` : ""}
-          ${item.published ? `<p class="ln-published">📅 ${escHtml(item.published)}</p>` : ""}
-        </div>
-      </div>`;
-  }
-
-  // 아이디어 카드 HTML
-  function ideaCardHTML(idea) {
-    const basedOn = (idea.based_on_titles || [])
-      .map(t => `<span class="ln-kw">${escHtml(t)}</span>`).join(" ");
-    return `
-      <div class="ln-idea-card">
-        <h3>💡 ${escHtml(idea.video_title)}</h3>
-        <span class="ln-idea-format">${escHtml(idea.format)}</span>
-        <p class="ln-idea-reason">${escHtml(idea.reason)}</p>
-        ${basedOn ? `<div class="ln-keywords" style="margin-top:8px">📰 ${basedOn}</div>` : ""}
-      </div>`;
-  }
-
-  // 메인 렌더링
-  function render(data) {
-    const b = data.brief || {};
-    const news = data.top_news || [];
-    const ideas = data.content_ideas || [];
-
-    root.innerHTML = `
-      <!-- 헤더 -->
-      <div class="ln-header">
-        <h1>🚢 물류 뉴스 일일 브리핑</h1>
-        <div class="ln-meta">
-          ${escHtml(data.analysis_date || "")}<br>
-          갱신: ${escHtml(data.generated_at || "")}
-        </div>
-      </div>
-
-      <!-- 오늘의 한 줄 -->
-      ${b["오늘의한줄"] ? `<div class="ln-oneliner">${escHtml(b["오늘의한줄"])}</div>` : ""}
-
-      <!-- 브리프 카드 그리드 -->
-      <p class="ln-section-title">📋 오늘의 총평 &amp; 동향</p>
-      <div class="ln-brief-grid">
-        ${briefCard("총평",      b["총평"],      "")}
-        ${briefCard("🇰🇷 국내 동향", b["국내동향"], "")}
-        ${briefCard("🌐 해외 동향", b["해외동향"], "")}
-        ${briefCard("⚠️ 리스크 포인트", b["리스크포인트"], "risk")}
-        ${briefCard("🌱 기회 포인트", b["기회포인트"], "oppo")}
-      </div>
-
-      <!-- 주요 뉴스 -->
-      <p class="ln-section-title">📰 오늘의 주요 뉴스 TOP ${news.length}</p>
-      <div class="ln-news-list">
-        ${news.map(newsCardHTML).join("")}
-      </div>
-
-      <!-- 콘텐츠 아이디어 -->
-      ${ideas.length > 0 ? `
-        <p class="ln-section-title">🎬 콘텐츠 아이디어 제안</p>
-        <div class="ln-ideas-list">
-          ${ideas.map(ideaCardHTML).join("")}
-        </div>
-      ` : ""}
-
-      <div class="ln-footer">
-        Powered by Gemini AI · 데이터는 매일 오전 7시(KST)에 자동 갱신됩니다.
-      </div>
-    `;
-  }
-
-  function briefCard(title, text, cls) {
-    if (!text) return "";
-    return `
-      <div class="ln-brief-card ${cls}">
-        <h3>${title}</h3>
-        <p>${escHtml(text)}</p>
-      </div>`;
-  }
-
-  // XSS 방지 이스케이프
   function escHtml(str) {
     return String(str || "")
       .replace(/&/g, "&amp;")
@@ -400,16 +371,270 @@
       .replace(/"/g, "&quot;")
       .replace(/'/g, "&#39;");
   }
-  function escAttr(str) { return escHtml(str); }
 
-  // 로딩 표시
+  function escAttr(str) {
+    return escHtml(str);
+  }
+
+  function isBadText(value) {
+    const text = String(value || "").trim().toLowerCase();
+    if (!text) return true;
+    return BAD_UI_PHRASES.some(bad => text.includes(bad.toLowerCase()));
+  }
+
+  function safeText(value, fallback = "") {
+    if (value === null || value === undefined) return fallback;
+    const text = String(value).trim();
+    if (!text) return fallback;
+    if (isBadText(text)) return fallback;
+    return text;
+  }
+
+  function safeArray(arr) {
+    return Array.isArray(arr) ? arr : [];
+  }
+
+  function stars(n) {
+    const num = Number(n || 0);
+    const safe = Math.min(Math.max(num, 1), 10);
+    const filled = Math.round(safe / 2);
+    return "★".repeat(filled) + "☆".repeat(5 - filled) + ` ${safe}/10`;
+  }
+
+  function badge(text, type = "") {
+    return `<span class="ln-badge ${type}">${escHtml(text)}</span>`;
+  }
+
+  function regionBadge(region) {
+    if (region === "국내") return badge(region, "domestic");
+    if (region === "해외") return badge(region, "global");
+    return badge(region || "기타");
+  }
+
+  function qualityBadge(item) {
+    const q = item && item.quality ? item.quality : {};
+    const status = String(q.analysis_status || "").toLowerCase();
+
+    if (status === "ai") {
+      return badge("AI 정리", "ai");
+    }
+    if (status === "fallback") {
+      return badge("기본 정리", "fallback");
+    }
+    return "";
+  }
+
+  function briefCard(title, text, cls) {
+    const safe = safeText(text, "");
+    if (!safe) return "";
+    return `
+      <div class="ln-brief-card ${cls || ""}">
+        <h3>${title}</h3>
+        <p>${escHtml(safe)}</p>
+      </div>
+    `;
+  }
+
+  function normalizeSummary(item) {
+    const arr = safeArray(item.summary)
+      .map(v => safeText(v, ""))
+      .filter(Boolean);
+
+    if (arr.length) return arr;
+
+    const text = safeText(item.summary_text, "");
+    if (text) {
+      return [text];
+    }
+
+    const desc = safeText(item.description, "");
+    if (desc) {
+      return [desc];
+    }
+
+    return ["요약 정보가 충분하지 않습니다."];
+  }
+
+  function newsCardHTML(item) {
+    const title = safeText(item.title, safeText(item.original_title, "제목 없음"));
+    const summaryItems = normalizeSummary(item)
+      .map(s => `<li>${escHtml(s)}</li>`)
+      .join("");
+
+    const kwHTML = safeArray(item.keywords)
+      .map(k => safeText(k, ""))
+      .filter(Boolean)
+      .map(k => `<span class="ln-kw">${escHtml(k)}</span>`)
+      .join("");
+
+    const reason = safeText(item.reason, "");
+    const contentAngle = safeText(item.content_angle, "");
+    const published = safeText(item.published, "");
+    const source = safeText(item.source, "미상");
+    const category = safeText(item.category, "기타");
+    const region = safeText(item.region || item.classification, "기타");
+    const link = safeText(item.link, "");
+    const importance = Number(item.importance || 5);
+
+    return `
+      <div class="ln-news-card">
+        <div class="ln-rank">${escHtml(item.rank)}</div>
+        <div class="ln-news-body">
+          <div class="ln-news-meta">
+            ${regionBadge(region)}
+            ${badge(category)}
+            ${badge(source)}
+            ${qualityBadge(item)}
+          </div>
+
+          <p class="ln-news-title">
+            ${link
+              ? `<a href="${escAttr(link)}" target="_blank" rel="noopener noreferrer">${escHtml(title)}</a>`
+              : escHtml(title)}
+          </p>
+
+          <ul class="ln-summary-list">${summaryItems}</ul>
+
+          <div class="ln-importance">${stars(importance)}</div>
+
+          ${(reason || contentAngle) ? `
+            <div class="ln-detail-box">
+              ${reason ? `<p><strong>왜 중요한가</strong> · ${escHtml(reason)}</p>` : ""}
+              ${contentAngle ? `<p><strong>활용 포인트</strong> · ${escHtml(contentAngle)}</p>` : ""}
+            </div>
+          ` : ""}
+
+          ${kwHTML ? `<div class="ln-keywords">${kwHTML}</div>` : ""}
+          ${published ? `<p class="ln-published">📅 ${escHtml(published)}</p>` : ""}
+        </div>
+      </div>
+    `;
+  }
+
+  function ideaCardHTML(idea) {
+    const title = safeText(idea.video_title, safeText(idea.topic, "콘텐츠 아이디어"));
+    const format = safeText(idea.format, "해설형");
+    const reason = safeText(idea.reason, "시청자에게 업계 변화의 의미를 전달할 수 있는 주제입니다.");
+
+    const basedOn = safeArray(idea.based_on_titles)
+      .map(t => safeText(t, ""))
+      .filter(Boolean)
+      .map(t => `<span class="ln-kw">${escHtml(t)}</span>`)
+      .join("");
+
+    return `
+      <div class="ln-idea-card">
+        <h3>💡 ${escHtml(title)}</h3>
+        <span class="ln-idea-format">${escHtml(format)}</span>
+        <p class="ln-idea-reason">${escHtml(reason)}</p>
+        ${basedOn ? `<div class="ln-keywords" style="margin-top:8px">📰 ${basedOn}</div>` : ""}
+      </div>
+    `;
+  }
+
+  function render(data) {
+    const brief = data.brief || {};
+    const news = safeArray(data.top_news);
+    const ideas = safeArray(data.content_ideas);
+    const overview = data.project_overview || {};
+
+    const projectTitle = safeText(
+      overview.project_name,
+      "물류 뉴스 일일 브리핑"
+    );
+
+    const projectPurpose = safeText(
+      overview.purpose,
+      "국내외 물류 뉴스를 자동 수집·정리하여 핵심 이슈를 빠르게 파악할 수 있도록 돕습니다."
+    );
+
+    const analysisDate = safeText(data.analysis_date, "");
+    const generatedAt = safeText(data.generated_at, "");
+
+    const oneLiner = safeText(
+      brief["오늘의한줄"] || brief.one_liner,
+      ""
+    );
+
+    const overall = safeText(
+      brief["총평"] || brief.overall,
+      ""
+    );
+
+    const domesticTrend = safeText(
+      brief["국내동향"] || brief.domestic_trend,
+      ""
+    );
+
+    const globalTrend = safeText(
+      brief["해외동향"] || brief.global_trend,
+      ""
+    );
+
+    const riskPoints = safeText(
+      brief["리스크포인트"] || brief.risk_points,
+      ""
+    );
+
+    const opportunityPoints = safeText(
+      brief["기회포인트"] || brief.opportunity_points,
+      ""
+    );
+
+    root.innerHTML = `
+      <div class="ln-header">
+        <div>
+          <h1>🚢 ${escHtml(projectTitle)}</h1>
+          <div class="ln-subtitle">${escHtml(projectPurpose)}</div>
+        </div>
+        <div class="ln-meta">
+          ${analysisDate ? `${escHtml(analysisDate)}<br>` : ""}
+          ${generatedAt ? `갱신: ${escHtml(generatedAt)}` : ""}
+        </div>
+      </div>
+
+      ${oneLiner ? `<div class="ln-oneliner">${escHtml(oneLiner)}</div>` : ""}
+
+      <p class="ln-section-title">📋 오늘의 총평 &amp; 동향</p>
+      <div class="ln-brief-grid">
+        ${briefCard("총평", overall, "")}
+        ${briefCard("🇰🇷 국내 동향", domesticTrend, "")}
+        ${briefCard("🌐 해외 동향", globalTrend, "")}
+        ${briefCard("⚠️ 리스크 포인트", riskPoints, "risk")}
+        ${briefCard("🌱 기회 포인트", opportunityPoints, "oppo")}
+      </div>
+
+      <p class="ln-section-title">📰 오늘의 주요 뉴스 TOP ${news.length}</p>
+      ${
+        news.length
+          ? `<div class="ln-news-list">${news.map(newsCardHTML).join("")}</div>`
+          : `<div class="ln-empty">오늘 표시할 주요 뉴스가 아직 준비되지 않았습니다.</div>`
+      }
+
+      ${
+        ideas.length
+          ? `
+          <p class="ln-section-title">🎬 콘텐츠 아이디어 제안</p>
+          <div class="ln-ideas-list">
+            ${ideas.map(ideaCardHTML).join("")}
+          </div>
+        `
+          : ""
+      }
+
+      <div class="ln-footer">
+        Powered by Gemini AI · 데이터는 매일 오전 7시(KST) 기준 자동 갱신됩니다.
+      </div>
+    `;
+  }
+
   root.innerHTML = `
     <div class="ln-loading">
       <div class="ln-spinner"></div>
       <p>오늘의 물류 뉴스를 불러오는 중...</p>
-    </div>`;
+    </div>
+  `;
 
-  // 데이터 fetch
   fetch(DATA_URL + "?t=" + Date.now())
     .then(res => {
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -421,8 +646,10 @@
         <div class="ln-error">
           <p>⚠️ 데이터를 불러오지 못했습니다.<br>
           잠시 후 다시 시도하거나 페이지를 새로고침 해주세요.</p>
-          <p style="font-size:11px;color:#bbb">${err.message}</p>
-        </div>`;
+          <p style="font-size:11px;color:#bbb">${escHtml(err.message)}</p>
+          <p style="font-size:11px;color:#bbb;margin-top:6px;">DATA_URL 설정값도 함께 확인해 주세요.</p>
+        </div>
+      `;
     });
 })();
 </script>
