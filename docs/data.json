@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-04-26 07:29",
-  "analysis_date": "2026-04-26",
+  "generated_at": "2026-04-27 07:32",
+  "analysis_date": "2026-04-27",
   "project_overview": {
     "project_name": "국내외 물류 뉴스 자동 브리핑 및 콘텐츠 아이디어 도출 시스템",
     "purpose": "국내외 물류 뉴스를 자동 수집·정리해 대표가 빠르게 핵심 이슈를 파악하고 콘텐츠 기획에 활용할 수 있도록 돕는 시스템",
@@ -13,216 +13,210 @@
     "final_deliverable": "테오시스 홈페이지용 data.json"
   },
   "brief": {
-    "총평": "오늘은 친환경 해운 연료 도입과 AI 기술의 공급망 혁신이 가속화되는 중요한 변곡점을 보여줍니다. 동시에 고질적인 운전자 부족 현상이 시장 재편을 야기하며, 물류 기업의 전략적 대응을 요구하고 있습니다. 전반적으로 지속 가능한 기술 투자와 인력 확보 방안 마련이 시급합니다.",
-    "국내동향": "울산항만공사가 세계 최초로 암모니아 연료 선박 급유에 성공하며 해운 탈탄소화의 중요한 첫발을 내디뎠습니다. 이는 친환경 연료 공급 인프라 구축의 선도적 역할을 보여주며 국내 해운 산업의 미래 경쟁력에 긍정적입니다.",
-    "해외동향": "AI가 향후 10년간 공급망을 가장 크게 혁신할 동인으로 지목되어 기술 도입의 중요성이 강조되고 있습니다. 또한, 화물 운송 시장에서는 운전자 부족 현상이 규제 및 인구 통계와 맞물려 시장의 근본적인 재조정을 초래하고 있습니다. 한편, 콜드체인 물류의 중요성이 커지며 글로벌 물류 기업들은 이 분야 투자를 확대하고 있습니다.",
-    "리스크포인트": "국내외적으로 심화되는 운전자 부족 현상은 운송 역량 감소와 비용 상승으로 이어져 기업 운영에 지속적인 부담을 줄 것입니다. AI 등 핵심 기술 도입 지연 시 경쟁에서 뒤처질 위험이 커지고, 급변하는 시장 환경에 효과적으로 대응하기 어려워질 수 있습니다.",
-    "기회포인트": "암모니아와 같은 차세대 친환경 연료 전환은 신규 서비스 모델 및 인프라 구축을 통해 시장 선점의 기회를 제공합니다. AI 기반의 공급망 혁신은 운영 효율성 극대화와 새로운 가치 창출을 가능하게 할 것입니다. 또한, 콜드체인 등 고부가가치 전문 물류 시장의 성장에 선제적으로 대응하여 사업 확장의 발판을 마련할 수 있습니다.",
-    "오늘의한줄": "친환경 기술과 AI 투자로 지속 가능한 성장을 추구하며, 인력 문제 해결을 위한 전략적 접근이 필요한 시점입니다."
+    "총평": "오늘 물류 업계는 중동발 공급망 불안정 지속과 함께 국내외 정책 및 인프라 변화 소식이 혼재되어 있습니다. 특히 중동 지역의 신규 물류 인프라와 국내 항만 안정화 노력, 그리고 해외 무역 정책 변화에 주목해야 합니다.",
+    "국내동향": "중동발 공급망 대란에 대응하여 한국무역협회가 해상·항공 수출 물류 지원에 나섭니다. 또한, 해수부는 군산항의 안정적인 운영을 위해 제2준설토 투기장 조성 공사에 착공하며 장기적인 항만 인프라 유지에 힘쓰고 있습니다.",
+    "해외동향": "UAE에서는 에티하드 철도가 첫 화물 운송을 시작하며 지속 가능한 신규 물류 인프라 시대의 개막을 알렸습니다. 한편, 미국에서는 과거 IEEPA 관세 환급 절차가 4월 20일부터 시작될 예정으로, 관련 기업들의 재정 부담 완화가 기대됩니다.",
+    "리스크포인트": "중동발 공급망 불안정은 여전히 국내 수출 물류에 직접적인 리스크로 작용하며, 운송 비용 증가 및 납기 지연 가능성을 높이고 있습니다. 이에 대한 지속적인 모니터링과 대체 운송 방안 모색이 필요합니다.",
+    "기회포인트": "UAE의 신규 철도 물류망은 중동 지역 내 새로운 비즈니스 기회를 창출할 수 있으며, 국내 기업들을 위한 무역협회의 물류 지원 사업도 적극 활용을 고려할 수 있습니다. 또한, 미국 관세 환급은 기업들의 무역 활동 활성화에 긍정적 영향을 줄 수 있습니다.",
+    "오늘의한줄": "중동발 불안정 속, 해외 신규 인프라 및 국내 항만 안정화 노력에 주목하며 위기를 기회로 전환할 방안을 모색해야 합니다."
   },
   "top_news": [
     {
       "rank": 1,
-      "region": "국내",
-      "classification": "국내",
-      "source": "물류신문",
-      "title": "울산항만공사, 세계 최초 '암모니아 연료' 선박 급유 성공",
-      "display_title": "울산항만공사, 세계 최초 '암모니아 연료' 선박 급유 성공",
-      "original_title": "울산항만공사, 세계 최초 ‘암모니아 연료’ 선박 급유 성공",
+      "region": "해외",
+      "classification": "해외",
+      "source": "Google News Global",
+      "title": "UAE Transforms Travel and Logistics, Etihad Rail’s Historic First Car Shipment Marks the Dawn of a New Era in Sustainable Transportation - Travel And Tour World",
+      "display_title": "UAE Transforms Travel and Logistics, Etihad Rail’s Historic First Car Shipment Marks the Dawn of a New Era in Sustainable Transportation - Travel And Tour World",
+      "original_title": "UAE Transforms Travel and Logistics, Etihad Rail’s Historic First Car Shipment Marks the Dawn of a New Era in Sustainable Transportation - Travel And Tour World",
       "summary": [
-        "울산항만공사가 세계 최초로 암모니아 연료 선박에 청정 암모니아 급유에 성공했다.",
-        "암모니아는 차세대 친환경 선박 연료로 주목받고 있으며, 이번 실증은 울산본항에서 롯데정밀화학의 참여로 이뤄졌다.",
-        "해운 산업의 탈탄소화를 가속화하고 친환경 연료 공급 인프라 구축의 중요한 첫걸음이 될 것이다."
+        "UAE Transforms Travel and Logistics, Etihad Rail’s Historic First Car Shipment Marks the Dawn of a New Era in...",
+        "UAE Transforms Travel and Logistics, Etihad Rail’s Historic First Car Shipment Marks the Dawn of a New Era in...",
+        "기타 관점에서 후속 흐름을 살펴볼 필요가 있습니다."
       ],
-      "summary_text": "울산항만공사가 세계 최초로 암모니아 연료 선박에 청정 암모니아 급유에 성공했다. 암모니아는 차세대 친환경 선박 연료로 주목받고 있으며, 이번 실증은 울산본항에서 롯데정밀화학의 참여로 이뤄졌다. 해운 산업의 탈탄소화를 가속화하고 친환경 연료 공급 인프라 구축의 중요한 첫걸음이 될 것이다.",
-      "description": "울산항만공사가 세계 최초로 암모니아를 연료로 사용하는 가스운반선에 청정 암모니아 600톤을 성공적으로 급유했습니다. 이는 메탄올과 함께 차세대 친환경 선박 연료로 주목받는 암모니아의 실증 성공 사례입니다.",
-      "category": "항만·해운",
-      "importance": 10,
-      "reason": "미래 해운 시장의 친환경 연료 전환 트렌드를 선도하며, 새로운 사업 기회와 항만 경쟁력 강화에 직결되기 때문입니다.",
-      "content_angle": "친환경 선박 연료 전환의 성공 사례로, 미래 물류 산업의 지속 가능성 전략을 논하는 콘텐츠로 활용할 수 있습니다.",
+      "summary_text": "UAE Transforms Travel and Logistics, Etihad Rail’s Historic First Car Shipment Marks the Dawn of a New Era in... UAE Transforms Travel and Logistics, Etihad Rail’s Historic First Car Shipment Marks the Dawn of a New Era in... 기타 관점에서 후속 흐름을 살펴볼 필요가 있습니다.",
+      "description": "UAE Transforms Travel and Logistics, Etihad Rail’s Historic First Car Shipment Marks the Dawn of a New Era in Sustainable Transportation Travel And Tour World",
+      "category": "기타",
+      "importance": 5,
+      "reason": "기술 도입은 운영 효율과 가시성 개선에 직결되므로 업계 파급력이 큰 편입니다.",
+      "content_angle": "자동화·디지털 전환 사례와 현장 적용 포인트를 설명하는 콘텐츠에 적합합니다.",
       "keywords": [
-        "암모니아 연료",
-        "친환경 선박",
-        "울산항",
-        "탈탄소화",
-        "롯데정밀화학"
+        "travel",
+        "car",
+        "dawn",
+        "era"
       ],
-      "link": "https://www.klnews.co.kr/news/articleView.html?idxno=320844",
-      "published": "2026-04-23 15:02",
+      "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxQcHhRSTM3REFiVzlGRW9XVlN0czhyajg1aVJXZk9JYk1uUy1GbVlDZzN5Vlc2RFVNUFh2R08xWkc1RF9WalpCb2RHbVBtTmE0WHZTeG5Ob2JUR2g5dkxTTU5LS2M4WWN2dDJ2SUZOdW9VTnhMVDRxLWlYR0phb21SU3hOaDJ1ZVpuWlBlcHpZc0gzanVoQkRWbUVaYlU0bktsVGNaVWtuZjhNeFBBZnJHZzZQc3hSVmNTV2dIb1FJSW1BNlRQMVR1dkQ1UWRDQmJ4WDh5MzNVZ2s2bmFVc1pocFo5VjBWTUZlbjZTTEI0STRkWnNQRklCU25DNmlpcUVBTVlGVmo5ckx6NlhSWWE3WQ?oc=5",
+      "published": "2026-04-26 20:36",
       "quality": {
-        "title_status": "원문한국어",
-        "summary_status": "AI요약",
-        "analysis_status": "ai"
+        "title_status": "원문표시",
+        "summary_status": "기본정리",
+        "analysis_status": "fallback"
       }
     },
     {
       "rank": 2,
-      "region": "해외",
-      "classification": "해외",
-      "source": "Logistics Management",
-      "title": "MHI 및 Deloitte 보고서, AI가 향후 10년간 공급망의 최대 혁신 동인으로 지목",
-      "display_title": "MHI 및 Deloitte 보고서, AI가 향후 10년간 공급망의 최대 혁신 동인으로 지목",
-      "original_title": "MHI and Deloitte report finds AI biggest disruptor of supply chains over the next decade",
+      "region": "국내",
+      "classification": "국내",
+      "source": "Google News Korea",
+      "title": "중동발 공급망 대란에…한국무역협회, 해상·항공 수출물류 지원나서 - newsis.com",
+      "display_title": "중동발 공급망 대란에…한국무역협회, 해상·항공 수출물류 지원나서 - newsis.com",
+      "original_title": "중동발 공급망 대란에…한국무역협회, 해상·항공 수출물류 지원나서 - newsis.com",
       "summary": [
-        "MHI와 Deloitte 보고서에 따르면, AI가 향후 10년간 공급망을 가장 크게 변화시킬 동인으로 지목되었다.",
-        "공급망 리더 설문조사 결과, AI의 변혁적 및 파괴적 영향에 대한 인식이 전년 대비 크게 증가했다.",
-        "물류업계는 AI 기술 도입을 서두르고, 인력 재교육 및 프로세스 혁신을 통해 미래 공급망 변화에 적극적으로 대응해야 할 것이다."
+        "중동발 공급망 대란에…한국무역협회, 해상·항공 수출물류 지원나서 - newsis.com",
+        "중동발 공급망 대란에…한국무역협회, 해상·항공 수출물류 지원나서 newsis.com",
+        "항만·해운 관점에서 후속 흐름을 살펴볼 필요가 있습니다."
       ],
-      "summary_text": "MHI와 Deloitte 보고서에 따르면, AI가 향후 10년간 공급망을 가장 크게 변화시킬 동인으로 지목되었다. 공급망 리더 설문조사 결과, AI의 변혁적 및 파괴적 영향에 대한 인식이 전년 대비 크게 증가했다. 물류업계는 AI 기술 도입을 서두르고, 인력 재교육 및 프로세스 혁신을 통해 미래 공급망 변화에 적극적으로 대응해야 할 것이다.",
-      "description": "공급망 리더 설문조사 기반의 보고서에 따르면, 응답자의 24%는 AI를 변혁적이라고, 48%는 그 파괴적 영향을 중요하거나 그 이상으로 평가하며, 이는 2025년 대비 25% 포인트 증가한 수치입니다.",
-      "category": "자동화·기술",
-      "importance": 9,
-      "reason": "AI 기술이 물류 산업의 미래 경쟁력과 운영 효율성을 결정하는 핵심 요소가 될 것이므로, 전략적 투자 및 도입 계획 수립에 필수적입니다.",
-      "content_angle": "AI 기반 공급망 혁신의 필요성과 성공적인 도입 전략을 다루는 인사이트 콘텐츠로, 미래 물류 시장의 변화를 예측하는 데 활용할 수 있습니다.",
+      "summary_text": "중동발 공급망 대란에…한국무역협회, 해상·항공 수출물류 지원나서 - newsis.com 중동발 공급망 대란에…한국무역협회, 해상·항공 수출물류 지원나서 newsis.com 항만·해운 관점에서 후속 흐름을 살펴볼 필요가 있습니다.",
+      "description": "중동발 공급망 대란에…한국무역협회, 해상·항공 수출물류 지원나서 newsis.com",
+      "category": "항만·해운",
+      "importance": 5,
+      "reason": "항만·해운 운영 변화는 공급망 전반의 흐름과 연결되어 주목할 필요가 있습니다.",
+      "content_angle": "항만 경쟁력과 공급망 연결성 관점에서 풀어내는 해설형 콘텐츠로 활용하기 좋습니다.",
       "keywords": [
-        "AI",
+        "com",
+        "newsis",
         "공급망",
-        "기술 혁신",
-        "물류 자동화",
-        "Deloitte"
+        "대란에"
       ],
-      "link": "https://www.logisticsmgmt.com/article/mhi_and_deloitte_report_finds_ai_biggest_disruptor_of_supply_chains_over_the_next_decade",
-      "published": "2026-04-17 21:27",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1neXhuMXo0b1dlR01kdGdLU1ZyUDRReU1ONFlWZlZkYWpqcGlaN2MzVG53Q1o1ajFVZGU2bTJ1Qm1ib0dpcGxCZndmcDh0MTRiYklIX1hCSGpvRHpNb1U0RtIBeEFVX3lxTE5xMXZBUkhYcWdiV2otd2Fna29WMTRIVVY2c09naElWOG5OMDRaRVJ5MndTdjY3bWlNbUxHa2RDeGJEcFEteHQzd0FzZGpObU5LaEVWd2dqYm1CVDNrVk5USTRJUmRoeUVJTHM5MkNhb0tPbEREbE1PWA?oc=5",
+      "published": "2026-04-26 14:27",
       "quality": {
-        "title_status": "번역완료",
-        "summary_status": "AI요약",
-        "analysis_status": "ai"
+        "title_status": "원문한국어",
+        "summary_status": "기본정리",
+        "analysis_status": "fallback"
       }
     },
     {
       "rank": 3,
-      "region": "해외",
-      "classification": "해외",
-      "source": "Google News Global",
-      "title": "운전자 부족인가, 시장 재조정인가? 규제, 인구 통계, 그리고 역량이 화물 운송을 재편하는 방법",
-      "display_title": "운전자 부족인가, 시장 재조정인가? 규제, 인구 통계, 그리고 역량이 화물 운송을 재편하는 방법",
-      "original_title": "Driver Shortage—or Market Reset? How Compliance, Demographics, and Capacity Are Reshaping Freight - Inbound Logistics",
-      "summary": [
-        "화물 운송 산업에서 운전자 부족 현상이 규제, 인구 통계, 역량 변화와 맞물려 시장의 근본적인 재조정을 초래하고 있다.",
-        "장기적인 운전자 수 감소 추세, 강화되는 운송 관련 규제, 그리고 운송 역량의 변화가 복합적으로 작용하고 있다.",
-        "물류 기업들은 인력 확보 전략 재정비, 자동화 도입, 운송 모델 혁신 등을 통해 변화하는 시장 환경에 선제적으로 대응해야 할 것이다."
-      ],
-      "summary_text": "화물 운송 산업에서 운전자 부족 현상이 규제, 인구 통계, 역량 변화와 맞물려 시장의 근본적인 재조정을 초래하고 있다. 장기적인 운전자 수 감소 추세, 강화되는 운송 관련 규제, 그리고 운송 역량의 변화가 복합적으로 작용하고 있다. 물류 기업들은 인력 확보 전략 재정비, 자동화 도입, 운송 모델 혁신 등을 통해 변화하는 시장 환경에 선제적으로 대응해야 할 것이다.",
-      "description": "운전자 부족 문제가 단순한 결핍이 아니라 시장 재조정의 신호일 수 있습니다. 규제 변화, 인구 통계학적 요인, 그리고 운송 역량이 복합적으로 화물 운송 산업을 어떻게 재편하고 있는지 탐구합니다.",
-      "category": "항공·운송",
-      "importance": 9,
-      "reason": "운전자 부족은 육상 운송 비용 상승 및 서비스 품질 저하로 이어져 물류 운영 전반에 심각한 영향을 미치므로, 이에 대한 대응 전략 마련이 필수적입니다.",
-      "content_angle": "운전자 부족 문제의 심층 분석과 해결 방안(자동화, 인센티브 등)을 제시하는 콘텐츠로, 육상 운송의 미래와 혁신 방향을 논의할 수 있습니다.",
-      "keywords": [
-        "운전자 부족",
-        "화물 운송",
-        "시장 재조정",
-        "규제",
-        "인구 통계"
-      ],
-      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPU0dlazV3amxDakxrbUVPUXVJcEd6M19NUVcyaWE1U3VPcnd4MFdseDVKTUcxN1lVenQwdkJWZnNvTHo5eVo2MTI1MWlCdUdleXIyS3pqYzY0LXpnVEg5NHAwV090NFBScDZNdnY5UnM2eDJBTUJLTXRCTGJKd0tDNVhXdml2NTAwcDJqam5NWThxM0Z6VGFQR0tTSHFBQU42azc5cTgtNG1UbnRLeC1udElCY1U1NzM5Uk9KWFhIM2tpVkEyWGg0aEtTUnV5MmFSZUlr?oc=5",
-      "published": "2026-04-25 05:39",
-      "quality": {
-        "title_status": "번역완료",
-        "summary_status": "AI요약",
-        "analysis_status": "ai"
-      }
-    },
-    {
-      "rank": 4,
-      "region": "해외",
-      "classification": "해외",
-      "source": "Logistics Management",
-      "title": "Echo Global Logistics, 새크라멘토 냉장 보관 시설로 EchoChill 네트워크 확장",
-      "display_title": "Echo Global Logistics, 새크라멘토 냉장 보관 시설로 EchoChill 네트워크 확장",
-      "original_title": "Echo Global Logistics expands EchoChill network with new Sacramento cold storage facility",
-      "summary": [
-        "Echo Global Logistics가 캘리포니아 새크라멘토에 새로운 냉장 보관 시설을 추가하며 냉장 LTL 서비스 네트워크 'EchoChill'을 확장했다.",
-        "3자 물류 및 기술 기반 운송 서비스 제공업체로서 냉장 소량 화물 운송 시장의 수요 증가에 대응하기 위한 전략적 투자이다.",
-        "콜드체인 물류의 중요성이 증가하는 시장에서 서비스 역량을 강화하여 시장 점유율을 확대하고 고객에게 더 나은 서비스를 제공할 수 있다."
-      ],
-      "summary_text": "Echo Global Logistics가 캘리포니아 새크라멘토에 새로운 냉장 보관 시설을 추가하며 냉장 LTL 서비스 네트워크 'EchoChill'을 확장했다. 3자 물류 및 기술 기반 운송 서비스 제공업체로서 냉장 소량 화물 운송 시장의 수요 증가에 대응하기 위한 전략적 투자이다. 콜드체인 물류의 중요성이 증가하는 시장에서 서비스 역량을 강화하여 시장 점유율을 확대하고 고객에게 더 나은 서비스를 제공할 수 있다.",
-      "description": "시카고 기반의 3자 물류 및 기술 기반 운송 서비스 제공업체인 Echo Global Logistics가 캘리포니아 새크라멘토에 새로운 냉장 보관 시설을 추가하여 EchoChill이라는 냉장 LTL(소량 화물 운송) 서비스 네트워크를 확장했습니다.",
-      "category": "창고·물류센터",
-      "importance": 8,
-      "reason": "콜드체인 물류 시장의 성장세를 보여주며, 특정 분야에 대한 전문성 강화 및 네트워크 확장이 기업 경쟁력에 얼마나 중요한지 시사합니다.",
-      "content_angle": "콜드체인 물류 시장의 성장 동향과 주요 플레이어의 확장 전략을 분석하는 콘텐츠로, 틈새 시장 공략 방안을 논의할 수 있습니다.",
-      "keywords": [
-        "콜드체인",
-        "Echo Global Logistics",
-        "냉장 보관",
-        "LTL",
-        "물류 네트워크"
-      ],
-      "link": "https://www.logisticsmgmt.com/article/echo_global_logistics_expands_echochill_network_with_new_sacramento_cold_storage_facility",
-      "published": "2026-04-17 03:44",
-      "quality": {
-        "title_status": "번역완료",
-        "summary_status": "AI요약",
-        "analysis_status": "ai"
-      }
-    },
-    {
-      "rank": 5,
       "region": "국내",
       "classification": "국내",
       "source": "물류신문",
-      "title": "해수부, '군산항 제2준설토 투기장 조성공사' 착공",
-      "display_title": "해수부, '군산항 제2준설토 투기장 조성공사' 착공",
+      "title": "해수부, ‘군산항 제2준설토 투기장 조성공사’ 착공",
+      "display_title": "해수부, ‘군산항 제2준설토 투기장 조성공사’ 착공",
       "original_title": "해수부, ‘군산항 제2준설토 투기장 조성공사’ 착공",
       "summary": [
-        "해양수산부가 군산항 및 장항항의 준설토 처리를 위한 '군산항 제2준설토 투기장 조성공사'를 착공했다.",
-        "군산항과 장항항은 토사 퇴적으로 매년 유지 준설이 필요하며, 기존 투기장의 매립 완료가 임박하여 새로운 투기장이 요구되었다.",
-        "안정적인 항만 운영을 위한 필수 인프라 확보로, 항만 기능 유지 및 물류 흐름 안정성에 기여할 것이다."
+        "해양수산부(장관 황종우)는 군산항과 장항항에서 발생하는 준설토를 안정적으로 처리하기 위한 ‘군산항 제2준설토 투기장 조성공사’를 24일 착공한다고 전했다.금강 하구에 있는 군산항과 장항항은 선박이...",
+        "그러나 2028년이면 매립이 완료될 예정이어서 새로운 준설토 투기장 조성이 필요하다.이에 해양수산부는 2030년까지 국비 5,477억 원을 투입해 ‘군산항 제2",
+        "정책·공공 관점에서 시사점을 점검할 필요가 있습니다."
       ],
-      "summary_text": "해양수산부가 군산항 및 장항항의 준설토 처리를 위한 '군산항 제2준설토 투기장 조성공사'를 착공했다. 군산항과 장항항은 토사 퇴적으로 매년 유지 준설이 필요하며, 기존 투기장의 매립 완료가 임박하여 새로운 투기장이 요구되었다. 안정적인 항만 운영을 위한 필수 인프라 확보로, 항만 기능 유지 및 물류 흐름 안정성에 기여할 것이다.",
-      "description": "해양수산부가 군산항과 장항항의 준설토를 안정적으로 처리하기 위해 '군산항 제2준설토 투기장 조성공사'를 착공합니다. 2030년까지 국비 5,477억 원이 투입될 예정입니다.",
-      "category": "항만·해운",
-      "importance": 6,
-      "reason": "항만의 안정적인 운영과 장기적인 물류 처리 능력을 보장하는 필수 인프라 투자로, 지역 경제 및 물류 흐름에 영향을 미칩니다.",
-      "content_angle": "지역 항만의 지속 가능성을 위한 인프라 투자 사례로, 장기적인 관점의 항만 개발 전략을 다루는 콘텐츠로 활용할 수 있습니다.",
+      "summary_text": "해양수산부(장관 황종우)는 군산항과 장항항에서 발생하는 준설토를 안정적으로 처리하기 위한 ‘군산항 제2준설토 투기장 조성공사’를 24일 착공한다고 전했다.금강 하구에 있는 군산항과 장항항은 선박이... 그러나 2028년이면 매립이 완료될 예정이어서 새로운 준설토 투기장 조성이 필요하다.이에 해양수산부는 2030년까지 국비 5,477억 원을 투입해 ‘군산항 제2 정책·공공 관점에서 시사점을 점검할 필요가 있습니다.",
+      "description": "해양수산부(장관 황종우)는 군산항과 장항항에서 발생하는 준설토를 안정적으로 처리하기 위한 ‘군산항 제2준설토 투기장 조성공사’를 24일 착공한다고 전했다.금강 하구에 있는 군산항과 장항항은 선박이 통항하는 항로구간과 선박이접안하는 부두구간에 토사가 지속적으로 쌓이고 있어 매년 유지 준설이 필요하다.현재 발생되는 준설토는 인근의 금란도 투기장과 7부두 투기장에 매립하고 있다. 그러나 2028년이면 매립이 완료될 예정이어서 새로운 준설토 투기장 조성이 필요하다.이에 해양수산부는 2030년까지 국비 5,477억 원을 투입해 ‘군산항 제2",
+      "category": "정책·공공",
+      "importance": 5,
+      "reason": "정책·제도 변화가 물류 현장과 기업 대응 전략에 직접 영향을 줄 수 있는 이슈입니다.",
+      "content_angle": "정책 변화 해설, 실무 대응 가이드, 업계 영향 분석 콘텐츠로 활용할 수 있습니다.",
       "keywords": [
         "군산항",
-        "준설토",
-        "해양수산부",
-        "항만 인프라",
-        "유지 준설"
+        "투기장",
+        "군산항과",
+        "제2준설토"
       ],
       "link": "https://www.klnews.co.kr/news/articleView.html?idxno=320833",
       "published": "2026-04-22 22:51",
       "quality": {
         "title_status": "원문한국어",
-        "summary_status": "AI요약",
-        "analysis_status": "ai"
+        "summary_status": "기본정리",
+        "analysis_status": "fallback"
+      }
+    },
+    {
+      "rank": 4,
+      "region": "국내",
+      "classification": "국내",
+      "source": "물류신문",
+      "title": "한국해양진흥공사, 싱암감사 등 임원 공모",
+      "display_title": "한국해양진흥공사, 싱암감사 등 임원 공모",
+      "original_title": "한국해양진흥공사, 싱암감사 등 임원 공모",
+      "summary": [
+        "한국해양진흥공사(사장 안병길)는 임원 4명을 공개 모집한다.모집 대상은 상임감사 1명, 비상임이사 3명이다.",
+        "한국해양진흥공사는 임원 후보자 추천을 위한 임원추천위원회를 구성해 공개 모집 계획을 확정했다.지원 서류 제출 기간은 이달 21일부터 5월 4일까지이며, 임원추천위원회에서 심사를 거쳐 임원 후보자를...",
+        "정책·공공 관점에서 시사점을 점검할 필요가 있습니다."
+      ],
+      "summary_text": "한국해양진흥공사(사장 안병길)는 임원 4명을 공개 모집한다.모집 대상은 상임감사 1명, 비상임이사 3명이다. 한국해양진흥공사는 임원 후보자 추천을 위한 임원추천위원회를 구성해 공개 모집 계획을 확정했다.지원 서류 제출 기간은 이달 21일부터 5월 4일까지이며, 임원추천위원회에서 심사를 거쳐 임원 후보자를... 정책·공공 관점에서 시사점을 점검할 필요가 있습니다.",
+      "description": "한국해양진흥공사(사장 안병길)는 임원 4명을 공개 모집한다.모집 대상은 상임감사 1명, 비상임이사 3명이다. 한국해양진흥공사는 임원 후보자 추천을 위한 임원추천위원회를 구성해 공개 모집 계획을 확정했다.지원 서류 제출 기간은 이달 21일부터 5월 4일까지이며, 임원추천위원회에서 심사를 거쳐 임원 후보자를 추천하고 임명권자가 최종 임명할 예정이다.자세한 사항은 한국해양진흥공사 홈페이지에서 확인할 수 있다.",
+      "category": "정책·공공",
+      "importance": 5,
+      "reason": "정책·제도 변화가 물류 현장과 기업 대응 전략에 직접 영향을 줄 수 있는 이슈입니다.",
+      "content_angle": "정책 변화 해설, 실무 대응 가이드, 업계 영향 분석 콘텐츠로 활용할 수 있습니다.",
+      "keywords": [
+        "임원",
+        "한국해양진흥공사",
+        "공개",
+        "모집"
+      ],
+      "link": "https://www.klnews.co.kr/news/articleView.html?idxno=320827",
+      "published": "2026-04-22 22:51",
+      "quality": {
+        "title_status": "원문한국어",
+        "summary_status": "기본정리",
+        "analysis_status": "fallback"
+      }
+    },
+    {
+      "rank": 5,
+      "region": "해외",
+      "classification": "해외",
+      "source": "Logistics Management",
+      "title": "Refund process for IEEPA tariffs is set to go live April 20",
+      "display_title": "Refund process for IEEPA tariffs is set to go live April 20",
+      "original_title": "Refund process for IEEPA tariffs is set to go live April 20",
+      "summary": [
+        "Companies that paid tariffs later ruled unlawful under the International Emergency Economic Powers Act (IEEPA)...",
+        "Customs and Border Protection.",
+        "정책·공공 관점에서 시사점을 점검할 필요가 있습니다."
+      ],
+      "summary_text": "Companies that paid tariffs later ruled unlawful under the International Emergency Economic Powers Act (IEEPA)... Customs and Border Protection. 정책·공공 관점에서 시사점을 점검할 필요가 있습니다.",
+      "description": "Companies that paid tariffs later ruled unlawful under the International Emergency Economic Powers Act (IEEPA) will be able to start filing refund claims April 20, according to U.S. Customs and Border Protection.",
+      "category": "정책·공공",
+      "importance": 5,
+      "reason": "정책·제도 변화가 물류 현장과 기업 대응 전략에 직접 영향을 줄 수 있는 이슈입니다.",
+      "content_angle": "정책 변화 해설, 실무 대응 가이드, 업계 영향 분석 콘텐츠로 활용할 수 있습니다.",
+      "keywords": [
+        "to",
+        "20",
+        "april",
+        "ieepa"
+      ],
+      "link": "https://www.logisticsmgmt.com/article/refund_process_for_ieepa_tariffs_is_set_to_go_live_april_20",
+      "published": "2026-04-18 04:22",
+      "quality": {
+        "title_status": "원문표시",
+        "summary_status": "기본정리",
+        "analysis_status": "fallback"
       }
     }
   ],
   "content_ideas": [
     {
       "rank": 1,
-      "topic": "해운업의 친환경 대전환: 암모니아 연료의 미래와 산업 영향",
-      "reason": "세계 최초 암모니아 선박 급유 성공은 해운업계의 탈탄소화 노력에 있어 매우 중요한 이정표입니다. 이 콘텐츠는 시청자들이 차세대 친환경 연료인 암모니아의 도입이 해운 산업 전반에 미칠 영향과 준비해야 할 변화를 심층적으로 이해하고, 관련 기업들의 미래 전략 수립에 실질적인 인사이트를 얻을 수 있도록 돕습니다.",
-      "video_title": "세계 최초! 암모니아 선박 급유 성공, 해운업의 미래가 바뀐다! (ft. 탈탄소 혁명)",
-      "format": "해설형",
+      "topic": "중동 물류 지형 변화 및 공급망 위기 대응 전략",
+      "reason": "현재 중동발 공급망 이슈를 이해하고, 단기적 대응 방안(KITA 지원)과 장기적 인프라 변화(UAE 철도)를 종합적으로 파악하여 실무에 적용할 인사이트를 제공합니다. 특히 새로운 운송 수단이 기존 해운/항공 물류에 미칠 영향 예측은 경쟁 우위 확보에 도움이 됩니다.",
+      "video_title": "🚨중동 물류 대란: UAE 철도 개통이 게임 체인저? KITA 지원 활용법과 미래 공급망 전략!",
+      "format": "전망형",
       "based_on_titles": [
-        "울산항만공사, 세계 최초 '암모니아 연료' 선박 급유 성공"
+        "UAE Transforms Travel and Logistics, Etihad Rail’s Historic First Car Shipment Marks the Dawn of a New Era in Sustainable Transportation - Travel And Tour World",
+        "중동발 공급망 대란에…한국무역협회, 해상·항공 수출물류 지원나서 - newsis.com"
       ]
     },
     {
       "rank": 2,
-      "topic": "AI, 공급망 혁신의 핵심 동인! 우리 기업은 어떻게 준비해야 할까?",
-      "reason": "AI가 향후 10년간 공급망의 가장 큰 혁신 동인으로 지목되면서, 물류업계는 AI 기술 도입과 인력 재교육, 프로세스 혁신에 대한 압박을 느끼고 있습니다. 이 콘텐츠는 AI 도입의 필요성을 명확히 하고, 실제 물류 현장에서 AI를 어떻게 적용하고 활용하여 경쟁력을 강화할 수 있는지 구체적인 가이드라인과 성공 사례를 제시하여 시청자들의 실무적 고민을 해결하는 데 기여합니다.",
-      "video_title": "물류업 AI 도입, 이렇게 해야 성공한다! | 공급망 혁신의 필수 기술 완벽 분석",
+      "topic": "항만 인프라의 필수 요소: 준설토 투기장과 지속 가능한 항만 운영",
+      "reason": "항만 개발의 숨겨진 복잡성 중 준설토 처리의 중요성을 이해하고, 환경 문제와 항만 경쟁력 강화에 대한 정책적 노력을 심층적으로 파악하여 물류 전문가로서 보다 넓은 시야를 갖추는 데 기여합니다.",
+      "video_title": "🚢물류 전문가도 몰랐던 항만 비밀: 군산항 준설토 투기장이 왜 중요할까? (환경 & 경제)",
       "format": "설명형",
       "based_on_titles": [
-        "MHI 및 Deloitte 보고서, AI가 향후 10년간 공급망의 최대 혁신 동인으로 지목"
+        "해수부, ‘군산항 제2준설토 투기장 조성공사’ 착공"
       ]
     },
     {
       "rank": 3,
-      "topic": "운전자 부족 시대, 물류 기업의 생존 전략: AI와 콜드체인으로 돌파구를 찾다",
-      "reason": "만성적인 운전자 부족과 강화되는 규제는 화물 운송 산업에 근본적인 재조정을 요구하고 있습니다. 이 콘텐츠는 이러한 구조적인 문제를 진단하고, AI 기반의 운송 최적화, 자동화 도입, 그리고 콜드체인 물류와 같은 특화된 시장 확장을 통해 인력난을 극복하고 변화하는 시장 환경에 선제적으로 대응할 수 있는 실질적인 전략과 아이디어를 제공하여 시청자들이 미래 비즈니스 기회를 포착하는 데 도움을 줍니다.",
-      "video_title": "트럭 운전사 사라진다? 인력난 시대, 물류 기업 생존 전략 (ft. AI & 콜드체인)",
-      "format": "전망형",
+      "topic": "국제 무역 관세 환급 가이드: IEEPA 관세 환급 절차와 실무적 대응 방안",
+      "reason": "국제 무역 관련 실무자들이 복잡한 관세 규정 변화를 파악하고, 실제로 재정적 이득을 얻을 수 있는 구체적인 방법을 안내합니다. 이는 기업의 비용 절감 및 리스크 관리에 직접적인 도움을 주며, 정책 변화에 대한 민감성을 높이는 데 기여합니다.",
+      "video_title": "💰놓치면 손해! IEEPA 관세 환급, 지금 바로 신청하세요! (feat. 미국 CBP 실무 가이드)",
+      "format": "해설형",
       "based_on_titles": [
-        "운전자 부족인가, 시장 재조정인가? 규제, 인구 통계, 그리고 역량이 화물 운송을 재편하는 방법",
-        "MHI 및 Deloitte 보고서, AI가 향후 10년간 공급망의 최대 혁신 동인으로 지목",
-        "Echo Global Logistics, 새크라멘토 냉장 보관 시설로 EchoChill 네트워크 확장"
+        "Refund process for IEEPA tariffs is set to go live April 20"
       ]
     }
   ]
