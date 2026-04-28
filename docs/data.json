@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28 07:43",
+  "generated_at": "2026-04-28 19:33",
   "analysis_date": "2026-04-28",
   "project_overview": {
     "project_name": "국내외 물류 뉴스 자동 브리핑 및 콘텐츠 아이디어 도출 시스템",
@@ -13,80 +13,78 @@
     "final_deliverable": "테오시스 홈페이지용 data.json"
   },
   "brief": {
-    "총평": "글로벌 해운 시장은 동맹 재편과 트럭 운송량 증가로 변화와 활력을 보이고 있으며, 국내에서는 인천항 시설 투자 및 활용 기회가 확인됩니다. 기술 통합을 통한 라스트마일 효율화 동향도 주목해야 합니다.",
-    "국내동향": "인천항만공사가 내항 시설 임대 입찰 공고를 내 우리 회사의 사업 확장 기회를 제공하고 있습니다. 또한, 인천항 노후 시설 보수보강 공사가 착공되어 장기적인 항만 운영 안정성과 효율성 향상이 기대됩니다.",
-    "해외동향": "글로벌 해운 동맹 재편이 공급망 구조와 운임에 큰 영향을 미치며, UPS 자회사의 당일 배송 통합은 라스트마일 효율화의 새로운 기준을 제시하고 있습니다. 미국 트럭 운송량 증가는 글로벌 물동량 회복의 긍정적 신호입니다.",
-    "리스크포인트": "해운 동맹의 재편은 시장 경쟁 구도와 운임 변동성 증폭으로 이어질 수 있어, 면밀한 모니터링과 유연한 해운 전략 수립이 필요합니다. 급변하는 라스트마일 기술 혁신에 뒤처지지 않도록 시장 변화에 대한 지속적인 관심이 요구됩니다.",
-    "기회포인트": "인천항 내항 시설 입찰은 우리 회사의 사업 영역을 확장하고 물동량 처리 역량을 강화할 수 있는 직접적인 기회입니다. 해외의 당일 배송 효율화 기술 통합 사례를 통해 국내 라스트마일 서비스 개선 및 비용 절감 방안을 모색할 수 있습니다.",
-    "오늘의한줄": "글로벌 시장의 변화와 국내 인프라 기회를 활용하여 경쟁력을 강화하고 라스트마일 혁신을 주도할 시점입니다."
+    "총평": "국내에서는 주요 공공기관들이 연구 협력 및 동반성장 등 상생을 통한 역량 강화에 집중하는 모습입니다. 반면 해외에서는 중동발 리스크가 공급망 불안정을 넘어 기업의 파산 위험까지 확대될 수 있다는 경고가 나왔습니다.",
+    "국내동향": "인천공항공사는 서울연구원과의 연구 협력을 통해 미래 전략을 모색하고, 부산항만공사는 4년 연속 동반성장 최우수 기관으로 선정되었습니다. 이는 국내 주요 공공기관들이 지속 가능한 성장을 위해 상생 협력 및 ESG 경영을 강화하고 있음을 보여줍니다.",
+    "해외동향": "UPS 자회사 로디(Roadie)와 센티로(Centiro)의 통합을 통해 유통업체를 위한 당일 배송 서비스가 더욱 효율화되고 있습니다. 이는 마지막 마일 배송 시장의 경쟁 심화와 기술 통합 트렌드를 시사합니다.",
+    "리스크포인트": "중동 위기가 공급망 불안정을 넘어 기업의 재정 건전성까지 위협할 수 있다는 경고가 나왔습니다. 이는 물류 운영 비용 증가 및 운송 지연은 물론, 장기적으로 파트너사나 고객사의 파산으로 이어질 수 있어 면밀한 주시가 필요합니다.",
+    "기회포인트": "당일 배송 서비스의 효율화를 위한 기술 통합 트렌드는 국내외 시장에서 새로운 서비스 모델 발굴의 기회를 제공합니다. 특히 B2B 또는 B2C 마지막 마일 배송 역량 강화에 대한 투자 및 파트너십을 고려해볼 수 있습니다.",
+    "오늘의한줄": "국내는 상생과 미래 준비에 집중하는 동안, 해외 지정학적 리스크가 심화되는 가운데 마지막 마일 서비스의 혁신 기회를 포착해야 합니다."
   },
   "top_news": [
     {
       "rank": 1,
-      "region": "해외",
-      "classification": "해외",
-      "source": "Google News Global",
-      "title": "해운 동맹이 글로벌 공급망 역량을 재편하고 있다",
-      "display_title": "해운 동맹이 글로벌 공급망 역량을 재편하고 있다",
-      "original_title": "Shipping Alliances Are Reshaping Global Supply Chain Capacity - Logistics Viewpoints",
+      "region": "국내",
+      "classification": "국내",
+      "source": "물류신문",
+      "title": "KOEM, 개도국 해양보호구역 관리자 역량강화 워크숍 개최",
+      "display_title": "KOEM, 개도국 해양보호구역 관리자 역량강화 워크숍 개최",
+      "original_title": "KOEM, 개도국 해양보호구역 관리자 역량강화 워크숍 개최",
       "summary": [
-        "해운 동맹(Shipping Alliances)이 글로벌 공급망의 역량과 구조를 변화시키고 있다.",
-        "해운 동맹은 선사 간 협력을 통해 선복량, 노선 등을 공유하며 운영 효율성을 높이고 시장 영향력을 확대한다.",
-        "글로벌 해상 운송 시장의 경쟁 구도와 서비스 품질, 운임 등에 큰 영향을 미치므로, 우리 회사의 해운 전략 수립에 필수적인 고려 사항이다."
+        "KOEM, 개도국 해양보호구역 관리자 역량강화 워크숍 개최",
+        "해양환경공단(KOEM, 이사장 강용석)은 세계자연보전연맹(IUCN)과의 협력사업 일환으로, 지난 20일부터 23일까지 ‘개도국 해양보호구역 관리자 역량강화 워크숍’을 가졌다고 전했다.해양환경공단과...",
+        "정책·공공 관점에서 후속 흐름을 살펴볼 필요가 있습니다."
       ],
-      "summary_text": "해운 동맹(Shipping Alliances)이 글로벌 공급망의 역량과 구조를 변화시키고 있다. 해운 동맹은 선사 간 협력을 통해 선복량, 노선 등을 공유하며 운영 효율성을 높이고 시장 영향력을 확대한다. 글로벌 해상 운송 시장의 경쟁 구도와 서비스 품질, 운임 등에 큰 영향을 미치므로, 우리 회사의 해운 전략 수립에 필수적인 고려 사항이다.",
-      "description": "해운 동맹은 글로벌 공급망의 역량을 재편하는 주요 요인으로 작용하고 있다.",
-      "category": "항만·해운",
-      "importance": 9,
-      "reason": "해운 동맹의 변화는 글로벌 해상 운송 시장의 운임, 선복 가용성, 서비스 네트워크에 직접적인 영향을 미쳐 우리 회사의 국제 물류 전략 수립에 매우 중요합니다.",
-      "content_angle": "글로벌 해운 시장 분석 브리핑 자료로 활용하여, 해운 동맹 재편이 우리 회사 해상 운송 서비스 및 운임 전략에 미칠 영향에 대한 깊이 있는 토론을 진행할 수 있다.",
+      "summary_text": "KOEM, 개도국 해양보호구역 관리자 역량강화 워크숍 개최 해양환경공단(KOEM, 이사장 강용석)은 세계자연보전연맹(IUCN)과의 협력사업 일환으로, 지난 20일부터 23일까지 ‘개도국 해양보호구역 관리자 역량강화 워크숍’을 가졌다고 전했다.해양환경공단과... 정책·공공 관점에서 후속 흐름을 살펴볼 필요가 있습니다.",
+      "description": "해양환경공단(KOEM, 이사장 강용석)은 세계자연보전연맹(IUCN)과의 협력사업 일환으로, 지난 20일부터 23일까지 ‘개도국 해양보호구역 관리자 역량강화 워크숍’을 가졌다고 전했다.해양환경공단과 세계자연보전연맹(IUCN)은 2021년 7월 아시아 지역 해양보호구역 확대 및 관리 효과성 증대를 위한 업무협약을 체결하고, 매년 개도국 대상 ‘해양 생태계 보전 및 관리’ 사업을 공동으로 시행하고 있다.이번 워크숍에는 공단, 세계자연보전연맹(IUCN), 스리랑카 관계자 등 20여 명이 참석했으며 ▲우리나라 해양보호구역 관리 정책, ▲부산",
+      "category": "정책·공공",
+      "importance": 5,
+      "reason": "정책·제도 변화가 물류 현장과 기업 대응 전략에 직접 영향을 줄 수 있는 이슈입니다.",
+      "content_angle": "정책 변화 해설, 실무 대응 가이드, 업계 영향 분석 콘텐츠로 활용할 수 있습니다.",
       "keywords": [
-        "해운 동맹",
-        "글로벌 공급망",
-        "선복량",
-        "해상 운송",
-        "시장 재편"
+        "해양보호구역",
+        "iucn",
+        "개도국",
+        "관리"
       ],
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNc042a25iUm0tMTBhdFVXVUlCZUhmYUs1dUQ2UUdEVG9teFd3MU0ySnNkM1B4Ymg3NV91R2Z0bmt6N2VWWmZWVGl5WFV3NVM5LXU4MHpFMEVtbGJDQnhFMkM3WEFPTlVHWmg4NDZQbG5TSkUxWWVNdmNQczJUYjlzMTFSTzFlR0R6djdNd0pDbzZXalRQMmZheEh1TnJBUGdxcEFPWG9Id3c?oc=5",
-      "published": "2026-04-28 03:43",
+      "link": "https://www.klnews.co.kr/news/articleView.html?idxno=320901",
+      "published": "2026-04-28 10:20",
       "quality": {
-        "title_status": "번역완료",
-        "summary_status": "AI요약",
-        "analysis_status": "ai"
+        "title_status": "원문한국어",
+        "summary_status": "기본정리",
+        "analysis_status": "fallback"
       }
     },
     {
       "rank": 2,
-      "region": "해외",
-      "classification": "해외",
-      "source": "Logistics Management",
-      "title": "로디와 센티로, 당일 배송 간소화를 위한 통합 발표",
-      "display_title": "로디와 센티로, 당일 배송 간소화를 위한 통합 발표",
-      "original_title": "Roadie and Centiro integration streamlines same-day delivery for retailers",
+      "region": "국내",
+      "classification": "국내",
+      "source": "물류신문",
+      "title": "인천공항공사, 서울연구원과 연구협력 협약 체결",
+      "display_title": "인천공항공사, 서울연구원과 연구협력 협약 체결",
+      "original_title": "인천공항공사, 서울연구원과 연구협력 협약 체결",
       "summary": [
-        "UPS 자회사 로디와 센티로가 당일 배송 효율성 증대를 위한 통합을 발표했다.",
-        "소매업체와 3PL은 이 통합을 통해 당일 배송 서비스를 비용 효율적으로 확장하고 창고 운영을 원활하게 유지할 수 있다.",
-        "최종 소비자 만족도 향상과 함께 물류 운영 효율성을 극대화할 수 있는 솔루션으로, 국내 라스트마일 시장에도 영향을 줄 수 있다."
+        "인천공항공사, 서울연구원과 연구협력 협약 체결",
+        "인천국제공항공사(사장직무대행 김범호 )는 지난 24일 서울연구원과 ‘상호협력 및 연구 네트워크 강화를 위한 업무협약’을 체결했다고 26일 밝혔다.이날 협약식에는 인천국제공항공사 김범호 사장직무대행,...",
+        "정책·공공 관점에서 후속 흐름을 살펴볼 필요가 있습니다."
       ],
-      "summary_text": "UPS 자회사 로디와 센티로가 당일 배송 효율성 증대를 위한 통합을 발표했다. 소매업체와 3PL은 이 통합을 통해 당일 배송 서비스를 비용 효율적으로 확장하고 창고 운영을 원활하게 유지할 수 있다. 최종 소비자 만족도 향상과 함께 물류 운영 효율성을 극대화할 수 있는 솔루션으로, 국내 라스트마일 시장에도 영향을 줄 수 있다.",
-      "description": "UPS 자회사 로디와 스웨덴 배송 관리 소프트웨어 제공업체 센티로는 소매업체와 3PL이 창고 운영에 지장 없이 당일 배송을 더 빠르고 비용 효율적으로 확장할 수 있도록 하는 통합을 발표했다.",
-      "category": "자동화·기술",
-      "importance": 8,
-      "reason": "당일 배송 경쟁 심화 속에서 비용 효율적인 라스트마일 솔루션은 시장 선점과 고객 만족도 향상에 필수적이므로 주목해야 합니다.",
-      "content_angle": "당일 배송 시장의 최신 트렌드와 기술 통합 사례를 분석하여 국내 라스트마일 서비스 혁신 방안에 대한 유튜브 콘텐츠를 제작할 수 있다.",
+      "summary_text": "인천공항공사, 서울연구원과 연구협력 협약 체결 인천국제공항공사(사장직무대행 김범호 )는 지난 24일 서울연구원과 ‘상호협력 및 연구 네트워크 강화를 위한 업무협약’을 체결했다고 26일 밝혔다.이날 협약식에는 인천국제공항공사 김범호 사장직무대행,... 정책·공공 관점에서 후속 흐름을 살펴볼 필요가 있습니다.",
+      "description": "인천국제공항공사(사장직무대행 김범호 )는 지난 24일 서울연구원과 ‘상호협력 및 연구 네트워크 강화를 위한 업무협약’을 체결했다고 26일 밝혔다.이날 협약식에는 인천국제공항공사 김범호 사장직무대행, 공사 송치웅 공항산업기술연구원장, 서울연구원 오균 원장을 비롯하여 양 기관 관계자 약 10명이 참석했다.이번 협약에 따라 양 기관은 △주요 정책·기술 현안에 대한 공동 연구 및 의제 발굴, △학술연구정보 및 연구 인프라 공동 활용, △시설 및 현장 실증 기반 연구협력 확대, △연구성과 상호공유 및 공동학술행사 개최, △연구 인력 및 관련",
+      "category": "정책·공공",
+      "importance": 5,
+      "reason": "정책·제도 변화가 물류 현장과 기업 대응 전략에 직접 영향을 줄 수 있는 이슈입니다.",
+      "content_angle": "정책 변화 해설, 실무 대응 가이드, 업계 영향 분석 콘텐츠로 활용할 수 있습니다.",
       "keywords": [
-        "로디",
-        "센티로",
-        "당일 배송",
-        "라스트마일",
-        "배송 관리 소프트웨어"
+        "연구",
+        "공동",
+        "김범호",
+        "사장직무대행"
       ],
-      "link": "https://www.logisticsmgmt.com/article/roadie_and_centiro_integration_streamlines_same_day_delivery_for_retailers",
-      "published": "2026-04-28 00:42",
+      "link": "https://www.klnews.co.kr/news/articleView.html?idxno=320902",
+      "published": "2026-04-28 10:20",
       "quality": {
-        "title_status": "번역완료",
-        "summary_status": "AI요약",
-        "analysis_status": "ai"
+        "title_status": "원문한국어",
+        "summary_status": "기본정리",
+        "analysis_status": "fallback"
       }
     },
     {
@@ -94,135 +92,132 @@
       "region": "국내",
       "classification": "국내",
       "source": "물류신문",
-      "title": "인천항만공사, 인천 내항 항동7가 항만시설 사용 입찰 공고",
-      "display_title": "인천항만공사, 인천 내항 항동7가 항만시설 사용 입찰 공고",
-      "original_title": "IPA, 인천 내항 항동7가 항만시설 사용 입찰 공고 실시",
+      "title": "BPA, 공공기관 동반성장 평가 4년 연속 ‘최우수’",
+      "display_title": "BPA, 공공기관 동반성장 평가 4년 연속 ‘최우수’",
+      "original_title": "BPA, 공공기관 동반성장 평가 4년 연속 ‘최우수’",
       "summary": [
-        "인천항만공사가 인천 내항 항동7가 항만시설 사용을 위한 입찰 공고를 실시했다.",
-        "수출입 화물 처리 및 지원시설 용도로 부지와 건물을 공개 경쟁 방식으로 임대하며, 연간 예정가격은 약 1억 1천만 원, 사용 기간은 최대 5년이다.",
-        "인천 내항의 유휴 시설을 활용하여 물류 활성화를 도모하고, 우리 회사에게는 인천항에서의 사업 확장 기회가 될 수 있다."
+        "부산항만공사(BPA, 사장 송상근)는 중소벤처기업부가 발표한 ‘2025년도 공공기관 동반성장 평가’에서 최고 등급인 최우수를 획득했다고 지난 27일 밝혔다.",
+        "이로써 부산항만공사는 2022년 이후 4년 연속 동반성장 최우수 기관 기록을 이어갔다.중소벤처기업부가 주관하는 ‘공공기관 동반성장 평가’는 공공기관이 중소기업과의 상생협력을 독려하는 데 목적을 두고...",
+        "부산항만공사는 동반성장 전략 수립의 적절성, 상생협력 기금의 출현, 성과공유제 확산 등 전 지표에서 우수성을 인정받았다."
       ],
-      "summary_text": "인천항만공사가 인천 내항 항동7가 항만시설 사용을 위한 입찰 공고를 실시했다. 수출입 화물 처리 및 지원시설 용도로 부지와 건물을 공개 경쟁 방식으로 임대하며, 연간 예정가격은 약 1억 1천만 원, 사용 기간은 최대 5년이다. 인천 내항의 유휴 시설을 활용하여 물류 활성화를 도모하고, 우리 회사에게는 인천항에서의 사업 확장 기회가 될 수 있다.",
-      "description": "인천항만공사가 인천 내항 항동7가 일원 항만시설(부지 2,916.73㎡, 건물 782㎡)의 효율적 활용과 항만물류 활성화를 위해 사용 입찰을 공고했다. 수출입 화물 처리시설 및 지원시설 용도로 활용할 사업자를 공개 경쟁 방식으로 선정하며, 예정가격은 연간 약 1억 1천만 원, 사용기간은 최대 5년이다.",
-      "category": "투자·경영",
-      "importance": 8,
-      "reason": "인천항 내 핵심 시설의 사용 입찰은 우리 회사의 사업 확장 및 물류 운영 효율성 증대를 위한 직접적인 기회가 될 수 있으므로, 적극적인 검토가 필요합니다.",
-      "content_angle": "인천항 사업 확장을 위한 투자 검토 자료로 활용하여, 해당 시설의 장단점 및 사업 시너지 효과에 대한 심층 분석을 진행할 수 있다.",
+      "summary_text": "부산항만공사(BPA, 사장 송상근)는 중소벤처기업부가 발표한 ‘2025년도 공공기관 동반성장 평가’에서 최고 등급인 최우수를 획득했다고 지난 27일 밝혔다. 이로써 부산항만공사는 2022년 이후 4년 연속 동반성장 최우수 기관 기록을 이어갔다.중소벤처기업부가 주관하는 ‘공공기관 동반성장 평가’는 공공기관이 중소기업과의 상생협력을 독려하는 데 목적을 두고... 부산항만공사는 동반성장 전략 수립의 적절성, 상생협력 기금의 출현, 성과공유제 확산 등 전 지표에서 우수성을 인정받았다.",
+      "description": "부산항만공사(BPA, 사장 송상근)는 중소벤처기업부가 발표한 ‘2025년도 공공기관 동반성장 평가’에서 최고 등급인 최우수를 획득했다고 지난 27일 밝혔다. 이로써 부산항만공사는 2022년 이후 4년 연속 동반성장 최우수 기관 기록을 이어갔다.중소벤처기업부가 주관하는 ‘공공기관 동반성장 평가’는 공공기관이 중소기업과의 상생협력을 독려하는 데 목적을 두고 있다. 부산항만공사는 동반성장 전략 수립의 적절성, 상생협력 기금의 출현, 성과공유제 확산 등 전 지표에서 우수성을 인정받았다. 특히 협력사들이 직접 평가하는 동반성장 체감도 조사에",
+      "category": "정책·공공",
+      "importance": 5,
+      "reason": "정책·제도 변화가 물류 현장과 기업 대응 전략에 직접 영향을 줄 수 있는 이슈입니다.",
+      "content_angle": "정책 변화 해설, 실무 대응 가이드, 업계 영향 분석 콘텐츠로 활용할 수 있습니다.",
       "keywords": [
-        "인천항만공사",
-        "인천 내항",
-        "항만 시설",
-        "입찰 공고",
-        "물류 활성화"
+        "동반성장",
+        "공공기관",
+        "평가",
+        "4년"
       ],
-      "link": "https://www.klnews.co.kr/news/articleView.html?idxno=320877",
-      "published": "2026-04-27 16:34",
+      "link": "https://www.klnews.co.kr/news/articleView.html?idxno=320897",
+      "published": "2026-04-28 10:20",
       "quality": {
         "title_status": "원문한국어",
-        "summary_status": "AI요약",
-        "analysis_status": "ai"
+        "summary_status": "기본정리",
+        "analysis_status": "fallback"
       }
     },
     {
       "rank": 4,
       "region": "해외",
       "classification": "해외",
-      "source": "Logistics Management",
-      "title": "ATA, 1분기 트럭 운송량 증가 보고",
-      "display_title": "ATA, 1분기 트럭 운송량 증가 보고",
-      "original_title": "Truck tonnage levels finish Q1 with gains, reports ATA",
+      "source": "Google News Global",
+      "title": "Middle East crisis turns supply-chain stress into insolvency risk - Trans.INFO",
+      "display_title": "Middle East crisis turns supply-chain stress into insolvency risk - Trans.INFO",
+      "original_title": "Middle East crisis turns supply-chain stress into insolvency risk - Trans.INFO",
       "summary": [
-        "미국트럭운송협회(ATA)에 따르면 3월 트럭 운송량이 전월 대비 및 전년 대비 모두 증가하여 1분기를 상승세로 마감했다.",
-        "3월 계절 조정 운송량 지수는 117.0을 기록했으며, 이는 2월 대비 2.9% 상승, 전년 대비 3% 상승한 수치로 2022년 10월 이후 최고 연간 증가율이다.",
-        "미국 내수 경제 활동의 활성화와 물동량 증가를 시사하며, 이는 글로벌 공급망 및 운송 시장의 긍정적인 신호로 해석될 수 있다."
+        "Middle East crisis turns supply-chain stress into insolvency risk - Trans.INFO",
+        "Middle East crisis turns supply-chain stress into insolvency risk Trans.INFO",
+        "안전·리스크 관점에서 후속 흐름을 살펴볼 필요가 있습니다."
       ],
-      "summary_text": "미국트럭운송협회(ATA)에 따르면 3월 트럭 운송량이 전월 대비 및 전년 대비 모두 증가하여 1분기를 상승세로 마감했다. 3월 계절 조정 운송량 지수는 117.0을 기록했으며, 이는 2월 대비 2.9% 상승, 전년 대비 3% 상승한 수치로 2022년 10월 이후 최고 연간 증가율이다. 미국 내수 경제 활동의 활성화와 물동량 증가를 시사하며, 이는 글로벌 공급망 및 운송 시장의 긍정적인 신호로 해석될 수 있다.",
-      "description": "미국트럭운송협회(ATA)는 3월 계절 조정된 유료 트럭 운송량 지수가 117.0으로 2월의 116.6보다 상승했으며, 연간 3% 증가하여 2022년 10월 이후 가장 높은 연간 증가율을 기록했다고 보고했다.",
-      "category": "항공·운송",
-      "importance": 7,
-      "reason": "미국 내 육상 운송량 증가는 경제 회복 신호이자 글로벌 물동량 증가 기대로 이어져 우리 회사의 사업 계획 및 투자 결정에 중요한 지표가 됩니다.",
-      "content_angle": "글로벌 물류 시장 동향 분석 브리핑 자료로 활용하여, 미국 경제 회복이 한국 물류 기업에 미칠 영향에 대한 인사이트를 제공할 수 있다.",
+      "summary_text": "Middle East crisis turns supply-chain stress into insolvency risk - Trans.INFO Middle East crisis turns supply-chain stress into insolvency risk Trans.INFO 안전·리스크 관점에서 후속 흐름을 살펴볼 필요가 있습니다.",
+      "description": "Middle East crisis turns supply-chain stress into insolvency risk Trans.INFO",
+      "category": "안전·리스크",
+      "importance": 5,
+      "reason": "기술 도입은 운영 효율과 가시성 개선에 직결되므로 업계 파급력이 큰 편입니다.",
+      "content_angle": "자동화·디지털 전환 사례와 현장 적용 포인트를 설명하는 콘텐츠에 적합합니다.",
       "keywords": [
-        "트럭 운송량",
-        "ATA",
-        "물동량",
-        "미국 경제",
-        "육상 운송"
+        "chain",
+        "crisis",
+        "east",
+        "info"
       ],
-      "link": "https://www.logisticsmgmt.com/article/truck_tonnage_levels_finish_q1_with_gains_reports_ata",
-      "published": "2026-04-27 23:16",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4yTWdHVk9Ya212blNYb2JEWWdWeDk2WGlveUU5ZTVGbS13NlBjbVUzeWoyTFNoWTFDODVsMXNOMWJXa3M3Q2FTbmRIMHhZczJCUHdQY2s1OW96SG1JRkRNUA?oc=5",
+      "published": "2026-04-28 17:48",
       "quality": {
-        "title_status": "번역완료",
-        "summary_status": "AI요약",
-        "analysis_status": "ai"
+        "title_status": "원문표시",
+        "summary_status": "기본정리",
+        "analysis_status": "fallback"
       }
     },
     {
       "rank": 5,
-      "region": "국내",
-      "classification": "국내",
-      "source": "물류신문",
-      "title": "인천항만공사, 인천항 토목시설물 보수보강공사 착공",
-      "display_title": "인천항만공사, 인천항 토목시설물 보수보강공사 착공",
-      "original_title": "IPA, 인천항 토목시설물 보수보강공사 착공",
+      "region": "해외",
+      "classification": "해외",
+      "source": "Logistics Management",
+      "title": "Roadie and Centiro integration streamlines same-day delivery for retailers",
+      "display_title": "Roadie and Centiro integration streamlines same-day delivery for retailers",
+      "original_title": "Roadie and Centiro integration streamlines same-day delivery for retailers",
       "summary": [
-        "인천항만공사가 인천항 노후 토목시설물 안전성 확보를 위한 보수보강 공사에 착수했다.",
-        "19억 원 규모의 이 공사는 약 7개월간 연안카페리부두, 국제여객부두 등 인천항 17개 주요 거점에서 진행되며, 정밀안전점검 결과에 따른 구조적 결함을 개선한다.",
-        "항만 인프라의 안정적인 유지는 물동량 처리 효율성과 직결되므로, 장기적인 항만 경쟁력 강화에 긍정적인 영향을 미칠 것이다."
+        "Roadie and Centiro integration streamlines same-day delivery for retailers",
+        "UPS subsidiary Roadie, an on-the-way delivery service with the nation’s largest local same-day footprint, and...",
+        "항공·운송 관점에서 후속 흐름을 살펴볼 필요가 있습니다."
       ],
-      "summary_text": "인천항만공사가 인천항 노후 토목시설물 안전성 확보를 위한 보수보강 공사에 착수했다. 19억 원 규모의 이 공사는 약 7개월간 연안카페리부두, 국제여객부두 등 인천항 17개 주요 거점에서 진행되며, 정밀안전점검 결과에 따른 구조적 결함을 개선한다. 항만 인프라의 안정적인 유지는 물동량 처리 효율성과 직결되므로, 장기적인 항만 경쟁력 강화에 긍정적인 영향을 미칠 것이다.",
-      "description": "인천항만공사(IPA)는 인천항 내 노후 토목시설물의 안전성 확보와 내구연한 증진을 위해 약 19억 원 규모의 '2026년 인천항 토목시설물 보수보강공사'를 착공한다고 밝혔다. 7개월간 연안카페리부두, 국제여객부두, 남항 및 신항 등 17개 주요 거점을 대상으로 콘크리트 단면복구, 균열부 보수 등을 진행한다.",
-      "category": "항만·해운",
-      "importance": 7,
-      "reason": "인천항 시설 개선은 우리 회사의 항만 이용 효율성을 높이고 안전 리스크를 줄이는 데 기여하며, 장기적으로 인천항의 물동량 처리 능력 향상에도 긍정적입니다.",
-      "content_angle": "항만 인프라 개선이 물류 효율성에 미치는 영향에 대한 브리핑 자료로 활용하여, 인천항 활용 전략 및 기대 효과에 대해 논의할 수 있다.",
+      "summary_text": "Roadie and Centiro integration streamlines same-day delivery for retailers UPS subsidiary Roadie, an on-the-way delivery service with the nation’s largest local same-day footprint, and... 항공·운송 관점에서 후속 흐름을 살펴볼 필요가 있습니다.",
+      "description": "UPS subsidiary Roadie, an on-the-way delivery service with the nation’s largest local same-day footprint, and Centrino, a Swedish global delivery management software provider, said they are not collaborating on a new integration, in which retailers and 3PLs can more quickly scale same-day delivery and cost-effectively, and not disrupt warehouse operations.",
+      "category": "항공·운송",
+      "importance": 5,
+      "reason": "기술 도입은 운영 효율과 가시성 개선에 직결되므로 업계 파급력이 큰 편입니다.",
+      "content_angle": "자동화·디지털 전환 사례와 현장 적용 포인트를 설명하는 콘텐츠에 적합합니다.",
       "keywords": [
-        "인천항만공사",
-        "인천항",
-        "항만 시설",
-        "보수보강",
-        "항만 인프라"
+        "delivery",
+        "day",
+        "same",
+        "integration"
       ],
-      "link": "https://www.klnews.co.kr/news/articleView.html?idxno=320881",
-      "published": "2026-04-27 16:34",
+      "link": "https://www.logisticsmgmt.com/article/roadie_and_centiro_integration_streamlines_same_day_delivery_for_retailers",
+      "published": "2026-04-28 00:42",
       "quality": {
-        "title_status": "원문한국어",
-        "summary_status": "AI요약",
-        "analysis_status": "ai"
+        "title_status": "원문표시",
+        "summary_status": "기본정리",
+        "analysis_status": "fallback"
       }
     }
   ],
   "content_ideas": [
     {
       "rank": 1,
-      "topic": "글로벌 해운 동맹과 항만 인프라 투자가 공급망 전략에 미치는 영향 분석",
-      "reason": "해운 동맹의 재편은 선복량, 운임, 노선 등에 직접적인 영향을 미쳐 기업의 수출입 비용과 스케줄 예측을 어렵게 합니다. 항만 인프라 투자 동향과 결합하여 시청자들이 변화하는 해운 시장에서 최적의 운송 전략을 수립하고 공급망 리스크를 관리하는 데 실질적인 도움을 받을 수 있습니다.",
-      "video_title": "해운 동맹 격변기, 우리 회사 '운송 전략' 이렇게 짜세요! (feat. 항만 경쟁력)",
+      "topic": "중동 위기가 글로벌 공급망 및 물류 기업의 재정 건전성에 미치는 영향과 대응 전략",
+      "reason": "중동 지역의 불안정은 전 세계 물류 운송 비용을 상승시키고 운송 지연을 야기하며, 이는 곧 물류 기업의 수익성 악화와 파산 위험으로 직결될 수 있습니다. 시청자들은 이러한 위기 상황을 정확히 인지하고, 실질적인 리스크 관리 및 위기 대응 방안을 모색하는 데 큰 도움을 받을 수 있습니다. 실제로 물류 현장에서 직면할 수 있는 문제에 대한 선제적 대응책을 제시합니다.",
+      "video_title": "🚨중동 위기, 물류 대란 넘어 기업 파산까지? 2024년 물류 리스크 관리 전략 총정리!",
       "format": "해설형",
       "based_on_titles": [
-        "해운 동맹이 글로벌 공급망 역량을 재편하고 있다",
-        "인천항만공사, 인천항 토목시설물 보수보강공사 착공"
+        "Middle East crisis turns supply-chain stress into insolvency risk - Trans.INFO"
       ]
     },
     {
       "rank": 2,
-      "topic": "당일 배송 효율성 극대화를 위한 라스트마일 기술 통합 솔루션 분석",
-      "reason": "당일 배송 서비스는 소비자 만족도를 높이는 핵심 요소지만, 높은 비용과 복잡한 운영이 걸림돌입니다. 로디와 센티로의 통합 사례를 통해 소매업체와 3PL이 비용 효율적으로 당일 배송을 확장하고 창고 운영을 간소화할 수 있는 구체적인 기술적 접근법과 이점을 이해하여 실제 비즈니스에 적용할 아이디어를 얻을 수 있습니다.",
-      "video_title": "당일 배송 비용 확 줄이는 방법! UPS 자회사 기술 통합 사례 완벽 분석 (feat. 라스트마일 혁신)",
+      "topic": "당일 배송 혁신을 이끄는 라스트마일 기술 통합 및 리테일 성공 사례",
+      "reason": "이커머스 시장에서 당일 배송은 고객 만족도를 높이고 경쟁 우위를 확보하는 핵심 요소입니다. Roadie와 Centiro의 통합 사례를 통해 최신 라스트마일 배송 기술 동향과 실제 기술 적용을 통한 효율성 극대화 방안을 제시하여, 리테일러와 물류 기업이 빠르게 변화하는 시장에 대응하고 경쟁력을 확보하는 데 실질적인 인사이트를 제공합니다.",
+      "video_title": "🚀당일 배송 혁명 시작! Roadie & Centiro 통합으로 본 라스트마일 물류의 미래 (feat. UPS)",
       "format": "설명형",
       "based_on_titles": [
-        "로디와 센티로, 당일 배송 간소화를 위한 통합 발표"
+        "Roadie and Centiro integration streamlines same-day delivery for retailers"
       ]
     },
     {
       "rank": 3,
-      "topic": "국내외 물류 시장 동향(미국 트럭 운송량 증가, 인천항만시설 입찰)을 통한 사업 확장 기회 전망",
-      "reason": "미국 트럭 운송량 증가는 글로벌 경기 회복과 물동량 증가의 긍정적인 신호로, 이는 국내 항만 및 내륙 운송 시장에도 영향을 미칠 것입니다. 인천항만공사의 시설 입찰은 이러한 물동량 증가에 대비한 구체적인 사업 확장 기회를 제공합니다. 시청자들은 거시 경제 동향과 지역 투자 기회를 연계하여 새로운 사업 기회를 발굴하거나 기존 사업 전략을 재정비하는 데 유용한 정보를 얻을 수 있습니다.",
-      "video_title": "미국 물동량 폭증? 인천항 사업 기회는 지금! 물류 시장 '넥스트 빅띵' 예측!",
+      "topic": "대한민국 항만/공항 공사의 역할 변화: 동반성장부터 미래 연구 협력까지, 지속가능한 물류 생태계 구축 전략",
+      "reason": "항만 및 공항 공사는 단순 인프라 관리자를 넘어 물류 생태계 전체의 지속가능성과 효율성을 이끄는 중요한 주체로 부상하고 있습니다. 공공기관의 동반성장 정책, 연구 협력, 그리고 해양 환경 보호 노력을 통해 민간 물류 기업들이 활용할 수 있는 기회와 미래 발전 방향을 제시하여, 장기적인 관점에서 물류 산업의 성장을 조망하고 협력 방안을 모색하는 데 도움을 줍니다.",
+      "video_title": "✨항만/공항 공사가 만드는 미래 물류! 지속가능한 공급망의 핵심 플레이어는?",
       "format": "전망형",
       "based_on_titles": [
-        "인천항만공사, 인천 내항 항동7가 항만시설 사용 입찰 공고",
-        "ATA, 1분기 트럭 운송량 증가 보고"
+        "BPA, 공공기관 동반성장 평가 4년 연속 ‘최우수’",
+        "인천공항공사, 서울연구원과 연구협력 협약 체결",
+        "KOEM, 개도국 해양보호구역 관리자 역량강화 워크숍 개최"
       ]
     }
   ]
