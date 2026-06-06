@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-06 08:00",
-  "analysis_date": "2026-06-06",
+  "generated_at": "2026-06-07 07:58",
+  "analysis_date": "2026-06-07",
   "project_overview": {
     "project_name": "국내외 물류 뉴스 자동 브리핑 및 콘텐츠 아이디어 도출 시스템",
     "purpose": "국내외 물류 뉴스를 자동 수집·정리해 대표가 빠르게 핵심 이슈를 파악하고 콘텐츠 기획에 활용할 수 있도록 돕는 시스템",
@@ -13,148 +13,144 @@
     "final_deliverable": "테오시스 홈페이지용 data.json"
   },
   "brief": {
-    "총평": "국내 물류 업계는 항만의 AI 기반 스마트화와 차세대 친환경 선박 기술 개발로 미래 경쟁력 확보에 박차를 가하고 있습니다. 한편, 해외에서는 지정학적 요인과 관세가 공급망 재편을 가속화하며 회복탄력성 강화의 중요성이 부각되고 있습니다. 법적 책임과 환경 안전 이슈 또한 지속적인 경영 관리의 주요 요소로 부각되고 있습니다.",
-    "국내동향": "국내에서는 부산항만공사가 AI 기반 스마트 항만 구축 사업을 본격화하며 미래형 물류 시스템 전환을 주도하고 있습니다. HD현대는 차세대 친환경 선박 기술인 SMR 기반 자동차운반선 개념설계 인증을 획득, 해운 분야의 탄소중립 목표 달성에 기여할 혁신적 움직임을 보였습니다.",
-    "해외동향": "글로벌 공급망은 관세 및 지정학적 요인으로 인해 재편 압력이 커지고 있으며, 기업들은 예측 불가능한 혼란에 대비하기 위한 노력을 강화하고 있습니다. 이에 따라 공급망 회복탄력성 강화 및 기술·운영 개선 투자가 해외 주요 기업들의 핵심 전략으로 부상하고 있습니다.",
-    "리스크포인트": "대법원의 몽고메리 판결은 화물 중개인의 법적 책임 노출을 강화하고 있어, 관련 법률 및 계약 검토를 통한 리스크 관리가 필요합니다. 또한, 해외 지정학적 요인과 관세로 인한 공급망 혼란 가능성은 지속적인 리스크 요인으로 작용하고 있습니다.",
-    "기회포인트": "국내에서는 AI 기반 스마트 항만 및 차세대 친환경 선박 기술 개발을 통해 미래 물류 시장을 선점할 수 있는 기회가 확대되고 있습니다. 또한, 글로벌 공급망 재편 속에서 기술 및 운영 개선 투자를 통해 공급망 회복탄력성을 높이는 것은 새로운 비즈니스 기회를 창출할 핵심 요소입니다. ESG 경영 차원에서 친환경 및 안전 인프라 구축은 기업의 지속가능성을 강화할 것입니다.",
-    "오늘의한줄": "AI 기반 스마트 물류 전환 가속화와 글로벌 공급망 재편 압력 속에서 기술 투자와 리스크 관리를 통한 지속가능한 성장을 모색해야 할 시점입니다."
+    "총평": "금일 주요 뉴스는 기술 혁신을 통한 효율성 증대 및 지속가능성 확보가 국내외 물류 산업의 핵심 의제임을 보여줍니다. 특히, AI 도입과 친환경 선박 기술 발전이 눈에 띄며, 동시에 법적 책임 강화에 대한 주의가 필요합니다.",
+    "국내동향": "부산항만공사는 피지컬 AI 사업 기획을 통해 항만 운영 스마트화를 본격화합니다. 또한 HD현대는 SMR 적용 자동차운반선 기본 인증을 획득하며 친환경 선박 기술을 선도하고 있습니다.",
+    "해외동향": "글로벌 TMS 원탁회의를 통해 운송 관리 시스템의 최신 동향을 파악하고, 운영 효율성 제고를 위한 기술 도입을 검토할 필요가 있습니다. 미 대법원의 브로커 책임 강화 판결은 해외 운송 계약 및 보험 전략에 대한 재검토를 시사합니다.",
+    "리스크포인트": "미 대법원의 브로커 책임 강화 판결은 운송 중개 관련 법적 리스크를 증대시키며, 이는 계약 조건과 보험 정책에 중대한 영향을 미칠 수 있습니다. 관련 법규 변화를 면밀히 모니터링하고 대응 방안을 마련해야 합니다.",
+    "기회포인트": "부산항의 AI 도입은 스마트 항만 전환을 가속화하며 운영 효율성을 극대화할 기회가 됩니다. HD현대의 SMR 선박 개발은 미래 친환경 해운 시장의 선점과 지속가능한 물류 솔루션 확장에 기여할 것입니다.",
+    "오늘의한줄": "기술 혁신을 통한 성장과 지속가능성 확보가 중요하며, 동시에 강화되는 법적 리스크에 대한 선제적 대응이 필요합니다."
   },
   "top_news": [
     {
       "rank": 1,
+      "region": "해외",
+      "classification": "해외",
+      "source": "Google News Global",
+      "title": "Exclusive Roundtable: The State of TMS - Logistics Management",
+      "display_title": "Exclusive Roundtable: The State of TMS - Logistics Management",
+      "original_title": "Exclusive Roundtable: The State of TMS - Logistics Management",
+      "summary": [
+        "Exclusive Roundtable: The State of TMS - Logistics Management",
+        "Exclusive Roundtable: The State of TMS Logistics Management",
+        "기타 관점에서 후속 흐름을 살펴볼 필요가 있습니다."
+      ],
+      "summary_text": "Exclusive Roundtable: The State of TMS - Logistics Management Exclusive Roundtable: The State of TMS Logistics Management 기타 관점에서 후속 흐름을 살펴볼 필요가 있습니다.",
+      "description": "Exclusive Roundtable: The State of TMS Logistics Management",
+      "category": "기타",
+      "importance": 5,
+      "reason": "업계 흐름과 실무 대응 방향을 파악하는 데 참고 가치가 높은 이슈입니다.",
+      "content_angle": "오늘의 물류 브리프, 유튜브 해설, 실무 인사이트 정리 콘텐츠로 확장할 수 있습니다.",
+      "keywords": [
+        "exclusive",
+        "logistics",
+        "management",
+        "of"
+      ],
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPbG1XeDRKd291cHNDc3FPNV9BakV1dFN3ZWZ1SGZ5TXFzOHI1aS1BMnRhV3FpX2xZaFNnNlZtckNPSDhSMHV4Y216U3hrQzBUanhaZE1nZmxvY25ZNzYyTk5ndDlmMDY3cDJlU0NwV3ZycFRlb0RtSm45YjdmZG9McA?oc=5",
+      "published": "2026-06-07 02:39",
+      "quality": {
+        "title_status": "원문표시",
+        "summary_status": "기본정리",
+        "analysis_status": "fallback"
+      }
+    },
+    {
+      "rank": 2,
       "region": "국내",
       "classification": "국내",
       "source": "물류신문",
-      "title": "부산항만공사, 부산항 특화 물리적 AI 사업 기획 착수",
-      "display_title": "부산항만공사, 부산항 특화 물리적 AI 사업 기획 착수",
+      "title": "항로표지기술원, 고교생 대상 실습 교육 지원 나서",
+      "display_title": "항로표지기술원, 고교생 대상 실습 교육 지원 나서",
+      "original_title": "항로표지기술원, 고교생 대상 실습 교육 지원 나서",
+      "summary": [
+        "한국항로표지기술원(원장 박광열)은 특성화고교 재학생들을 대상으로 교육 지원 사업을 시행한다고 전했다.",
+        "이에 따라 한국항로표지기술원은 학교를 직접 방문해 진행하는 실습 중심 교육과정을 마련해 항로표지 자격시험과 연계한 현장형 교육 프로그램을 시행한다.",
+        "이를 통해 학생들의 진로탐색 지원과 현장 실무역량 강화를 꾀한다는 방침이다.우선 지난 5월 19일 인천해사고교에서 항로표지 실습기자재 전달식을 갖고 민간업체 협조를 통해 마련한 등명기, 태양전지,..."
+      ],
+      "summary_text": "한국항로표지기술원(원장 박광열)은 특성화고교 재학생들을 대상으로 교육 지원 사업을 시행한다고 전했다. 이에 따라 한국항로표지기술원은 학교를 직접 방문해 진행하는 실습 중심 교육과정을 마련해 항로표지 자격시험과 연계한 현장형 교육 프로그램을 시행한다. 이를 통해 학생들의 진로탐색 지원과 현장 실무역량 강화를 꾀한다는 방침이다.우선 지난 5월 19일 인천해사고교에서 항로표지 실습기자재 전달식을 갖고 민간업체 협조를 통해 마련한 등명기, 태양전지,...",
+      "description": "한국항로표지기술원(원장 박광열)은 특성화고교 재학생들을 대상으로 교육 지원 사업을 시행한다고 전했다. 이에 따라 한국항로표지기술원은 학교를 직접 방문해 진행하는 실습 중심 교육과정을 마련해 항로표지 자격시험과 연계한 현장형 교육 프로그램을 시행한다. 이를 통해 학생들의 진로탐색 지원과 현장 실무역량 강화를 꾀한다는 방침이다.우선 지난 5월 19일 인천해사고교에서 항로표지 실습기자재 전달식을 갖고 민간업체 협조를 통해 마련한 등명기, 태양전지, 충방전조절기, 축전지까지 실습기자재 4종을 전달했다. 기자재들은 학생들의 실습교육과 현장실",
+      "category": "안전·리스크",
+      "importance": 5,
+      "reason": "운영 차질과 비용 변동 가능성을 함께 점검해야 하는 리스크 이슈입니다.",
+      "content_angle": "오늘의 물류 브리프, 유튜브 해설, 실무 인사이트 정리 콘텐츠로 확장할 수 있습니다.",
+      "keywords": [
+        "교육",
+        "실습",
+        "실습기자재",
+        "지원"
+      ],
+      "link": "https://www.klnews.co.kr/news/articleView.html?idxno=321374",
+      "published": "2026-06-05 11:04",
+      "quality": {
+        "title_status": "원문한국어",
+        "summary_status": "기본정리",
+        "analysis_status": "fallback"
+      }
+    },
+    {
+      "rank": 3,
+      "region": "해외",
+      "classification": "해외",
+      "source": "Logistics Management",
+      "title": "Supreme Court’s Montgomery ruling reinforces broker liability exposure, but industry stakeholders see limited operational change",
+      "display_title": "Supreme Court’s Montgomery ruling reinforces broker liability exposure, but industry stakeholders see limited operational change",
+      "original_title": "Supreme Court’s Montgomery ruling reinforces broker liability exposure, but industry stakeholders see limited operational change",
+      "summary": [
+        "Supreme Court’s Montgomery ruling reinforces broker liability exposure, but industry stakeholders see limited...",
+        "One major takeaway of the Supreme Court’s ruling, according to Jeff Tucker, CEO of Haddonfield, N.J.-based Tuc...",
+        "항공·운송 관점에서 후속 흐름을 살펴볼 필요가 있습니다."
+      ],
+      "summary_text": "Supreme Court’s Montgomery ruling reinforces broker liability exposure, but industry stakeholders see limited... One major takeaway of the Supreme Court’s ruling, according to Jeff Tucker, CEO of Haddonfield, N.J.-based Tuc... 항공·운송 관점에서 후속 흐름을 살펴볼 필요가 있습니다.",
+      "description": "One major takeaway of the Supreme Court’s ruling, according to Jeff Tucker, CEO of Haddonfield, N.J.-based Tucker Company Worldwide, the nation’s oldest privately-held freight brokerage, is that, at the end of the day, nothing has changed, in that brokers, forwarders, and shippers were sued prior to this ruling, and will continue to be sued after it.",
+      "category": "항공·운송",
+      "importance": 5,
+      "reason": "업계 흐름과 실무 대응 방향을 파악하는 데 참고 가치가 높은 이슈입니다.",
+      "content_angle": "오늘의 물류 브리프, 유튜브 해설, 실무 인사이트 정리 콘텐츠로 확장할 수 있습니다.",
+      "keywords": [
+        "of",
+        "ruling",
+        "to",
+        "court"
+      ],
+      "link": "https://www.logisticsmgmt.com/article/supreme_courts_montgomery_ruling_reinforces_broker_liability_exposure_but_industry_stakeholders_see_limited_operational_change",
+      "published": "2026-06-06 02:34",
+      "quality": {
+        "title_status": "원문표시",
+        "summary_status": "기본정리",
+        "analysis_status": "fallback"
+      }
+    },
+    {
+      "rank": 4,
+      "region": "국내",
+      "classification": "국내",
+      "source": "물류신문",
+      "title": "BPA, 부산항 특화 피지컬 AI 사업기획 수립 착수",
+      "display_title": "BPA, 부산항 특화 피지컬 AI 사업기획 수립 착수",
       "original_title": "BPA, 부산항 특화 피지컬 AI 사업기획 수립 착수",
       "summary": [
-        "부산항만공사가 부산정보산업진흥원과 함께 'K-해양 인공지능(AI) 벨트' 조성 사업 기획에 돌입했습니다.",
-        "부산을 글로벌 해양 AI 허브 도시로 육성하고, 해양산업 전반에 AI를 접목하여 국가 경쟁력을 강화하는 것이 목표입니다.",
-        "항만 운영의 스마트화 및 미래형 물류 시스템 구축을 위한 중요한 기반이 될 것으로 예상됩니다."
+        "BPA, 부산항 특화 피지컬 AI 사업기획 수립 착수",
+        "부산항만공사(BPA, 사장 송상근)는 부산정보산업진흥원(원장 김태열)과 함께 ‘K-해양 인공지능(AI) 벨트’ 조성에 본격 착수한다고 5일 밝혔다.앞서 양사는 지난달 29일 부산시티호텔에서 ‘K-해...",
+        "항만·해운 관점에서 후속 흐름을 살펴볼 필요가 있습니다."
       ],
-      "summary_text": "부산항만공사가 부산정보산업진흥원과 함께 'K-해양 인공지능(AI) 벨트' 조성 사업 기획에 돌입했습니다. 부산을 글로벌 해양 AI 허브 도시로 육성하고, 해양산업 전반에 AI를 접목하여 국가 경쟁력을 강화하는 것이 목표입니다. 항만 운영의 스마트화 및 미래형 물류 시스템 구축을 위한 중요한 기반이 될 것으로 예상됩니다.",
-      "description": "부산항만공사가 부산정보산업진흥원과 협력하여 부산을 해양 인공지능 허브로 육성하기 위한 'K-해양 인공지능(AI) 벨트' 조성 사업 기획에 착수했습니다.",
-      "category": "자동화·기술",
-      "importance": 9,
-      "reason": "부산항의 AI 기술 도입은 항만 운영 효율성 및 경쟁력 향상에 직결되며, 이는 우리 회사의 항만 물류 전략 및 기술 도입 방향 설정에 중요한 참고 자료가 됩니다.",
-      "content_angle": "국내 주요 항만의 AI 도입 현황과 미래 스마트 항만의 비전을 다루는 심층 분석 리포트 또는 전문가 대담 콘텐츠를 제작하여 미래 물류 기술 트렌드를 제시할 수 있습니다.",
+      "summary_text": "BPA, 부산항 특화 피지컬 AI 사업기획 수립 착수 부산항만공사(BPA, 사장 송상근)는 부산정보산업진흥원(원장 김태열)과 함께 ‘K-해양 인공지능(AI) 벨트’ 조성에 본격 착수한다고 5일 밝혔다.앞서 양사는 지난달 29일 부산시티호텔에서 ‘K-해... 항만·해운 관점에서 후속 흐름을 살펴볼 필요가 있습니다.",
+      "description": "부산항만공사(BPA, 사장 송상근)는 부산정보산업진흥원(원장 김태열)과 함께 ‘K-해양 인공지능(AI) 벨트’ 조성에 본격 착수한다고 5일 밝혔다.앞서 양사는 지난달 29일 부산시티호텔에서 ‘K-해양 인공지능(AI) 벨트 조성 전략 수립 연구용역’ 착수보고회를 갖고, 부산을 글로벌 해양 인공지능(AI) 허브도시로 육성하기 위한 전략 수립에 나선다고 밝힌 바 있다.‘K-해양 인공지능(AI) 벨트’는 부산을 중심으로 국방·항만·조선·국방·문화 등 해양산업 전반에 인공지능(AI)를 접목해 대한민국 해양산업 경쟁력을 강화하고, 국가 차원의",
+      "category": "항만·해운",
+      "importance": 5,
+      "reason": "기술 도입은 운영 효율과 가시성 개선에 직결되므로 업계 파급력이 큰 편입니다.",
+      "content_angle": "자동화·디지털 전환 사례와 현장 적용 포인트를 설명하는 콘텐츠에 적합합니다.",
       "keywords": [
-        "부산항만공사",
-        "해양 AI 벨트",
-        "스마트 항만",
+        "ai",
         "인공지능",
-        "물류 기술"
+        "해양",
+        "벨트"
       ],
       "link": "https://www.klnews.co.kr/news/articleView.html?idxno=321386",
       "published": "2026-06-05 11:04",
       "quality": {
         "title_status": "원문한국어",
-        "summary_status": "AI요약",
-        "analysis_status": "ai"
-      }
-    },
-    {
-      "rank": 2,
-      "region": "해외",
-      "classification": "해외",
-      "source": "Logistics Management",
-      "title": "관세와 지정학적 요인이 제약 공급망을 재편하고 있습니다",
-      "display_title": "관세와 지정학적 요인이 제약 공급망을 재편하고 있습니다",
-      "original_title": "The pairing of tariffs and geopolitics is reshaping pharma supply chains",
-      "summary": [
-        "관세와 지정학적 요인의 복합적인 영향으로 제약 공급망이 변화하고 있습니다.",
-        "기업들은 미래의 공급망 혼란에 대비하기 위해 기술 및 운영 개선에 적극적으로 투자하고 있는 것으로 나타났습니다.",
-        "공급망 회복탄력성 강화 및 재편 전략 수립의 중요성이 부각되고 있습니다."
-      ],
-      "summary_text": "관세와 지정학적 요인의 복합적인 영향으로 제약 공급망이 변화하고 있습니다. 기업들은 미래의 공급망 혼란에 대비하기 위해 기술 및 운영 개선에 적극적으로 투자하고 있는 것으로 나타났습니다. 공급망 회복탄력성 강화 및 재편 전략 수립의 중요성이 부각되고 있습니다.",
-      "description": "새로운 AlixPartners 연구에 따르면 기업들은 미래의 혼란에 대비하면서 기술 및 운영 개선에 투자하고 있습니다.",
-      "category": "투자·경영",
-      "importance": 8,
-      "reason": "전반적인 글로벌 공급망 전략 수립에 있어 관세 및 지정학적 요인을 고려하는 것은 필수적이며, 특히 제약과 같은 민감 산업의 변화는 다른 산업에도 시사하는 바가 큽니다.",
-      "content_angle": "제약 산업 공급망 전문가와 함께 지정학적 리스크와 관세 정책이 미래 물류에 미칠 영향을 분석하고, 기업의 대응 전략을 논의하는 브리핑 자료를 제작할 수 있습니다.",
-      "keywords": [
-        "제약 공급망",
-        "관세",
-        "지정학",
-        "공급망 재편",
-        "기술 투자"
-      ],
-      "link": "https://www.logisticsmgmt.com/article/the_pairing_of_tariffs_and_geopolitics_is_reshaping_pharma_supply_chains",
-      "published": "2026-06-05 22:51",
-      "quality": {
-        "title_status": "번역완료",
-        "summary_status": "AI요약",
-        "analysis_status": "ai"
-      }
-    },
-    {
-      "rank": 3,
-      "region": "국내",
-      "classification": "국내",
-      "source": "물류신문",
-      "title": "HD현대, SMR 자동차운반선 영국선급 기본인증 획득",
-      "display_title": "HD현대, SMR 자동차운반선 영국선급 기본인증 획득",
-      "original_title": "HD현대, SMR 자동차운반선 영국선급 기본인증 획득",
-      "summary": [
-        "HD현대가 MSR(용융염 원자로) 기반의 대형 자동차운반선(PCTC) 개념설계에 대해 영국선급(LR)의 기본인증을 획득했습니다.",
-        "현대글로비스, 지마린서비스, 한국원자력연구원 등이 공동 참여하여 차세대 친환경 선박 기술 개발에 박차를 가하고 있습니다.",
-        "해운 분야의 탄소중립 실현과 친환경 선박 기술 경쟁력 강화에 크게 기여할 잠재력을 가지고 있습니다."
-      ],
-      "summary_text": "HD현대가 MSR(용융염 원자로) 기반의 대형 자동차운반선(PCTC) 개념설계에 대해 영국선급(LR)의 기본인증을 획득했습니다. 현대글로비스, 지마린서비스, 한국원자력연구원 등이 공동 참여하여 차세대 친환경 선박 기술 개발에 박차를 가하고 있습니다. 해운 분야의 탄소중립 실현과 친환경 선박 기술 경쟁력 강화에 크게 기여할 잠재력을 가지고 있습니다.",
-      "description": "HD현대가 HD현대중공업, HD한국조선해양과 함께 MSR(용융염 원자로)을 적용한 대형 자동차운반선(PCTC)의 개념설계에 대해 영국선급으로부터 기본인증을 받았습니다. 이 프로젝트에는 현대글로비스 등 여러 기관이 공동 참여했습니다.",
-      "category": "항만·해운",
-      "importance": 8,
-      "reason": "용융염 원자로를 적용한 차세대 친환경 선박 기술은 해운업계의 탄소중립 목표 달성에 핵심적인 역할을 할 것이며, 이는 장기적인 선박 투자 및 운영 전략 수립에 중요한 고려 사항입니다.",
-      "content_angle": "미래 해운의 탈탄소화 전략과 SMR 등 혁신적인 선박 추진 기술의 발전 방향을 심층적으로 분석하고, 물류 기업들이 친환경 선박 도입에 어떻게 대비해야 할지 논의하는 전문가 토론을 기획할 수 있습니다.",
-      "keywords": [
-        "HD현대",
-        "SMR 선박",
-        "친환경 선박",
-        "자동차운반선",
-        "해운 탈탄소"
-      ],
-      "link": "https://www.klnews.co.kr/news/articleView.html?idxno=321387",
-      "published": "2026-06-05 11:04",
-      "quality": {
-        "title_status": "원문한국어",
-        "summary_status": "AI요약",
-        "analysis_status": "ai"
-      }
-    },
-    {
-      "rank": 4,
-      "region": "해외",
-      "classification": "해외",
-      "source": "Logistics Management",
-      "title": "대법원의 몽고메리 판결, 중개인의 책임 노출 강화하지만 업계는 운영상 변화 제한적",
-      "display_title": "대법원의 몽고메리 판결, 중개인의 책임 노출 강화하지만 업계는 운영상 변화 제한적",
-      "original_title": "Supreme Court’s Montgomery ruling reinforces broker liability exposure, but industry stakeholders see limited operational change",
-      "summary": [
-        "대법원의 몽고메리 판결이 화물 중개인의 법적 책임 노출을 강화했습니다.",
-        "업계 전문가들은 이번 판결이 중개인, 포워더, 화주에 대한 기존 소송 관행을 크게 바꾸지는 않을 것으로 보고 있습니다.",
-        "법적 책임 리스크는 여전히 존재하며, 관련 당사자들은 기존의 소송 가능성에 대비해야 합니다."
-      ],
-      "summary_text": "대법원의 몽고메리 판결이 화물 중개인의 법적 책임 노출을 강화했습니다. 업계 전문가들은 이번 판결이 중개인, 포워더, 화주에 대한 기존 소송 관행을 크게 바꾸지는 않을 것으로 보고 있습니다. 법적 책임 리스크는 여전히 존재하며, 관련 당사자들은 기존의 소송 가능성에 대비해야 합니다.",
-      "description": "대법원의 판결은 중개인, 포워더, 화주에 대한 소송이 이전에도 있었고 앞으로도 계속될 것이므로 궁극적으로 큰 변화는 없다는 것이 주요 내용입니다.",
-      "category": "안전·리스크",
-      "importance": 7,
-      "reason": "우리 회사가 중개 사업을 한다면 법적 책임 노출에 대한 이해가 중요하며, 잠재적 소송 리스크를 항상 인지하고 대응 전략을 마련해야 합니다.",
-      "content_angle": "법률 전문가를 초빙하여 최신 대법원 판결이 물류 중개 사업에 미치는 영향과 법적 리스크 관리 방안에 대한 인사이트를 제공하는 콘텐츠를 기획할 수 있습니다.",
-      "keywords": [
-        "법적 책임",
-        "화물 중개인",
-        "대법원 판결",
-        "리스크 관리",
-        "운영 변화"
-      ],
-      "link": "https://www.logisticsmgmt.com/article/supreme_courts_montgomery_ruling_reinforces_broker_liability_exposure_but_industry_stakeholders_see_limited_operational_change",
-      "published": "2026-06-06 02:34",
-      "quality": {
-        "title_status": "번역완료",
-        "summary_status": "AI요약",
-        "analysis_status": "ai"
+        "summary_status": "기본정리",
+        "analysis_status": "fallback"
       }
     },
     {
@@ -162,66 +158,64 @@
       "region": "국내",
       "classification": "국내",
       "source": "물류신문",
-      "title": "여수광양항만공사, 항만 최초 석면 건축자재 전면 제거 완료",
-      "display_title": "여수광양항만공사, 항만 최초 석면 건축자재 전면 제거 완료",
-      "original_title": "YGPA, 항만 최초 석면 건축자재 전면 제거 완료",
+      "title": "HD현대, SMR 자동차운반선 영국선급 기본인증 획득",
+      "display_title": "HD현대, SMR 자동차운반선 영국선급 기본인증 획득",
+      "original_title": "HD현대, SMR 자동차운반선 영국선급 기본인증 획득",
       "summary": [
-        "여수광양항만공사가 국내 항만 최초로 항만 내 모든 석면 건축자재 제거를 완료하여 '무석면 친환경 항만'을 구축했습니다.",
-        "근로자의 건강 보호와 안전한 작업 환경 조성을 위해 2017년부터 단계적으로 석면 해체·제거 사업을 추진해왔습니다.",
-        "ESG 경영의 중요성이 강조되는 시점에서, 공공기관의 모범적인 환경 및 안전 관리 사례로 평가받을 수 있습니다."
+        "HD현대는 HD현대중공업과 HD한국조선해양이 영국선급(LR)으로부터 MSR(용융염 원자로, Molten Salt Reactor) 적용 대형 자동차운반선(PCTC, Pure Car and Truck...",
+        "HD현대는 선박 개념설계와 기술 검토를 담당했고 현대글로비스는 PCTC 운항 경험을 바탕으로 한 방안 제시를, 지마린서비스는 선박관리 관점의 검토를, 한국원자력연구원은 MSR 기술 검토를 각각",
+        "항만·해운 관점에서 시사점을 점검할 필요가 있습니다."
       ],
-      "summary_text": "여수광양항만공사가 국내 항만 최초로 항만 내 모든 석면 건축자재 제거를 완료하여 '무석면 친환경 항만'을 구축했습니다. 근로자의 건강 보호와 안전한 작업 환경 조성을 위해 2017년부터 단계적으로 석면 해체·제거 사업을 추진해왔습니다. ESG 경영의 중요성이 강조되는 시점에서, 공공기관의 모범적인 환경 및 안전 관리 사례로 평가받을 수 있습니다.",
-      "description": "여수광양항만공사가 2017년부터 추진해 온 항만 내 석면 해체·제거 사업을 모두 완료하고, 국내 항만 중 최초로 '무석면 친환경 항만'을 구축하여 항만 근로자의 건강과 안전한 작업 환경을 확보했습니다.",
-      "category": "안전·리스크",
-      "importance": 7,
-      "reason": "근로자의 건강과 안전은 기업의 최우선 가치이며, 유해 물질 제거를 통한 안전한 작업 환경 조성은 ESG 경영 관점에서 우리 회사가 지향해야 할 방향을 제시합니다.",
-      "content_angle": "여수광양항만공사의 '무석면 항만' 사례를 통해 물류 시설의 환경 안전 관리 노하우와 ESG 경영 실천 방안을 조명하는 인포그래픽 또는 성공 사례 분석 콘텐츠를 제작할 수 있습니다.",
+      "summary_text": "HD현대는 HD현대중공업과 HD한국조선해양이 영국선급(LR)으로부터 MSR(용융염 원자로, Molten Salt Reactor) 적용 대형 자동차운반선(PCTC, Pure Car and Truck... HD현대는 선박 개념설계와 기술 검토를 담당했고 현대글로비스는 PCTC 운항 경험을 바탕으로 한 방안 제시를, 지마린서비스는 선박관리 관점의 검토를, 한국원자력연구원은 MSR 기술 검토를 각각 항만·해운 관점에서 시사점을 점검할 필요가 있습니다.",
+      "description": "HD현대는 HD현대중공업과 HD한국조선해양이 영국선급(LR)으로부터 MSR(용융염 원자로, Molten Salt Reactor) 적용 대형 자동차운반선(PCTC, Pure Car and Truck Carrier)의 개념설계에 대한 기본인증을 받았다고 5일 밝혔다.이번 프로젝트는 현대글로비스와 지마린서비스, 한국원자력연구원이 공동으로 참여했다. HD현대는 선박 개념설계와 기술 검토를 담당했고 현대글로비스는 PCTC 운항 경험을 바탕으로 한 방안 제시를, 지마린서비스는 선박관리 관점의 검토를, 한국원자력연구원은 MSR 기술 검토를 각각",
+      "category": "항만·해운",
+      "importance": 5,
+      "reason": "항만·해운 운영 변화는 공급망 전반의 흐름과 연결되어 주목할 필요가 있습니다.",
+      "content_angle": "항만 경쟁력과 공급망 연결성 관점에서 풀어내는 해설형 콘텐츠로 활용하기 좋습니다.",
       "keywords": [
-        "여수광양항만공사",
-        "석면 제거",
-        "친환경 항만",
-        "근로자 안전",
-        "ESG 경영"
+        "검토를",
+        "hd현대는",
+        "msr",
+        "pctc"
       ],
-      "link": "https://www.klnews.co.kr/news/articleView.html?idxno=321378",
+      "link": "https://www.klnews.co.kr/news/articleView.html?idxno=321387",
       "published": "2026-06-05 11:04",
       "quality": {
         "title_status": "원문한국어",
-        "summary_status": "AI요약",
-        "analysis_status": "ai"
+        "summary_status": "기본정리",
+        "analysis_status": "fallback"
       }
     }
   ],
   "content_ideas": [
     {
       "rank": 1,
-      "topic": "항만 AI 도입, 내 업무 변화와 미래 물류 경쟁력",
-      "reason": "부산항의 AI 도입 기획 소식은 추상적으로 들릴 수 있지만, 물류 현장의 시청자들은 자신의 업무에 어떤 영향을 미칠지, 기업은 무엇을 준비해야 하는지에 대한 실질적인 궁금증을 가지고 있습니다. 이 콘텐츠는 AI가 항만 운영을 어떻게 스마트화하고, 물류 시스템을 어떻게 변화시킬지에 대한 구체적인 그림을 제시하여, 미래 물류 전문가로서 필요한 역량과 준비 사항을 고민하게 할 것입니다.",
-      "video_title": "부산항 AI 혁명! '물리적 AI'가 내 물류 업무를 어떻게 바꿀까?",
-      "format": "해설형",
+      "topic": "스마트 항만과 물류 AI 혁명",
+      "reason": "부산항만공사의 '피지컬 AI' 사업 기획 착수 뉴스는 항만 물류가 AI 기술을 통해 어떻게 지능화되고 효율화될지 실질적인 방향을 제시합니다. 물류 산업 종사자들에게는 미래 항만 운영의 청사진을, 취업 준비생에게는 유망 기술 분야를 탐색하는 데 도움이 되는 콘텐츠입니다. 국내 주요 항만의 구체적인 사례를 통해 AI가 물류 현장에 가져올 변화를 시청자들이 쉽게 이해하고 자신의 업무에 적용할 인사이트를 얻을 수 있습니다.",
+      "video_title": "[단독취재] 부산항, 피지컬 AI로 미래 항만 혁명 시작한다? (물류 AI 트렌드)",
+      "format": "전망형",
       "based_on_titles": [
-        "부산항만공사, 부산항 특화 물리적 AI 사업 기획 착수"
+        "BPA, 부산항 특화 피지컬 AI 사업기획 수립 착수"
       ]
     },
     {
       "rank": 2,
-      "topic": "지정학적 리스크 시대, 공급망 회복탄력성 강화를 위한 실전 전략",
-      "reason": "전 세계적으로 관세 인상, 지정학적 분쟁이 끊이지 않으며 공급망 불안정성이 극대화되고 있습니다. 특히 제약 산업처럼 민감한 분야의 변화는 모든 산업에 시사하는 바가 큽니다. 시청자들은 이러한 외부 요인에 기업이 어떻게 대응하고, 어떤 기술 투자를 통해 공급망 리스크를 최소화할 수 있는지에 대한 실질적인 가이드라인과 대응 전략을 필요로 합니다.",
-      "video_title": "지정학 리스크 파고! 우리 회사 공급망, 붕괴 막는 3가지 비결은?",
-      "format": "설명형",
+      "topic": "물류 중개업자의 법적 책임 리스크와 대응 전략",
+      "reason": "대법원 판례는 물류 중개업자들이 간과하기 쉬운 법적 책임 범위를 명확히 합니다. 이는 중개업자뿐만 아니라 이들과 거래하는 화주, 운송사 모두에게 중요한 실무 정보입니다. 잠재적 위험을 이해하고 적절한 계약 및 보험 전략을 수립하는 데 필요한 구체적인 해설을 제공하여, 시청자들이 실제 업무에서 법적 분쟁을 예방하고 효과적으로 대처할 수 있도록 실무 역량을 강화할 수 있습니다.",
+      "video_title": "물류 중개업자 필독! 대법원 판례로 본 책임 리스크, 이렇게 대비하라! (feat. 운송주선업)",
+      "format": "해설형",
       "based_on_titles": [
-        "관세와 지정학적 요인이 제약 공급망을 재편하고 있습니다"
+        "Supreme Court’s Montgomery ruling reinforces broker liability exposure, but industry stakeholders see limited operational change"
       ]
     },
     {
       "rank": 3,
-      "topic": "탄소중립 해운 시대: SMR 선박부터 친환경 항만까지, 미래 기술 경쟁력 심층 분석",
-      "reason": "해운 분야의 탄소중립은 거스를 수 없는 흐름이며, HD현대의 SMR 선박 개발과 여수광양항만공사의 무석면 항만 구축은 이러한 노력의 중요한 축입니다. 시청자들은 이러한 차세대 기술이 해운 산업에 미칠 파급 효과와 함께, 실제로 어떤 기술들이 개발되고 적용될 수 있는지, 그리고 이것이 물류 산업의 지속가능성에 어떻게 기여하는지에 대한 깊이 있는 이해와 미래 전망을 얻을 수 있습니다.",
-      "video_title": "SMR 선박이 온다! 친환경 해운, 기술 경쟁력으로 판을 뒤집는 법",
+      "topic": "친환경 해운의 미래, SMR(소형모듈원전) 선박의 등장과 영향",
+      "reason": "해운 산업의 탄소중립 목표 달성을 위한 기술 혁신은 필수적입니다. HD현대의 SMR 선박 인증 소식은 미래 선박 기술의 방향과 친환경 해운이 가져올 물류 비용 및 효율성 변화에 대한 중요한 시사점을 제공합니다. 지속가능한 물류에 관심 있는 기업 실무자 및 미래 기술 동향을 파악하고자 하는 시청자들에게 깊이 있는 인사이트를 제공하여, 빠르게 변화하는 해운 산업의 흐름을 읽는 데 도움을 줍니다.",
+      "video_title": "바다 위 원자로? HD현대 SMR 선박, 친환경 해운의 게임체인저 될까? (미래 선박 기술)",
       "format": "전망형",
       "based_on_titles": [
-        "HD현대, SMR 자동차운반선 영국선급 기본인증 획득",
-        "여수광양항만공사, 항만 최초 석면 건축자재 전면 제거 완료"
+        "HD현대, SMR 자동차운반선 영국선급 기본인증 획득"
       ]
     }
   ]
