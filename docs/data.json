@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-24 09:09",
-  "analysis_date": "2026-09-24",
+  "generated_at": "2026-09-25 09:11",
+  "analysis_date": "2026-09-25",
   "project_overview": {
     "project_name": "국내외 물류 뉴스 자동 브리핑 및 콘텐츠 아이디어 도출 시스템",
     "purpose": "국내외 물류 뉴스를 자동 수집·정리해 대표가 빠르게 핵심 이슈를 파악하고 콘텐츠 기획에 활용할 수 있도록 돕는 시스템",
@@ -13,114 +13,111 @@
     "final_deliverable": "테오시스 홈페이지용 data.json"
   },
   "brief": {
-    "총평": "오늘 물류 시장은 친환경 전환 가속화와 디지털 플랫폼의 해외 시장 확장이 두드러집니다. 동시에 글로벌 공급망 불안정성에 대한 대응력 강화가 지속적으로 요구됩니다.",
-    "국내동향": "정부의 친환경 선박 연료 시장 진입 장벽 완화로 해운업의 탄소 중립 전환이 가속화될 전망입니다. 또한 부산항만공사는 추석 연휴에도 안정적인 항만 운영을 보장하여 국내 물류 흐름에 큰 차질이 없을 것으로 보입니다.",
-    "해외동향": "우버 프레이트가 폴란드 허브 설립 및 유럽 시장 확장을 공식화하며 디지털 화물 운송 플랫폼의 영향력이 더욱 커지고 있습니다. 한편, 자동차 물류 분야에서는 공급망 혼란에 대응하기 위한 유연한 파트너십 및 전략 변화가 활발히 모색되고 있습니다.",
-    "리스크포인트": "우버 프레이트의 유럽 시장 투자는 디지털 플랫폼 기반 경쟁 심화를 예고하며, 전통 물류 기업들에게 새로운 도전이 될 수 있습니다. 또한 글로벌 공급망의 예측 불가능한 중단은 여전히 주요 리스크로, 지속적인 대응 전략 마련이 필요합니다.",
-    "기회포인트": "친환경 선박 연료 시장 활성화는 신규 사업 모델 창출 및 ESG 경영 강화의 기회를 제공합니다. 디지털 플랫폼 확산 추세에 맞춰 유럽 등 해외 시장 진출 시 기술 기반의 새로운 물류 인프라를 구축할 기회도 모색할 수 있습니다.",
-    "오늘의한줄": "친환경 전환과 디지털 확장을 통한 시장 변화에 선제적으로 대응하며 유연한 공급망 구축에 집중해야 할 시점입니다."
+    "총평": "미국 발 운송료 급등과 북미 물동량의 지속적인 증가로 해외 물류 시장은 공급 부족 및 높은 수요가 두드러집니다. 국내에서는 해수부의 선원 임금 체불 해소 노력이 있었으며, 주요 시장의 변화에 대한 면밀한 관찰이 필요한 시점입니다.",
+    "국내동향": "해양수산부가 추석을 앞두고 선원들의 체불임금 4억 3천여만 원을 지급 조치하며 노동 환경 개선에 집중했습니다. 울산항만공사는 추석 맞이 취약계층 지원 활동을 통해 사회적 책임을 다하는 모습을 보였습니다. 이는 공공 부문의 노동 및 사회 공헌 활동이 강화되고 있음을 시사합니다.",
+    "해외동향": "미국에서는 운송 능력 부족으로 화물 운임이 급등하고 있으며, 북미 지역의 국가 간 물동량도 1,576억 달러 규모로 견조한 흐름을 보입니다. 또한, 중국이 전 세계 컨테이너 수출의 40%를 차지하며 글로벌 해운 시장의 주요 동력임을 다시 한번 확인시켜주었습니다. 전반적으로 해외 물류 시장은 수요 강세와 공급 제약이 뚜렷합니다.",
+    "리스크포인트": "미국 내 운임 급등은 글로벌 공급망 전반의 비용 상승 압력으로 작용할 수 있으며, 이는 특히 해상 및 항공 운송을 이용하는 물류 기업들에게 직접적인 영향을 미칠 것입니다. 국내 해수부의 선원 체불임금 단속 강화는 향후 노동 관련 규제 준수 및 투명성 요구가 증대될 수 있음을 시사합니다.",
+    "기회포인트": "미국과 북미 지역의 견조한 물동량 및 운임 상승은 공급 역량을 확보한 기업에게는 수익성 개선의 기회가 될 수 있습니다. 중국발 글로벌 컨테이너 수출의 지속적인 성장은 아시아-북미/유럽 노선의 물동량 증가로 이어져 새로운 서비스 개발 및 시장 점유율 확대를 모색할 수 있는 바탕을 제공합니다.",
+    "오늘의한줄": "해외 시장의 운임 상승과 물동량 강세는 비용 압박과 동시에 성장 기회를 제공하므로, 시장 변화에 대한 민첩한 대응과 전략적 역량 강화가 필수적입니다."
   },
   "top_news": [
     {
       "rank": 1,
-      "region": "국내",
-      "classification": "국내",
-      "source": "물류신문",
-      "title": "친환경 선박 연료 활성화를 위해 시장 진입 문턱 완화",
-      "display_title": "친환경 선박 연료 활성화를 위해 시장 진입 문턱 완화",
-      "original_title": "친환경 선박 연료 활성화 위해 시장 진입 문턱 낮췄다",
+      "region": "해외",
+      "classification": "해외",
+      "source": "Google News Global",
+      "title": "US Freight Rates Soar Amid Capacity Crisis: The Week in Logistics - Mexico Business News",
+      "display_title": "US Freight Rates Soar Amid Capacity Crisis: The Week in Logistics - Mexico Business News",
+      "original_title": "US Freight Rates Soar Amid Capacity Crisis: The Week in Logistics - Mexico Business News",
       "summary": [
-        "해양수산부가 친환경 선박 연료 공급업을 신설하고 관련 등록 기준을 완화하는 항만운송사업법 시행령을 개정했습니다.",
-        "해운업의 친환경 연료 전환 추세에 맞춰 안전한 공급 기반을 마련하고, 초기 시장 진입 장벽을 낮춰 활성화를 촉진하기 위함입니다.",
-        "친환경 선박 연료 시장의 성장이 가속화될 것이며, 이는 해운 물류 기업의 탄소 중립 및 ESG 경영 전략 수립에 중요한 영향을 미칠 것입니다."
+        "US Freight Rates Soar Amid Capacity Crisis: The Week in Logistics - Mexico Business News",
+        "US Freight Rates Soar Amid Capacity Crisis: The Week in Logistics Mexico Business News",
+        "항공·운송 관점에서 후속 흐름을 살펴볼 필요가 있습니다."
       ],
-      "summary_text": "해양수산부가 친환경 선박 연료 공급업을 신설하고 관련 등록 기준을 완화하는 항만운송사업법 시행령을 개정했습니다. 해운업의 친환경 연료 전환 추세에 맞춰 안전한 공급 기반을 마련하고, 초기 시장 진입 장벽을 낮춰 활성화를 촉진하기 위함입니다. 친환경 선박 연료 시장의 성장이 가속화될 것이며, 이는 해운 물류 기업의 탄소 중립 및 ESG 경영 전략 수립에 중요한 영향을 미칠 것입니다.",
-      "description": "해양수산부가 친환경 선박 연료 공급 시장 활성화를 위해 '항만운송사업법 시행령'을 개정, 친환경 선박 연료 공급업을 신설하고 등록 기준을 완화했습니다.",
-      "category": "항만·해운",
-      "importance": 8,
-      "reason": "친환경 선박 연료 시장 확대는 해운업의 미래 방향성을 제시하며, 기업의 탄소 배출량 감소와 지속 가능한 물류 시스템 구축에 직접적인 영향을 미치므로 중요합니다.",
-      "content_angle": "친환경 선박 연료 시장의 변화와 정부 정책이 해운 물류 산업에 미치는 영향을 분석하고, 기업들이 친환경 전환에 어떻게 대응해야 할지 전략적 통찰을 제공하는 콘텐츠로 활용할 수 있습니다.",
+      "summary_text": "US Freight Rates Soar Amid Capacity Crisis: The Week in Logistics - Mexico Business News US Freight Rates Soar Amid Capacity Crisis: The Week in Logistics Mexico Business News 항공·운송 관점에서 후속 흐름을 살펴볼 필요가 있습니다.",
+      "description": "US Freight Rates Soar Amid Capacity Crisis: The Week in Logistics Mexico Business News",
+      "category": "항공·운송",
+      "importance": 5,
+      "reason": "업계 흐름과 실무 대응 방향을 파악하는 데 참고 가치가 높은 이슈입니다.",
+      "content_angle": "오늘의 물류 브리프, 유튜브 해설, 실무 인사이트 정리 콘텐츠로 확장할 수 있습니다.",
       "keywords": [
-        "친환경 선박",
-        "선박 연료",
-        "항만운송사업법",
-        "해양수산부",
-        "ESG 경영"
+        "business",
+        "capacity",
+        "crisis",
+        "freight"
       ],
-      "link": "https://www.klnews.co.kr/news/articleView.html?idxno=322845",
-      "published": "2026-09-23 14:51",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNOFQ2MEJORUg0X3pVU1luRzF1TWlLTFpHV3pDakhlT2xRUGZMc1diUlhLR3dWdU8xaXVndGhFb09YMEVKRk5qNXdTMDRDNmlKbXd0djROeWlHTDZaQ3pBZ1o2SklEMVQ5SFEwam5UNUk5WVZkazJ0Wi1KYnRYVXhvYmEtLV9lQ3NDZEhDOU80dFpzcFVBU3VzMXJMbVdTRFQxY0E?oc=5",
+      "published": "2026-09-25 04:53",
       "quality": {
-        "title_status": "원문한국어",
-        "summary_status": "AI요약",
-        "analysis_status": "ai"
+        "title_status": "원문표시",
+        "summary_status": "기본정리",
+        "analysis_status": "fallback"
       }
     },
     {
       "rank": 2,
-      "region": "해외",
-      "classification": "해외",
-      "source": "Google News Global",
-      "title": "우버 프레이트, 크라쿠프 허브 설립으로 유럽 시장에 장기적인 투자",
-      "display_title": "우버 프레이트, 크라쿠프 허브 설립으로 유럽 시장에 장기적인 투자",
-      "original_title": "Uber Freight makes ‘significant, multi-year’ bet on Europe with Krakow hub - FreightWaves",
+      "region": "국내",
+      "classification": "국내",
+      "source": "물류신문",
+      "title": "UPA, 추석 명절맞이 취약계층 300세대에 선물 꾸러미 전달",
+      "display_title": "UPA, 추석 명절맞이 취약계층 300세대에 선물 꾸러미 전달",
+      "original_title": "UPA, 추석 명절맞이 취약계층 300세대에 선물 꾸러미 전달",
       "summary": [
-        "우버 프레이트가 폴란드 크라쿠프에 대규모 허브를 설립하며 유럽 시장에 대한 장기적인 투자를 발표했습니다.",
-        "유럽 내 디지털 화물 운송 시장의 성장 잠재력을 보고 전략적 거점을 마련하여 시장 점유율을 확대하려는 목표를 가지고 있습니다.",
-        "유럽 시장 진출을 고려하는 국내 물류 기업들에게는 잠재적 경쟁 심화 및 디지털 플랫폼 기반 물류 인프라 구축의 중요성을 보여줍니다."
+        "UPA, 추석 명절맞이 취약계층 300세대에 선물 꾸러미 전달",
+        "울산항만공사(UPA, 사장 변재영)는 추석을 앞두고 울산광역시사회복지협의회(회장 오세걸)를 통해 1,500만 원 상당의 물품을 전달했다고 21일 밝혔다.전달된 물품은 지역 종합사회복지관 8개소에서...",
+        "정책·공공 관점에서 후속 흐름을 살펴볼 필요가 있습니다."
       ],
-      "summary_text": "우버 프레이트가 폴란드 크라쿠프에 대규모 허브를 설립하며 유럽 시장에 대한 장기적인 투자를 발표했습니다. 유럽 내 디지털 화물 운송 시장의 성장 잠재력을 보고 전략적 거점을 마련하여 시장 점유율을 확대하려는 목표를 가지고 있습니다. 유럽 시장 진출을 고려하는 국내 물류 기업들에게는 잠재적 경쟁 심화 및 디지털 플랫폼 기반 물류 인프라 구축의 중요성을 보여줍니다.",
-      "description": "우버 프레이트가 폴란드 크라쿠프에 허브를 설립하며 유럽 시장에 대한 상당한 규모의 다년간 투자를 단행합니다.",
-      "category": "투자·경영",
-      "importance": 8,
-      "reason": "우버 프레이트의 유럽 거점 투자는 디지털 물류 플랫폼의 성장 동력을 보여주며, 이는 글로벌 시장 경쟁 환경과 물류 기술 트렌드 변화에 대한 이해를 높이는 데 필수적입니다.",
-      "content_angle": "우버 프레이트의 유럽 물류 허브 전략을 심층 분석하고, 디지털 플랫폼이 글로벌 물류 지형을 어떻게 재편하고 있는지 인사이트를 제공하는 콘텐츠로 활용할 수 있습니다.",
+      "summary_text": "UPA, 추석 명절맞이 취약계층 300세대에 선물 꾸러미 전달 울산항만공사(UPA, 사장 변재영)는 추석을 앞두고 울산광역시사회복지협의회(회장 오세걸)를 통해 1,500만 원 상당의 물품을 전달했다고 21일 밝혔다.전달된 물품은 지역 종합사회복지관 8개소에서... 정책·공공 관점에서 후속 흐름을 살펴볼 필요가 있습니다.",
+      "description": "울산항만공사(UPA, 사장 변재영)는 추석을 앞두고 울산광역시사회복지협의회(회장 오세걸)를 통해 1,500만 원 상당의 물품을 전달했다고 21일 밝혔다.전달된 물품은 지역 종합사회복지관 8개소에서 관리하는 위기가정 및 취약계층 등 300세대의 추석 명절 선물로 사용될 예정이다.울산항만공사 변재영 사장은 “추석을 맞아 지역의 어려운 이웃들이 소외되지 않고 따뜻하고 풍성한 명절을 보내는 데 조금이나마 보탬이 되길 바라는 마음으로 나눔을 준비했다”라며 “공공기관으로서 지역사회와 함께 성장하고 상생할 수 있도록 다양한 사회공헌 활동을 이어",
+      "category": "정책·공공",
+      "importance": 5,
+      "reason": "정책·제도 변화가 물류 현장과 기업 대응 전략에 직접 영향을 줄 수 있는 이슈입니다.",
+      "content_angle": "정책 변화 해설, 실무 대응 가이드, 업계 영향 분석 콘텐츠로 활용할 수 있습니다.",
       "keywords": [
-        "우버 프레이트",
-        "유럽 투자",
-        "크라쿠프 허브",
-        "디지털 물류",
-        "시장 확장"
+        "upa",
+        "변재영",
+        "울산항만공사",
+        "추석"
       ],
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPdTc5QThNSld0amNweFFCdDJfejVpTXpOTDhLZDlkRXpqUFBHOWtkSGpLOXpfMjJtRlZ4dm54d0RrcW5FanBJN2tQRlY3aTNGaVY2dmp1d3ZZX2NHbnRRMzF3aTRraTFVVXRGSEhSYjMyOWdZSnVxc21QSmgxQnR2cGtCMkpoMDJhRjdWbkdra2tJbDBVeDZYcFYtcXZIQnBudlh2SjN2MjQ?oc=5",
-      "published": "2026-09-23 23:09",
+      "link": "https://www.klnews.co.kr/news/articleView.html?idxno=322846",
+      "published": "2026-09-23 14:51",
       "quality": {
-        "title_status": "번역완료",
-        "summary_status": "AI요약",
-        "analysis_status": "ai"
+        "title_status": "원문한국어",
+        "summary_status": "기본정리",
+        "analysis_status": "fallback"
       }
     },
     {
       "rank": 3,
-      "region": "해외",
-      "classification": "해외",
-      "source": "Google News Global",
-      "title": "공급망 혼란 대응을 위한 자동차 물류 파트너십 및 전략 변화",
-      "display_title": "공급망 혼란 대응을 위한 자동차 물류 파트너십 및 전략 변화",
-      "original_title": "Partnerships and strategies are evolving in response to disruption - Automotive Logistics",
+      "region": "국내",
+      "classification": "국내",
+      "source": "물류신문",
+      "title": "해수부, “선원 체불임금 4억 3,100만 원 지급 조치”",
+      "display_title": "해수부, “선원 체불임금 4억 3,100만 원 지급 조치”",
+      "original_title": "해수부, “선원 체불임금 4억 3,100만 원 지급 조치”",
       "summary": [
-        "자동차 물류 분야에서 공급망 혼란에 대응하기 위해 파트너십과 전략이 변화하고 있습니다.",
-        "글로벌 공급망 불안정성이 지속되면서 기업들은 더욱 유연하고 회복력 있는 물류 체계를 구축해야 할 필요성을 느끼고 있습니다.",
-        "예상치 못한 공급망 중단에 대비하여 새로운 협력 모델과 위기 대응 전략을 모색하는 것이 중요합니다."
+        "해수부, “선원 체불임금 4억 3,100만 원 지급 조치”",
+        "해양수산부(장관 황종우)는 추석 명절을 앞두고 지난 8월 19일부터 9월 18일까지 한 달간 선원 임금 체불 예방과 해소 등을 위한 특별근로감독을 통해 체불임금 4억 3,100만 원을 확인하고 선원...",
+        "정책·공공 관점에서 후속 흐름을 살펴볼 필요가 있습니다."
       ],
-      "summary_text": "자동차 물류 분야에서 공급망 혼란에 대응하기 위해 파트너십과 전략이 변화하고 있습니다. 글로벌 공급망 불안정성이 지속되면서 기업들은 더욱 유연하고 회복력 있는 물류 체계를 구축해야 할 필요성을 느끼고 있습니다. 예상치 못한 공급망 중단에 대비하여 새로운 협력 모델과 위기 대응 전략을 모색하는 것이 중요합니다.",
-      "description": "자동차 물류 분야에서 발생하고 있는 혼란에 대응하여 파트너십과 전략이 진화하고 있습니다.",
-      "category": "투자·경영",
-      "importance": 7,
-      "reason": "공급망 교란에 대한 대응 전략과 파트너십 변화는 다른 산업 물류에도 시사하는 바가 커, 선제적인 전략 수립에 참고해야 합니다.",
-      "content_angle": "글로벌 공급망 위기 속 자동차 물류 기업들의 대응 방안을 분석하고, 국내 기업들이 벤치마킹할 수 있는 요소를 도출하는 콘텐츠로 활용할 수 있습니다.",
+      "summary_text": "해수부, “선원 체불임금 4억 3,100만 원 지급 조치” 해양수산부(장관 황종우)는 추석 명절을 앞두고 지난 8월 19일부터 9월 18일까지 한 달간 선원 임금 체불 예방과 해소 등을 위한 특별근로감독을 통해 체불임금 4억 3,100만 원을 확인하고 선원... 정책·공공 관점에서 후속 흐름을 살펴볼 필요가 있습니다.",
+      "description": "해양수산부(장관 황종우)는 추석 명절을 앞두고 지난 8월 19일부터 9월 18일까지 한 달간 선원 임금 체불 예방과 해소 등을 위한 특별근로감독을 통해 체불임금 4억 3,100만 원을 확인하고 선원들에게 지급되도록 조치했다고 밝혔다.해양수산부는 추석 명절 전까지 체불임금이 지급될 수 있도록 전국 11개 지방해양수산청별로 점검반을 구성해 임금을 상습적으로 체불하는 업체와 체불이 우려되는 사업장 36곳을 집중적으로 점검했다.해양수산부는 총 6억 7,700만 원이 체불된 사실을 확인하고 이 중에 4억 3,100만 원을 적극적인 지급 지도",
+      "category": "정책·공공",
+      "importance": 5,
+      "reason": "정책·제도 변화가 물류 현장과 기업 대응 전략에 직접 영향을 줄 수 있는 이슈입니다.",
+      "content_angle": "정책 변화 해설, 실무 대응 가이드, 업계 영향 분석 콘텐츠로 활용할 수 있습니다.",
       "keywords": [
-        "자동차 물류",
-        "공급망 혼란",
-        "파트너십",
-        "전략 변화",
-        "회복력"
+        "100만",
+        "4억",
+        "선원",
+        "원을"
       ],
-      "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOS1oyZkwxaGpLQVVPN2s5VUtpS3VleVl5QnAyLS04WUVhTEZQckwtUUlrRkRtalZXanRaX1NzeVMwdW9xYXdZaUN0WXVPZVFHNWxGM2d2SmJ2V3hFbTloN1NmeGQwMlJBckk1NHFIazhjYlBsaHRIdEZSR0JHMERfVWNwX2xLNmpJZnczaGpMelBTN0ZxMEREWFQ2aUlGOUxTbjVRNi1mV2R4R3lORUw1NFd6Wm1vZmFINFpDOXNjSnhwQzc5b2RsT0VqSHUtNlF1dnRiR3lGbw?oc=5",
-      "published": "2026-09-24 06:14",
+      "link": "https://www.klnews.co.kr/news/articleView.html?idxno=322842",
+      "published": "2026-09-23 14:51",
       "quality": {
-        "title_status": "번역완료",
-        "summary_status": "AI요약",
-        "analysis_status": "ai"
+        "title_status": "원문한국어",
+        "summary_status": "기본정리",
+        "analysis_status": "fallback"
       }
     },
     {
@@ -128,101 +125,100 @@
       "region": "해외",
       "classification": "해외",
       "source": "Google News Global",
-      "title": "우버 프레이트, 유럽 확장 이니셔티브 발표",
-      "display_title": "우버 프레이트, 유럽 확장 이니셔티브 발표",
-      "original_title": "Uber Freight announces European expansion initiatives - Logistics Management",
+      "title": "North American transborder freight valued at $157.6 billion in July 2026 - American Journal of Transportation",
+      "display_title": "North American transborder freight valued at $157.6 billion in July 2026 - American Journal of Transportation",
+      "original_title": "North American transborder freight valued at $157.6 billion in July 2026 - American Journal of Transportation",
       "summary": [
-        "우버 프레이트가 유럽 시장에서의 사업 확장을 위한 이니셔티브를 공식적으로 발표했습니다.",
-        "디지털 화물 운송 플랫폼이 글로벌 물류 시장, 특히 유럽 내 입지를 강화하려는 움직임의 일환입니다.",
-        "디지털 플랫폼 기반의 운송 서비스가 전통 물류 시장에 미치는 영향이 커지고 있으며, 국내 기업들도 이러한 변화에 대한 대응 전략을 모색해야 합니다."
+        "North American transborder freight valued at $157.6 billion in July 2026 - American Journal of Transportation",
+        "North American transborder freight valued at $157.6 billion in July 2026 American Journal of Transportation",
+        "항공·운송 관점에서 후속 흐름을 살펴볼 필요가 있습니다."
       ],
-      "summary_text": "우버 프레이트가 유럽 시장에서의 사업 확장을 위한 이니셔티브를 공식적으로 발표했습니다. 디지털 화물 운송 플랫폼이 글로벌 물류 시장, 특히 유럽 내 입지를 강화하려는 움직임의 일환입니다. 디지털 플랫폼 기반의 운송 서비스가 전통 물류 시장에 미치는 영향이 커지고 있으며, 국내 기업들도 이러한 변화에 대한 대응 전략을 모색해야 합니다.",
-      "description": "우버 프레이트가 유럽 시장 확장을 위한 새로운 이니셔티브를 발표했습니다.",
-      "category": "투자·경영",
-      "importance": 7,
-      "reason": "글로벌 디지털 화물 운송 플랫폼의 유럽 시장 확대는 경쟁 심화와 기술 기반 서비스의 중요성을 시사하며, 국내외 물류 시장 변화에 대한 이해를 높이는 데 중요합니다.",
-      "content_angle": "우버 프레이트의 유럽 시장 진출 전략을 분석하고, 디지털 물류 플랫폼의 성장과 전통 물류 기업의 생존 전략에 대해 논의하는 콘텐츠로 활용할 수 있습니다.",
+      "summary_text": "North American transborder freight valued at $157.6 billion in July 2026 - American Journal of Transportation North American transborder freight valued at $157.6 billion in July 2026 American Journal of Transportation 항공·운송 관점에서 후속 흐름을 살펴볼 필요가 있습니다.",
+      "description": "North American transborder freight valued at $157.6 billion in July 2026 American Journal of Transportation",
+      "category": "항공·운송",
+      "importance": 5,
+      "reason": "항만·해운 운영 변화는 공급망 전반의 흐름과 연결되어 주목할 필요가 있습니다.",
+      "content_angle": "오늘의 물류 브리프, 유튜브 해설, 실무 인사이트 정리 콘텐츠로 확장할 수 있습니다.",
       "keywords": [
-        "우버 프레이트",
-        "유럽 확장",
-        "디지털 물류",
-        "화물 운송 플랫폼",
-        "글로벌 경쟁"
+        "american",
+        "157",
+        "2026",
+        "at"
       ],
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNeFhCbE9IWnJyVVhqMkM4Z1NuZXdpLVhGeUN5Q0NMVF9Sc3d0Y3lkZ3FjbTRZMUZFQWQyb3VLdEVpbWlBOHJJbFZidl94QTVNcHMzS3pLYURLTHRjWlE2TGYwa3U2QlNualFRMTdjRDFmZFYwR2M4X3hPdngzazktaVUwR1JWQm4xTHFvTFdFX0pCVG1KYVE?oc=5",
-      "published": "2026-09-24 02:29",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQcjA4WjlkVEVWVmFOeS1jbVp4ckJfWHZJSnpsdnJKS2lzZXZMV1J0Q3RUX1hpRXhhVjJ3S0t6OVVMblpUUEd1bWQyY2xDUFEtMWFRUFFLYzM2OG5xdHFJcDludGZqc3VhdHU3Z0dkOER6dkJCZGtIRmdmTnJxblViR0g1WlVvMlhySEx0QUo0d0hWQXpqR1lKZnVscU02Zw?oc=5",
+      "published": "2026-09-25 02:32",
       "quality": {
-        "title_status": "번역완료",
-        "summary_status": "AI요약",
-        "analysis_status": "ai"
+        "title_status": "원문표시",
+        "summary_status": "기본정리",
+        "analysis_status": "fallback"
       }
     },
     {
       "rank": 5,
-      "region": "국내",
-      "classification": "국내",
-      "source": "물류신문",
-      "title": "부산항만공사, 추석 연휴에도 차질 없는 항만서비스 제공",
-      "display_title": "부산항만공사, 추석 연휴에도 차질 없는 항만서비스 제공",
-      "original_title": "부산항만공사, 추석 연휴에도 차질 없는 항만서비스 제공",
+      "region": "해외",
+      "classification": "해외",
+      "source": "Google News Global",
+      "title": "3 Shipping Stocks Worth Watching As China Drives 40% Of Global Container Exports - Yahoo Finance",
+      "display_title": "3 Shipping Stocks Worth Watching As China Drives 40% Of Global Container Exports - Yahoo Finance",
+      "original_title": "3 Shipping Stocks Worth Watching As China Drives 40% Of Global Container Exports - Yahoo Finance",
       "summary": [
-        "부산항만공사가 추석 연휴 동안 차질 없는 항만서비스를 제공하기 위해 항만운영 특별대책을 수립하고 관계기관과 협력합니다.",
-        "명절 연휴 기간에도 물류 흐름이 끊기지 않고, 항만 이용객들에게 불편함 없이 서비스를 제공하기 위한 공공기관의 책임 있는 조치입니다.",
-        "주요 항만의 안정적인 운영은 전체 물류 공급망에 큰 영향을 미치므로, 연휴 기간에도 물류 지연 없이 효율적인 운송 계획을 수립할 수 있습니다."
+        "3 Shipping Stocks Worth Watching As China Drives 40% Of Global Container Exports - Yahoo Finance",
+        "3 Shipping Stocks Worth Watching As China Drives 40% Of Global Container Exports Yahoo Finance",
+        "항만·해운 관점에서 후속 흐름을 살펴볼 필요가 있습니다."
       ],
-      "summary_text": "부산항만공사가 추석 연휴 동안 차질 없는 항만서비스를 제공하기 위해 항만운영 특별대책을 수립하고 관계기관과 협력합니다. 명절 연휴 기간에도 물류 흐름이 끊기지 않고, 항만 이용객들에게 불편함 없이 서비스를 제공하기 위한 공공기관의 책임 있는 조치입니다. 주요 항만의 안정적인 운영은 전체 물류 공급망에 큰 영향을 미치므로, 연휴 기간에도 물류 지연 없이 효율적인 운송 계획을 수립할 수 있습니다.",
-      "description": "부산항만공사가 추석 연휴 기간 동안 부산항의 물류 및 여객 서비스 공백을 최소화하기 위한 특별대책을 시행하여 차질 없는 항만 운영을 약속했습니다.",
+      "summary_text": "3 Shipping Stocks Worth Watching As China Drives 40% Of Global Container Exports - Yahoo Finance 3 Shipping Stocks Worth Watching As China Drives 40% Of Global Container Exports Yahoo Finance 항만·해운 관점에서 후속 흐름을 살펴볼 필요가 있습니다.",
+      "description": "3 Shipping Stocks Worth Watching As China Drives 40% Of Global Container Exports Yahoo Finance",
       "category": "항만·해운",
-      "importance": 6,
-      "reason": "명절 연휴에도 주요 항만이 차질 없이 운영된다는 점은 물류 계획 수립 시 중요한 정보이며, 운송 지연 리스크 관리에도 도움이 됩니다.",
-      "content_angle": "명절 연휴 물류 대란 예방을 위한 항만 공사의 노력과 그 효과를 분석하고, 기업들이 연휴 물류 계획을 어떻게 세워야 할지 가이드라인을 제시하는 콘텐츠로 활용할 수 있습니다.",
+      "importance": 5,
+      "reason": "기술 도입은 운영 효율과 가시성 개선에 직결되므로 업계 파급력이 큰 편입니다.",
+      "content_angle": "자동화·디지털 전환 사례와 현장 적용 포인트를 설명하는 콘텐츠에 적합합니다.",
       "keywords": [
-        "부산항",
-        "항만서비스",
-        "추석 연휴",
-        "물류 운영",
-        "항만운영 특별대책"
+        "40",
+        "as",
+        "china",
+        "container"
       ],
-      "link": "https://www.klnews.co.kr/news/articleView.html?idxno=322849",
-      "published": "2026-09-23 14:51",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNVTA3dXk5Z2tIQVhmSmEzbkl3UFlvOXZCTWF5LUh5M3VLazNJak5PazkwdWtXWXNXc3pJTXlFVEZmdUNKTGFTTFMxNEN4cF81WWgzSm1KUUE1RzJnNDh5R0NtOTRjcnQ2OFgxZ0QteEhfQkhqVlpsdHJqYTRWZTdaSGR4aVlrUHBJUUExY3ctUHd2eTlWeGZVNTFCeGFiUQ?oc=5",
+      "published": "2026-09-24 23:18",
       "quality": {
-        "title_status": "원문한국어",
-        "summary_status": "AI요약",
-        "analysis_status": "ai"
+        "title_status": "원문표시",
+        "summary_status": "기본정리",
+        "analysis_status": "fallback"
       }
     }
   ],
   "content_ideas": [
     {
       "rank": 1,
-      "topic": "친환경 선박 연료 전환 가속화와 시장 기회",
-      "reason": "해운 물류 기업들이 ESG 경영과 탄소 중립 목표 달성을 위해 친환경 연료 전환은 필수적입니다. 해양수산부의 시장 진입 완화 정책이 구체적으로 어떤 기회를 제공하며, 기업들이 비용 절감 및 경쟁력 확보를 위해 어떤 전략을 수립해야 하는지 실질적인 정보를 제공하여 사업 계획에 도움을 줄 수 있습니다.",
-      "video_title": "해운 물류 대전환! 친환경 선박 연료 도입, 우리 기업의 생존 전략은? (feat. 정부 지원)",
+      "topic": "글로벌 해운 시장 동향 및 운임 전망",
+      "reason": "물류 전문가는 급변하는 글로벌 운임 시장과 공급망 상황을 정확히 이해해야 비용 절감 및 효율적인 운송 전략 수립이 가능합니다. 특히 미주 노선 운임 폭등과 중국발 수출 물량 증가는 기업의 물류 계획에 직접적인 영향을 미치므로, 이에 대한 심층 분석은 실무적 의사결정에 큰 도움이 됩니다.",
+      "video_title": "[긴급분석] 미주 운임 폭등 vs 중국발 수출 대란! 2024년 글로벌 물류 시장 대격변 예고?",
       "format": "해설형",
       "based_on_titles": [
-        "친환경 선박 연료 활성화를 위해 시장 진입 문턱 완화"
+        "US Freight Rates Soar Amid Capacity Crisis: The Week in Logistics - Mexico Business News",
+        "North American transborder freight valued at $157.6 billion in July 2026 - American Journal of Transportation",
+        "3 Shipping Stocks Worth Watching As China Drives 40% Of Global Container Exports - Yahoo Finance"
       ]
     },
     {
       "rank": 2,
-      "topic": "우버 프레이트 유럽 확장, 국내 물류 기업의 대응 전략",
-      "reason": "우버 프레이트와 같은 글로벌 디지털 플랫폼의 유럽 시장 확대는 국내 물류 기업들에게 잠재적 경쟁 심화 요인이자, 동시에 디지털 전환의 필요성을 상기시키는 기회입니다. 이들의 전략과 시장 영향력을 분석하고, 국내 기업들이 해외 시장 진출 또는 국내 경쟁력 강화를 위한 전략을 수립하는 데 실질적인 인사이트를 제공할 수 있습니다.",
-      "video_title": "우버 프레이트가 온다! 유럽 물류 시장 격변, 한국 기업 생존법은?",
-      "format": "전망형",
+      "topic": "해운 산업 내 선원 노동 환경 및 체불임금 문제",
+      "reason": "해운사는 물론, 해상 운송을 주요 공급망으로 활용하는 기업들은 선원들의 노동 환경과 관련된 규제 준수 여부가 기업의 사회적 책임(ESG)뿐만 아니라 공급망의 안정성에도 영향을 미친다는 점을 인지해야 합니다. 체불임금과 같은 이슈는 선박 운영 중단 등 예기치 않은 리스크로 이어질 수 있으므로, 물류 전문가에게는 이러한 잠재적 위험을 이해하고 관리하는 데 필요한 정보를 제공합니다.",
+      "video_title": "선원 체불임금, 당신의 '안전한' 해상 운송을 위협한다! 해수부 특별 감독과 물류 기업의 대응 전략",
+      "format": "설명형",
       "based_on_titles": [
-        "우버 프레이트, 크라쿠프 허브 설립으로 유럽 시장에 장기적인 투자",
-        "우버 프레이트, 유럽 확장 이니셔티브 발표"
+        "해수부, “선원 체불임금 4억 3,100만 원 지급 조치”"
       ]
     },
     {
       "rank": 3,
-      "topic": "불안정한 공급망 시대, 물류 파트너십 강화 전략",
-      "reason": "지속적인 공급망 혼란은 기업들에게 비상 계획 수립 및 유연한 파트너십 구축의 중요성을 더욱 부각시키고 있습니다. 자동차 물류 분야의 사례를 통해 일반적인 물류 기업들이 겪는 문제에 대한 실질적인 해결책, 즉 어떤 파트너와 어떻게 협력해야 하는지, 그리고 위기 발생 시 어떻게 대응해야 하는지에 대한 가이드를 제공하여 기업의 리스크 관리 능력 향상에 기여할 수 있습니다.",
-      "video_title": "🆘 공급망 위기 탈출! 파트너십으로 리스크 낮추는 물류 전략 A to Z",
-      "format": "설명형",
+      "topic": "글로벌 물류 트렌드와 투자 기회 분석",
+      "reason": "물류 전문가는 단순 운송 운영을 넘어 산업 전체의 흐름을 읽고 미래를 예측하는 능력이 중요합니다. 중국의 막대한 수출 비중과 북미 지역의 물동량 변화, 그리고 운임 변동성은 해운 및 물류 관련 기업의 주가 및 투자 가치에 직접적인 영향을 미칩니다. 이러한 정보를 통해 전문가는 자신의 기업 전략 수립뿐만 아니라 개인적인 투자 안목을 넓히는 데 도움을 받을 수 있습니다.",
+      "video_title": "[2024 물류 전망] 미주 운임 급등, 중국發 수출 폭증! 지금 주목해야 할 물류/해운 투자처는?",
+      "format": "전망형",
       "based_on_titles": [
-        "공급망 혼란 대응을 위한 자동차 물류 파트너십 및 전략 변화",
-        "부산항만공사, 추석 연휴에도 차질 없는 항만서비스 제공"
+        "3 Shipping Stocks Worth Watching As China Drives 40% Of Global Container Exports - Yahoo Finance",
+        "US Freight Rates Soar Amid Capacity Crisis: The Week in Logistics - Mexico Business News"
       ]
     }
   ]
