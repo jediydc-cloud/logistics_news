@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-08 09:59",
-  "analysis_date": "2026-11-08",
+  "generated_at": "2026-11-09 10:20",
+  "analysis_date": "2026-11-09",
   "project_overview": {
     "project_name": "국내외 물류 뉴스 자동 브리핑 및 콘텐츠 아이디어 도출 시스템",
     "purpose": "국내외 물류 뉴스를 자동 수집·정리해 대표가 빠르게 핵심 이슈를 파악하고 콘텐츠 기획에 활용할 수 있도록 돕는 시스템",
@@ -13,46 +13,45 @@
     "final_deliverable": "테오시스 홈페이지용 data.json"
   },
   "brief": {
-    "총평": "글로벌 물류 시장은 공급망 안정성 확보와 AI 기반 기술 도입을 통한 효율성 극대화에 집중하는 반면, 국내에서는 공공기관의 ESG 경영 및 해양 안전 역량 강화 동향이 나타나고 있습니다. 급변하는 환경 속에서 기술 혁신과 위기 관리 역량 강화가 핵심 경쟁력이 될 것으로 보입니다.",
-    "국내동향": "울산항만공사는 지역 대학과 협력하여 지역사회 문제 해결 및 ESG 경영을 강화하고 있습니다. 또한 한국해양교통안전공단은 핵심 인력을 보강하며 해양 안전 및 규제 역량 강화에 집중하고 있어 관련 동향 파악이 중요합니다.",
-    "해외동향": "세계 50대 물류 기업들은 글로벌 공급망의 취약성에 대응하여 운영 회복 탄력성 확보를 최우선 전략으로 채택하고 있습니다. AI 기반 운송관리시스템(TMS) 및 자동화 기술이 화물 운송의 효율성을 재편하며 시장 경쟁력을 좌우하는 핵심 동력으로 부상하고 있습니다.",
-    "리스크포인트": "글로벌 공급망의 예측 불가능한 불안정성은 비즈니스 연속성에 지속적인 위협이 됩니다. 또한 AI 등 첨단 기술 도입에 대한 전략적 접근 부재는 시장 경쟁에서 뒤처질 수 있는 리스크로 작용할 수 있습니다.",
-    "기회포인트": "AI 기반 TMS 및 고급 분석 기술 도입을 통해 운송 효율성을 극대화하고 비용을 절감하여 경쟁 우위를 확보할 수 있습니다. 선제적으로 공급망 회복 탄력성을 강화하고 ESG 경영을 통해 기업의 지속가능성과 긍정적 이미지를 구축할 기회입니다.",
-    "오늘의한줄": "글로벌 공급망 안정화와 첨단 기술 도입으로 시장을 선도하고, 국내에서는 ESG 경영과 안전 관리에 집중하며 미래 성장을 준비해야 할 시점입니다."
+    "총평": "국내외적으로 물류 효율성 및 기술 혁신과 함께 지정학적, 정책적 리스크 관리가 중요해지는 시점입니다. 지속 가능한 성장을 위해 민첩한 대응과 전략적 투자가 요구됩니다.",
+    "국내동향": "ICT와 물류, 민관 협력을 기반으로 한 K-푸드뱅크가 글로벌 무대에 서며 국내 물류 모델의 성공 가능성을 보여주었습니다. 다만, 중국의 군사력 증강으로 인한 해상 물류의 긴장감은 국내 공급망에 불안 요소를 더하고 있습니다.",
+    "해외동향": "글로벌 무역 환경은 관세 변화 및 공급망 규제 강화 등 불확실성이 커지며 기업의 민첩한 대응이 중요해지고 있습니다. 아울러 공차 운행 감소와 같은 운송 효율성 증대 노력이 운전자 보상 문제로 이어질 수 있다는 점은 인력 관리의 중요성을 시사합니다.",
+    "리스크포인트": "중국의 군사적 움직임으로 인한 해상 물류의 지정학적 불안정성 증가는 주요 리스크입니다. 또한, 글로벌 무역 환경 변화에 따른 정책적 리스크와 운송 효율화 과정에서의 인력 관리 문제도 면밀히 검토해야 합니다.",
+    "기회포인트": "ICT와 물류, 민관 협력을 통한 새로운 비즈니스 모델 발굴과 ESG 경영 강화의 기회가 있습니다. 변화하는 무역 환경에 대응하기 위한 공급망 가시성 및 유연성 확보 솔루션에 대한 수요 또한 증가할 것으로 예상됩니다.",
+    "오늘의한줄": "불확실한 대외 환경 속, 국내 물류 모델의 성공 가능성을 타진하며 기술 혁신과 리스크 관리에 균형 잡힌 시각이 필요한 때입니다."
   },
   "top_news": [
     {
       "rank": 1,
-      "region": "해외",
-      "classification": "해외",
-      "source": "Google News Global",
-      "title": "세계 50대 물류 기업, 회복 탄력성 우선시",
-      "display_title": "세계 50대 물류 기업, 회복 탄력성 우선시",
-      "original_title": "Top 50 Global Freight Companies prioritize resilience - Transport Topics",
+      "region": "국내",
+      "classification": "국내",
+      "source": "Google News Korea",
+      "title": "ICT·물류·민관 협력 세 축으로 쌓은 K-푸드뱅크, 2026 GFN 글로벌 서밋 무대에 서다 - 한국공공정책신문",
+      "display_title": "ICT·물류·민관 협력 세 축으로 쌓은 K-푸드뱅크, 2026 GFN 글로벌 서밋 무대에 서다 - 한국공공정책신문",
+      "original_title": "ICT·물류·민관 협력 세 축으로 쌓은 K-푸드뱅크, 2026 GFN 글로벌 서밋 무대에 서다 - 한국공공정책신문",
       "summary": [
-        "세계 50대 물류 기업들이 운영 회복 탄력성 확보를 핵심 전략으로 채택하고 있다.",
-        "팬데믹과 지정학적 불안정 등으로 글로벌 공급망의 취약성이 드러나면서 안정성 확보의 중요성이 부각되었다.",
-        "기업들은 예측 불가능한 상황에 대비하고 비즈니스 연속성을 유지하기 위한 전략 마련이 필수적이다."
+        "ICT·물류·민관 협력 세 축으로 쌓은 K-푸드뱅크, 2026 GFN 글로벌 서밋 무대에 서다 - 한국공공정책신문",
+        "ICT·물류·민관 협력 세 축으로 쌓은 K-푸드뱅크, 2026 GFN 글로벌 서밋 무대에 서다 한국공공정책신문",
+        "정책·공공 관점에서 후속 흐름을 살펴볼 필요가 있습니다."
       ],
-      "summary_text": "세계 50대 물류 기업들이 운영 회복 탄력성 확보를 핵심 전략으로 채택하고 있다. 팬데믹과 지정학적 불안정 등으로 글로벌 공급망의 취약성이 드러나면서 안정성 확보의 중요성이 부각되었다. 기업들은 예측 불가능한 상황에 대비하고 비즈니스 연속성을 유지하기 위한 전략 마련이 필수적이다.",
-      "description": "세계 상위 50개 물류 기업들이 사업 운영의 회복 탄력성을 최우선 과제로 삼고 있다.",
-      "category": "투자·경영",
-      "importance": 9,
-      "reason": "주요 경쟁사들의 전략 방향을 파악하여 우리 회사도 공급망 안정성 및 위기 대응 역량 강화를 위한 투자를 고려해야 합니다.",
-      "content_angle": "'글로벌 물류기업의 생존 전략: 회복 탄력성 강화'라는 주제로 경영진 브리핑 자료를 준비할 수 있습니다.",
+      "summary_text": "ICT·물류·민관 협력 세 축으로 쌓은 K-푸드뱅크, 2026 GFN 글로벌 서밋 무대에 서다 - 한국공공정책신문 ICT·물류·민관 협력 세 축으로 쌓은 K-푸드뱅크, 2026 GFN 글로벌 서밋 무대에 서다 한국공공정책신문 정책·공공 관점에서 후속 흐름을 살펴볼 필요가 있습니다.",
+      "description": "ICT·물류·민관 협력 세 축으로 쌓은 K-푸드뱅크, 2026 GFN 글로벌 서밋 무대에 서다 한국공공정책신문",
+      "category": "정책·공공",
+      "importance": 5,
+      "reason": "정책·제도 변화가 물류 현장과 기업 대응 전략에 직접 영향을 줄 수 있는 이슈입니다.",
+      "content_angle": "정책 변화 해설, 실무 대응 가이드, 업계 영향 분석 콘텐츠로 활용할 수 있습니다.",
       "keywords": [
-        "회복 탄력성",
-        "공급망 안정성",
-        "글로벌 물류",
-        "위기 관리",
-        "경영 전략"
+        "2026",
+        "gfn",
+        "ict",
+        "글로벌"
       ],
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB4bG01NXdTbFBaTHlteFFDbGxscU9yaDNibVdxN0dSMmpBVGNRX0pNNUtfVnNRNTFZN1FhS0NaTGNTMGZteWkxMWJMaWxaTFNNa0xjV09XM2ZBYkxpWDZ0ZXpIb05qWTFKcXc?oc=5",
-      "published": "2026-11-07 21:00",
+      "link": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE5YQ0owanJtaEY4dHBDWlJhbXAtR3liZHhaTDg5OVVvU3YwVHRkb3NaclExcmtwN3RWdjlRMGloUkdPLTA?oc=5",
+      "published": "2026-11-09 02:19",
       "quality": {
-        "title_status": "번역완료",
-        "summary_status": "AI요약",
-        "analysis_status": "ai"
+        "title_status": "원문한국어",
+        "summary_status": "기본정리",
+        "analysis_status": "fallback"
       }
     },
     {
@@ -60,168 +59,165 @@
       "region": "해외",
       "classification": "해외",
       "source": "Google News Global",
-      "title": "AI가 TMS 시장을 재편하고 있으며, 성공적인 도입이 승패를 좌우한다",
-      "display_title": "AI가 TMS 시장을 재편하고 있으며, 성공적인 도입이 승패를 좌우한다",
-      "original_title": "AI Is Reshaping the TMS Market. Deployment Will Determine the Winners. - Logistics Viewpoints",
+      "title": "Optimal Dynamics says cutting empty truck miles can shrink driver pay - MarketScale",
+      "display_title": "Optimal Dynamics says cutting empty truck miles can shrink driver pay - MarketScale",
+      "original_title": "Optimal Dynamics says cutting empty truck miles can shrink driver pay - MarketScale",
       "summary": [
-        "인공지능 기술이 운송관리시스템(TMS) 시장의 핵심 동력이 되고 있으며, 실제 적용 방식이 기업의 성공을 결정한다.",
-        "운송 효율성 증대와 비용 절감을 위해 AI 기반의 TMS 솔루션에 대한 수요가 증가하고 있으며, 시장 경쟁이 심화되고 있다.",
-        "우리 회사도 AI 기반 TMS 도입을 검토하고, 시스템을 실제 운영에 효과적으로 통합하는 전략이 필요하다."
+        "Optimal Dynamics says cutting empty truck miles can shrink driver pay - MarketScale",
+        "Optimal Dynamics says cutting empty truck miles can shrink driver pay MarketScale",
+        "항공·운송 관점에서 후속 흐름을 살펴볼 필요가 있습니다."
       ],
-      "summary_text": "인공지능 기술이 운송관리시스템(TMS) 시장의 핵심 동력이 되고 있으며, 실제 적용 방식이 기업의 성공을 결정한다. 운송 효율성 증대와 비용 절감을 위해 AI 기반의 TMS 솔루션에 대한 수요가 증가하고 있으며, 시장 경쟁이 심화되고 있다. 우리 회사도 AI 기반 TMS 도입을 검토하고, 시스템을 실제 운영에 효과적으로 통합하는 전략이 필요하다.",
-      "description": "인공지능이 운송관리시스템(TMS) 시장의 지형을 변화시키고 있으며, AI 기술의 효과적인 도입 및 활용이 기업의 경쟁력을 결정할 것이다.",
-      "category": "자동화·기술",
-      "importance": 9,
-      "reason": "AI 기반 TMS 도입은 운송 효율성을 극대화하고 경쟁 우위를 확보하는 중요한 수단이므로, 현재 시스템의 AI 적용 가능성을 검토해야 합니다.",
-      "content_angle": "'AI 기반 TMS의 미래: 우리 회사의 운송 효율성을 높일 기회'라는 제목으로 내부 혁신 팀 브리핑 또는 인력 교육 자료를 제작할 수 있습니다.",
+      "summary_text": "Optimal Dynamics says cutting empty truck miles can shrink driver pay - MarketScale Optimal Dynamics says cutting empty truck miles can shrink driver pay MarketScale 항공·운송 관점에서 후속 흐름을 살펴볼 필요가 있습니다.",
+      "description": "Optimal Dynamics says cutting empty truck miles can shrink driver pay MarketScale",
+      "category": "항공·운송",
+      "importance": 5,
+      "reason": "업계 흐름과 실무 대응 방향을 파악하는 데 참고 가치가 높은 이슈입니다.",
+      "content_angle": "오늘의 물류 브리프, 유튜브 해설, 실무 인사이트 정리 콘텐츠로 확장할 수 있습니다.",
       "keywords": [
-        "AI",
-        "TMS",
-        "운송 관리",
-        "자동화",
-        "솔루션"
+        "can",
+        "cutting",
+        "driver",
+        "dynamics"
       ],
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNVFBSejFmX0cwRUcyUFZtcHRwUktUN3Y5QnUyaVdhUGpTcktQMmZoSjlMNGpxcWdzR3h3N25zeU9jNU1aOGctNkt3Q0FUT0FvRnJMQnczWkNvQjN0OEdtbXliRmJhRHJlR0FuM2Z0LUFmVE1CYW0wbG5XS2l4ODk2bUFtNU9xblFNbHhZZU4tcHdzTi1VWXgyaWFWcHRPT09jbUJ3MmRKS0ZsbG0zZzZ1M05B?oc=5",
-      "published": "2026-11-06 21:07",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNcmN5UV9SZEtfMW5zV2hsZG9nNG5tUWtoanUwWGVGUUxCcTA4X2RPZklQVkFULVc3QTVsX2RZcnVjdG1oSGpPTE82YlVxaVJSbnFMSUt1eWZ5QVhMOExITFVxdmpkbHNxWFN6bzNmYTRnbE1hSWpXMUdEVnpkdDd2Z2Q4bG9KUV9uRTA1cnhMRXdCckdmQS1MZGh3SjZsaVhnandkWXIxb1pDaGJHSGZWdWhVYXdsbTRYZ3ZIbDVlT2I?oc=5",
+      "published": "2026-11-09 04:18",
       "quality": {
-        "title_status": "번역완료",
-        "summary_status": "AI요약",
-        "analysis_status": "ai"
+        "title_status": "원문표시",
+        "summary_status": "기본정리",
+        "analysis_status": "fallback"
       }
     },
     {
       "rank": 3,
-      "region": "해외",
-      "classification": "해외",
-      "source": "Logistics Management",
-      "title": "화물 운송의 미래: 화물 관리의 다음 단계를 재편하는 6가지 트렌드",
-      "display_title": "화물 운송의 미래: 화물 관리의 다음 단계를 재편하는 6가지 트렌드",
-      "original_title": "Future of Motor Freight: 6 trends reshaping freight management’s next phase",
+      "region": "국내",
+      "classification": "국내",
+      "source": "Google News Korea",
+      "title": "中, 핵항모 띄우고 벵골만에 전투기 배치… 韓 해상 물류로 긴장 - 글로벌이코노믹",
+      "display_title": "中, 핵항모 띄우고 벵골만에 전투기 배치… 韓 해상 물류로 긴장 - 글로벌이코노믹",
+      "original_title": "中, 핵항모 띄우고 벵골만에 전투기 배치… 韓 해상 물류로 긴장 - 글로벌이코노믹",
       "summary": [
-        "AI, 고급 분석, 자동화 기술이 자율주행 트럭, 지능형 운송사 관리, 예측 계획 등 6가지 핵심 트렌드를 통해 화물 관리 방식을 혁신하고 있다.",
-        "복잡해지는 운송 네트워크와 공급망 리스크 증가로 인해, 물류 관리자는 더욱 정교하고 선제적인 관리 도구의 필요성을 느끼고 있다.",
-        "이 트렌드들은 물류 효율성을 극대화하고 의사결정 능력을 향상시키며, 우리 회사의 장기적인 운송 전략 수립에 중요한 고려 사항이 된다."
+        "中, 핵항모 띄우고 벵골만에 전투기 배치… 韓 해상 물류로 긴장 - 글로벌이코노믹",
+        "中, 핵항모 띄우고 벵골만에 전투기 배치… 韓 해상 물류로 긴장 글로벌이코노믹",
+        "항만·해운 관점에서 후속 흐름을 살펴볼 필요가 있습니다."
       ],
-      "summary_text": "AI, 고급 분석, 자동화 기술이 자율주행 트럭, 지능형 운송사 관리, 예측 계획 등 6가지 핵심 트렌드를 통해 화물 관리 방식을 혁신하고 있다. 복잡해지는 운송 네트워크와 공급망 리스크 증가로 인해, 물류 관리자는 더욱 정교하고 선제적인 관리 도구의 필요성을 느끼고 있다. 이 트렌드들은 물류 효율성을 극대화하고 의사결정 능력을 향상시키며, 우리 회사의 장기적인 운송 전략 수립에 중요한 고려 사항이 된다.",
-      "description": "AI, 고급 분석 및 자동화 기술이 화물 관리를 단순 가시성을 넘어 더욱 스마트한 도구로 발전시키며, 물류 관리자들이 중단을 예측하고 조달을 개선하며 더 빠르고 정보에 기반한 결정을 내릴 수 있도록 돕는다.",
-      "category": "자동화·기술",
-      "importance": 9,
-      "reason": "최신 기술 트렌드를 이해하고 선제적으로 도입하는 것은 화물 운송 관리의 효율성을 극대화하고 미래 경쟁력을 확보하는 데 필수적입니다.",
-      "content_angle": "'미래 화물 운송 관리 6대 트렌드: 우리 회사의 경쟁력 강화 전략'이라는 제목으로 최고경영진 브리핑 또는 심층 인사이트 보고서를 준비할 수 있습니다.",
+      "summary_text": "中, 핵항모 띄우고 벵골만에 전투기 배치… 韓 해상 물류로 긴장 - 글로벌이코노믹 中, 핵항모 띄우고 벵골만에 전투기 배치… 韓 해상 물류로 긴장 글로벌이코노믹 항만·해운 관점에서 후속 흐름을 살펴볼 필요가 있습니다.",
+      "description": "中, 핵항모 띄우고 벵골만에 전투기 배치… 韓 해상 물류로 긴장 글로벌이코노믹",
+      "category": "항만·해운",
+      "importance": 5,
+      "reason": "항만·해운 운영 변화는 공급망 전반의 흐름과 연결되어 주목할 필요가 있습니다.",
+      "content_angle": "항만 경쟁력과 공급망 연결성 관점에서 풀어내는 해설형 콘텐츠로 활용하기 좋습니다.",
       "keywords": [
-        "화물 운송",
-        "AI",
-        "자동화",
-        "예측 분석",
-        "자율주행 트럭"
+        "글로벌이코노믹",
+        "긴장",
+        "띄우고",
+        "물류로"
       ],
-      "link": "https://www.logisticsmgmt.com/article/future_of_motor_freight_6_trends_reshaping_freight_managements_next_phase",
-      "published": "2026-11-02 15:11",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNb00zUkVISnVXc0lkeERTVk1VdzEteG9qRE1yUVg5dnQ0UHJCbTRIdG5SVC1kQkpZckI3UXl1WHV5Zm9Qa3RiNTMzaHJCeHl0bXJ6Q0hZSjk4V1RVRTNsY1pFZUJjWWN6NWZjeXpqRTBIRVJJaGQtVkRZN05McTk0Q2JxWDExcDhO?oc=5",
+      "published": "2026-11-09 03:35",
       "quality": {
-        "title_status": "번역완료",
-        "summary_status": "AI요약",
-        "analysis_status": "ai"
+        "title_status": "원문한국어",
+        "summary_status": "기본정리",
+        "analysis_status": "fallback"
       }
     },
     {
       "rank": 4,
       "region": "국내",
       "classification": "국내",
-      "source": "물류신문",
-      "title": "울산항만공사, 울산대 학생들과 지역 현안 해결책 모색",
-      "display_title": "울산항만공사, 울산대 학생들과 지역 현안 해결책 모색",
-      "original_title": "울산항만공사, 울산대 학생들과 현안 해결책 찾는다",
+      "source": "Google News Korea",
+      "title": "‘국내 최초’ 40년, 물류기기 역사를 새로 쓰다 - 동아일보",
+      "display_title": "‘국내 최초’ 40년, 물류기기 역사를 새로 쓰다 - 동아일보",
+      "original_title": "‘국내 최초’ 40년, 물류기기 역사를 새로 쓰다 - 동아일보",
       "summary": [
-        "울산항만공사는 울산대학교와 협력하여 '2026 지역문제 해(海)결단' 프로젝트를 통해 지역 현안 해결을 위한 아이디어를 모색한다.",
-        "공기업이 지역사회와 상생하고 청년 참여를 유도하며, 국민 참여 활성화, 청년 일자리 창출, 자원순환 및 환경 등 다양한 사회적 가치를 실현하려는 노력의 일환이다.",
-        "지역사회와의 협력을 통해 항만 운영의 지속가능성을 높이고, ESG 경영 측면에서 긍정적인 이미지를 구축할 수 있다."
+        "‘국내 최초’ 40년, 물류기기 역사를 새로 쓰다 - 동아일보",
+        "‘국내 최초’ 40년, 물류기기 역사를 새로 쓰다 동아일보",
+        "기타 관점에서 후속 흐름을 살펴볼 필요가 있습니다."
       ],
-      "summary_text": "울산항만공사는 울산대학교와 협력하여 '2026 지역문제 해(海)결단' 프로젝트를 통해 지역 현안 해결을 위한 아이디어를 모색한다. 공기업이 지역사회와 상생하고 청년 참여를 유도하며, 국민 참여 활성화, 청년 일자리 창출, 자원순환 및 환경 등 다양한 사회적 가치를 실현하려는 노력의 일환이다. 지역사회와의 협력을 통해 항만 운영의 지속가능성을 높이고, ESG 경영 측면에서 긍정적인 이미지를 구축할 수 있다.",
-      "description": "울산항만공사가 울산대학교 학생들과 협력하여 '2026 지역문제 해(海)결단' 프로젝트를 추진하며, 청년들의 참신한 아이디어로 울산항과 지역사회의 현안을 해결하고자 한다.",
-      "category": "정책·공공",
-      "importance": 6,
-      "reason": "지역사회와의 상생 협력은 기업의 사회적 책임(ESG)을 다하고 긍정적인 이미지를 구축하는 데 중요하며, 잠재적으로 새로운 아이디어를 얻을 기회가 될 수 있습니다.",
-      "content_angle": "'ESG 경영 사례 연구: 울산항만공사의 지역 상생 프로젝트'라는 제목으로 사내 ESG 교육 자료 또는 외부 발표 자료를 기획할 수 있습니다.",
+      "summary_text": "‘국내 최초’ 40년, 물류기기 역사를 새로 쓰다 - 동아일보 ‘국내 최초’ 40년, 물류기기 역사를 새로 쓰다 동아일보 기타 관점에서 후속 흐름을 살펴볼 필요가 있습니다.",
+      "description": "‘국내 최초’ 40년, 물류기기 역사를 새로 쓰다 동아일보",
+      "category": "기타",
+      "importance": 5,
+      "reason": "업계 흐름과 실무 대응 방향을 파악하는 데 참고 가치가 높은 이슈입니다.",
+      "content_angle": "오늘의 물류 브리프, 유튜브 해설, 실무 인사이트 정리 콘텐츠로 확장할 수 있습니다.",
       "keywords": [
-        "울산항만공사",
-        "지역 상생",
-        "ESG 경영",
-        "청년 참여",
-        "항만 운영"
+        "40년",
+        "국내",
+        "동아일보",
+        "물류기기"
       ],
-      "link": "https://www.klnews.co.kr/news/articleView.html?idxno=323385",
-      "published": "2026-11-05 09:56",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBZdnJPcUlBU3gxNmFFOTdLVGFpck4zX253V2NZend0ZE9zN1BMRnUzTThOTmhHa2hha0tDaFJwNVE3UlNBNy1YWkdmeW5fdVNld0dmUm5hOE4xZ3pzaWhBa3pleXZxdTFKa0x1X1BFXzlDWDgzdXfSAWZBVV95cUxPUGVnekhkU2w5SWRqSng4QTdtVDJkSmFyNkRBamNCb0ZSdUlMZkhYOEUyVEg4cWFObTJOSGo4TUtFMzZrZnBHYjhrSUwtVWJHUlIzMGh1MFF4QzdmOHRmdy0yanJSSnc?oc=5",
+      "published": "2026-11-09 04:30",
       "quality": {
         "title_status": "원문한국어",
-        "summary_status": "AI요약",
-        "analysis_status": "ai"
+        "summary_status": "기본정리",
+        "analysis_status": "fallback"
       }
     },
     {
       "rank": 5,
-      "region": "국내",
-      "classification": "국내",
-      "source": "물류신문",
-      "title": "한국해양교통안전공단, 신임 해양교통본부장 및 검사본부장 임명",
-      "display_title": "한국해양교통안전공단, 신임 해양교통본부장 및 검사본부장 임명",
-      "original_title": "KOMSA, 신임 해양교통본부장-검사본부장 임명",
+      "region": "해외",
+      "classification": "해외",
+      "source": "Logistics Management",
+      "title": "Import/Export 2027: Staying nimble in a shifting trade landscape",
+      "display_title": "Import/Export 2027: Staying nimble in a shifting trade landscape",
+      "original_title": "Import/Export 2027: Staying nimble in a shifting trade landscape",
       "summary": [
-        "한국해양교통안전공단이 해양교통본부장과 검사본부장에 각각 이경훈 기술연구소장과 박금구 검사관리실장을 임명했다.",
-        "해양 안전과 운항의 중요성이 커지는 상황에서, 관련 분야의 전문성을 갖춘 인재를 핵심 보직에 배치하여 조직 역량을 강화하려는 목적이다.",
-        "해양 안전 및 규제 환경에 영향을 미치는 주요 기관의 인사는 해운 산업 전반에 미치는 영향이 있을 수 있으므로 동향을 파악하는 것이 중요하다."
+        "As shifting tariffs, tighter supply chain scrutiny and evolving export controls reshape global trade, importer...",
+        "From strengthening customs documentation and supply chain traceability to adapting export-control procedures,...",
+        "정책·공공 관점에서 시사점을 점검할 필요가 있습니다."
       ],
-      "summary_text": "한국해양교통안전공단이 해양교통본부장과 검사본부장에 각각 이경훈 기술연구소장과 박금구 검사관리실장을 임명했다. 해양 안전과 운항의 중요성이 커지는 상황에서, 관련 분야의 전문성을 갖춘 인재를 핵심 보직에 배치하여 조직 역량을 강화하려는 목적이다. 해양 안전 및 규제 환경에 영향을 미치는 주요 기관의 인사는 해운 산업 전반에 미치는 영향이 있을 수 있으므로 동향을 파악하는 것이 중요하다.",
-      "description": "한국해양교통안전공단(KOMSA)이 신임 해양교통본부장과 검사본부장을 임명했으며, 이는 해양 안전 및 연구 개발 분야의 전문가들을 핵심 보직에 배치하는 인사이다.",
-      "category": "안전·리스크",
-      "importance": 6,
-      "reason": "해양 안전 및 규제 기관의 주요 인사 변동은 해운 및 항만 운영 환경 변화의 신호가 될 수 있으므로, 관련 정책 변화에 대비해야 합니다.",
-      "content_angle": "'한국해양교통안전공단 인사: 해양 안전 정책의 방향성 변화 예측'이라는 주제로 정책 동향 브리핑 또는 유관 부서와의 정보 공유 시간을 가질 수 있습니다.",
+      "summary_text": "As shifting tariffs, tighter supply chain scrutiny and evolving export controls reshape global trade, importer... From strengthening customs documentation and supply chain traceability to adapting export-control procedures,... 정책·공공 관점에서 시사점을 점검할 필요가 있습니다.",
+      "description": "As shifting tariffs, tighter supply chain scrutiny and evolving export controls reshape global trade, importers and exporters face growing compliance challenges heading into 2027. From strengthening customs documentation and supply chain traceability to adapting export-control procedures, companies must build more agile, proactive compliance strategies to navigate an increasingly complex regulatory environment.",
+      "category": "정책·공공",
+      "importance": 5,
+      "reason": "정책·제도 변화가 물류 현장과 기업 대응 전략에 직접 영향을 줄 수 있는 이슈입니다.",
+      "content_angle": "정책 변화 해설, 실무 대응 가이드, 업계 영향 분석 콘텐츠로 활용할 수 있습니다.",
       "keywords": [
-        "한국해양교통안전공단",
-        "해양 안전",
-        "인사",
-        "정책 변화",
-        "항만 운영"
+        "export",
+        "2027",
+        "chain",
+        "compliance"
       ],
-      "link": "https://www.klnews.co.kr/news/articleView.html?idxno=323380",
-      "published": "2026-11-05 09:56",
+      "link": "https://www.logisticsmgmt.com/article/import_export_2027_staying_nimble_in_a_shifting_trade_landscape",
+      "published": "2026-11-02 15:13",
       "quality": {
-        "title_status": "원문한국어",
-        "summary_status": "AI요약",
-        "analysis_status": "ai"
+        "title_status": "원문표시",
+        "summary_status": "기본정리",
+        "analysis_status": "fallback"
       }
     }
   ],
   "content_ideas": [
     {
       "rank": 1,
-      "topic": "AI 기반 TMS 도입 전략 및 미래 화물 운송 트렌드 분석",
-      "reason": "물류 기업들이 AI 기술 도입을 통해 운송 효율성을 극대화하고 비용을 절감하는 실질적인 방법을 제시한다. 또한, 미래 화물 운송의 핵심 트렌드를 미리 파악하여 시청자들이 변화하는 시장에서 경쟁 우위를 확보하고 선제적으로 대응할 수 있도록 돕는다.",
-      "video_title": "AI TMS, 실패 없이 도입하는 법? 미래 물류 트렌드 6가지 완벽 해설!",
+      "topic": "화물차 공차율 개선을 통한 운송비 절감 및 수익 증대",
+      "reason": "운송업계 종사자(차주, 운송사 관리자)들에게 가장 큰 고민 중 하나인 유류비, 인건비 부담을 덜고 실질적인 수익을 개선할 수 있는 구체적인 전략과 사례를 제시하여 직접적인 도움이 될 것입니다.",
+      "video_title": "텅 빈 트럭은 그만! 공차율 0% 도전, 운송비 20% 줄이는 실전 전략 (feat. 최적화 시스템)",
       "format": "해설형",
       "based_on_titles": [
-        "AI가 TMS 시장을 재편하고 있으며, 성공적인 도입이 승패를 좌우한다",
-        "화물 운송의 미래: 화물 관리의 다음 단계를 재편하는 6가지 트렌드"
+        "Optimal Dynamics says cutting empty truck miles can shrink driver pay - MarketScale"
       ]
     },
     {
       "rank": 2,
-      "topic": "글로벌 공급망 회복 탄력성 확보를 위한 기업 전략",
-      "reason": "팬데믹, 지정학적 리스크 등 예측 불가능한 상황에서 물류 기업이 비즈니스 연속성을 유지하고 안정적인 운영을 확보하기 위한 구체적인 전략과 글로벌 선두 기업들의 사례를 분석하여, 시청자들이 실제 업무에 적용할 수 있는 실질적인 인사이트를 제공한다.",
-      "video_title": "세계 50대 물류 기업의 비밀! 팬데믹에도 끄떡없는 공급망 회복 탄력성 전략",
-      "format": "설명형",
+      "topic": "급변하는 국제 정세와 무역 환경 변화에 따른 해상 물류 리스크 관리",
+      "reason": "기업의 국제 무역 담당자나 물류 관리자들이 예측하기 어려운 지정학적 리스크와 변화하는 관세/수출입 규제에 효과적으로 대응하고, 공급망 안정성을 확보할 수 있는 실질적인 방안을 제공하여 비즈니스 연속성 유지에 기여할 것입니다.",
+      "video_title": "혼돈의 시대, 2024년 해상 물류 리스크 완전 분석! 관세, 규제부터 지정학적 위기 대응까지",
+      "format": "전망형",
       "based_on_titles": [
-        "세계 50대 물류 기업, 회복 탄력성 우선시"
+        "Import/Export 2027: Staying nimble in a shifting trade landscape",
+        "中, 핵항모 띄우고 벵골만에 전투기 배치… 韓 해상 물류로 긴장 - 글로벌이코노믹"
       ]
     },
     {
       "rank": 3,
-      "topic": "물류산업의 ESG 경영: 지역사회 협력과 지속가능성 강화",
-      "reason": "물류 기업들이 사회적 책임을 다하고 지속가능한 성장을 이루기 위한 ESG 경영의 중요성을 강조하고, 울산항만공사의 지역 협력 사례를 통해 시청자들이 실제 물류 운영에 ESG 요소를 어떻게 통합할 수 있는지 구체적인 아이디어를 얻을 수 있도록 돕는다. 이는 기업의 긍정적 이미지 구축 및 새로운 비즈니스 기회 모색으로 이어질 수 있다.",
-      "video_title": "물류기업도 이제 ESG! 울산항만공사처럼 지역과 상생하는 지속가능 경영법",
+      "topic": "ICT 기반 공공 물류 혁신 사례와 차세대 물류 기기 동향",
+      "reason": "K-푸드뱅크의 성공 사례를 통해 공공 부문에서의 스마트 물류 도입 효과를 조명하고, 나아가 민간 기업들이 참고할 만한 ICT 융합 기술 및 최신 물류 기기 동향을 소개하여, 효율성 향상 및 신사업 기회 발굴에 대한 인사이트를 제공할 것입니다.",
+      "video_title": "K-푸드뱅크의 놀라운 변신! ICT가 이끄는 공공 물류 혁신과 미래형 물류기기 트렌드",
       "format": "설명형",
       "based_on_titles": [
-        "울산항만공사, 울산대 학생들과 지역 현안 해결책 모색"
+        "ICT·물류·민관 협력 세 축으로 쌓은 K-푸드뱅크, 2026 GFN 글로벌 서밋 무대에 서다 - 한국공공정책신문",
+        "‘국내 최초’ 40년, 물류기기 역사를 새로 쓰다 - 동아일보"
       ]
     }
   ]
